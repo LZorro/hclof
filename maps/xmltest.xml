@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<library>
+	<map>
+		<universe>Other</universe>
+		<title>XML Test</title>
+		<set>N/A</set>
+		<inout>Outdoor</inout>
+		<totalRows>6</totalRows>
+		<totalCols>16</totalCols>
+		<specialRules>This is some text that explains the special rules of this particular map.</specialRules>
+		<tile>
+			<row>
+				<column>
+					<cell row='1' col='A'>
+						<terrain>clear</terrain>	
+						<elevated>1</elevated>
+						<south>wall</south>
+					</cell>
+				</column>
+				<column>
+					<cell row='1' col='B'>
+						<terrain>special</terrain>
+						<special>C</special>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='1' col='C'>
+						<terrain>blocking</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='1' col='D'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='1' col='E'>
+						<terrain>clear</terrain>
+						<elevated>2</elevated>
+						<indoor></indoor>
+					</cell>
+				</column>
+			</row>
+			<row>
+				<column>
+					<cell row='2' col='A'>
+						<terrain>hindering</terrain>
+						<elevated>1</elevated>
+						<east>wall</east>
+						<north>wall</north>
+					</cell>
+				</column>
+				<column>
+					<cell row='2' col='B'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+						<west>wall</west>
+					</cell>
+				</column>
+				<column>
+					<cell row='2' col='C'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+			</row>
+			<row>
+				<column>
+					<cell row='3' col='A'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='3' col='B'>
+						<terrain>special</terrain>
+						<special>H</special>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='3' col='C'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+			</row>
+		</tile>
+	</map>
+</library>

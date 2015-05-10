@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<head>
+	<title>Heroclix Line of Fire Tool - Tim Volpe</title>
+  
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<style type="text/css">
+		@media screen and (-webkit-min-device-pixel-ratio: 0) {
+			select:focus, textarea:focus, input:focus {
+				font-size: 16px;
+			}
+		}
+	</style>
+
+	<link rel="stylesheet" href="grid.css">
+	<link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css">  
+	<script type="text/javascript" src="js/plotline.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/loadxmldoc.js"></script>
+    <script type="text/javascript" src="js/lof.js"></script>
+	<script type="text/javascript" src="js/pageutil.js"></script>
+	<script type="text/javascript" src="js/grid.js"></script>
+	<script src="jquery.mobile-1.4.2/jquery-1.11.1.min.js"></script>	
+	<script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+</head> 
+
+
+<body>
+	<div data-role="page" id="mainpage">  
+		
+		<div data-role="header">
+			<h1>Heroclix&trade; Line of Fire Tool</h1>
+			<a href="#help" data-position-to="window" data-rel="popup" data-transition="slidedown" data-icon="star" class="ui-btn-right">Help</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#mapdialog" data-position-to="window" data-rel="popup" data-transition="slidedown" data-icon="plus">Load Map</a></li>
+					<li><a href="#lineInfo"  data-position-to="window" data-rel="popup" data-transition="slidedown" data-icon="action">Select Points</a></li>
+					<li><a href="#mapInfo"   data-position-to="window" data-rel="popup" data-transition="slidedown" data-icon="info">Map Info</a></li>
+				</ul>
+			</div>
+		</div>
+
+		
+		<div id='mapdiv' style="position: relative;">
+			<div id='griddiv' style="position: relative;"></div>
+		</div>
+		
+		<!--
+		<div id='griddiv' style="position: relative;">
+			<div id="mapElementsDiv" style="position: absolute;">
+				<canvas id="mapElements" style="position: absolute;"></canvas>
+			</div>
+		</div>
+		-->
+		
+		<script type="text/javascript"> 
+			createGrid(24,16); 
+			/*createOverlay();*/
+		</script>
+		
+		<div class="footer">
+			<p>This tool is intended for use as a reference only.  Please refer to the Rulebook for proper rulings, or ask your judge.<br>
+			Line of Fire rules used are defined in the 2014 Rulebook.  Modern Age maps are current as of 2014.<br>
+			
+			<p>Do you want to help this project be the best it can be?  Volunteer and <a href="mailto:timothyvolpe@hotmail.com?subject=HCLoF Help">contact me here!</a>
+			
+			<p>This tool is &copy;2014 <a href="http://www.lzorro.com">Tim Volpe</a>.  All Rights Reserved.  <a href="devblog.html">Dev Blog</a><br>
+			<a href="http://www.heroclix.com" rel="_blank">Heroclix</a> is &copy; and &trade; WizKids/NECA.	
+		</div>
+
+
+	
+	<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+	
+		<div data-role="popup" data-overlay-theme="b" id="lineInfo">
+	
+			<form>
+				<font color=blue>Attacker:</font>
+				<select data-role="none" id='attackCol'></select>
+				<select data-role="none" id="attackRow" ></select>
+				<font color=green>Target:</font>
+				<select data-role="none" id="targetCol" ></select>
+				<select data-role="none" id="targetRow" ></select>
+				<button type="button" data-role="none" onclick="getSquares()">LINE</button>
+				<button type="button" data-role="none" onclick="resetPage(false)">RESET</button>
+				<p><input id="toggleGrid" type="checkbox" data-role="none" onclick="showGrid(this);">Show grid</input>
+				<input id="toggleCoordinates" type="checkbox" data-role="none" onclick="showCoordinates(this);">Show Coordinates</input>
+	
+				<p>Drawing a line from: <input data-role="none" type="text" readonly id="result" size="40"></p>
+				<p>Line passes through squares: <textarea data-role="none" id="squareList" readonly cols='45' rows='4'></textarea></p>
+				<div>Line of Fire is: <input data-role="none" style='font-weight:bold' size=50 readonly id='lofResult'></input></div><br>
+			</form>
+			
+			<script type="text/javascript"> 
+				resetDropdowns(24,16); 
+			</script>
+		
+			<a href="#mainpage" data-rel="back" data-role="button" data-inline="true">Close</a>
+			
+		</div>
+	
+	<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+	
+		<div data-role="popup" data-overlay-theme="b" id="mapInfo">
+	
+			<form>
+				<div>Map Title: <span style='font-weight:bold' id='mapTitle'></span></div>
+				<div>Set: <span style='font-weight:bold' id='mapSet'></span></div>
+				<div>Universe: <span style='font-weight:bold' id='mapUniverse'></span></div>
+				<div><span style='font-weight:bold' id='mapInOut'></span></div>
+				<div id='mapSpecial' style='visibility:hidden'><u>Special Rules:<br></u>
+				<textarea data-role="none" readonly rows="5" cols="50" id='mapSpecialRules'></textarea></div>
+				<div>
+					<table id="mainStatsBox" class="breakdown">
+						<tr>
+							<th>H</th>
+							<th>B</th>
+							<th>Wall</th>
+							<th>E</th>
+							<th>W</th>
+							<th>S</th>
+							<th>I</th>
+						</tr>
+						<tr>
+							<td id="breakdown" class="H"></td>
+							<td id="breakdown" class="B"></td>
+							<td id="breakdown" class="Wall"></td>
+							<td id="breakdown" class="E"></td>
+							<td id="breakdown" class="W"></td>
+							<td id="breakdown" class="S"></td>
+							<td id="breakdown" class="I"></td>
+						</tr>
+					</table>				
+				</div>
+			</form>
+		
+		<a href="#mainpage" data-rel="back" data-role="button" data-inline="true">Close</a>
+		
+		</div>
+	
+	<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+	 
+		<div data-role="popup" data-overlay-theme="b" id="mapdialog">
+
+			<!--
+				//  Ideally we would like to have a filterable widget applied to a non-native select of a size greater than 1
+				<form>
+					<input data-type="search" id="searchForSelect">
+				</form>
+			-->
+			<select data-input="#searchForSelect" data-role="none" data-filter="true" id="library" onchange="loadStats()" style="width:300px" size=10>	
+			</select>
+
+			<div>
+				Set:  <span style='font-weight:bold' id='loadmapSet'></span>
+			</div>
+	
+			<div>
+				<form>
+					<input data-role="none" name="sort" type="radio" onchange="loadLibrary()" id="filterDefault" checked="true" value="default">Default</input>
+					<input data-role="none" name="sort" type="radio" onchange="loadLibrary()" id="filterAlpha" value="alpha">A-Z</input>
+				</form>
+	
+				<form>
+					<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" checked="true" id="filterMarvel">Marvel</input>
+					<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" checked="true" id="filterDC">DC</input>
+					<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" checked="true" id='filterOther'>Other</input>
+					<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" id="filterLotR">Lord of the Rings</input>
+					<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" id="filterStarTrek">Star Trek</input>
+				</form>
+	
+				<form>
+					<input data-role="none" name="age" type="radio" onchange="loadLibrary()" id="filterModern">Modern Age</input>
+					<input data-role="none" name="age" type="radio" onchange="loadLibrary()" id="filterGolden" checked="true" >Golden Age</input>
+				</form>
+	
+				<form>
+					<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filterIndoor">Indoor</input>
+					<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filterOutdoor">Outdoor</input>
+				</form>
+				
+				<form>
+					<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filter1624">16x24</input>
+					<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filter2424">24x24</input>
+					<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filter916">9x16</input>
+				</form>
+			</div>
+	
+			<div>
+				<table id="loadStatsBox" class="breakdown">
+					<tr>
+						<th><button data-role="none" onclick="sortLibrary('H')">H</button></th>
+						<th><button data-role="none" onclick="sortLibrary('B')">B</button></th>
+						<th><button data-role="none" onclick="sortLibrary('L')">Wall</button></th>
+						<th><button data-role="none" onclick="sortLibrary('E')">E</button></th>
+						<th><button data-role="none" onclick="sortLibrary('W')">W</button></th>
+						<th><button data-role="none" onclick="sortLibrary('S')">S</button></th>
+						<th><button data-role="none" onclick="sortLibrary('I')">I</button></th>
+					</tr>
+					<tr>
+						<td id="breakdown" class="H"></td>
+						<td id="breakdown" class="B"></td>
+						<td id="breakdown" class="Wall"></td>
+						<td id="breakdown" class="E"></td>
+						<td id="breakdown" class="W"></td>
+						<td id="breakdown" class="S"></td>
+						<td id="breakdown" class="I"></td>
+					</tr>
+				</table>
+			</div>
+	
+			<a href="#mainpage" data-rel="back" data-role="button" data-inline="true" onclick="loadMapDetails()">Load</a>
+			<a href="#mainpage" data-rel="back" data-role="button" data-inline="true">Close</a>
+	
+			<script type="text/javascript"> loadLibrary(); </script>
+	
+		</div>  <!-- end mapDialog -->
+		
+	<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+	
+		<div data-role="popup" data-overlay-theme="b" id="help">
+	
+			<form>
+				<div style="width:600px">
+					<p><b>To select a map, click the Load Map button.</b>
+					<p>The dropdown list shows all of the maps currently available.  You can filter the maps:
+					<ul>
+						<li>by Default (sets are ordered chronologically by release) or alphabetically</li>
+						<li>by Universe: Marvel, DC, Lord of the Rings, Star Trek, or Other</li>
+						<li>by Modern Age (recent maps from tournament-legal sets) or Golden Age (all maps)</li>
+						<li>by whether a map is indoor or outdoor (or both)</li>
+						<li>by map size: 16x24 (2'x3'), 24x24 (3'x3'), or 9x16 squares</li>
+					</ul>
+					<p>Selecting a map will display how much of that map is comprised of certain terrain types:<br>
+					<font color="green">Hindering</font>, <font color="chocolate">Blocking</font>, Wall segments, <font color="red">Elevated</font>,
+					<font color="blue">Water</font>, <font color="orange">Special</font>, or <mark>Indoor</mark>.
+					<p>Clicking the header buttons will resort the map list in descending order of the amount of terrain selected.
+					<p><b>Click the Map Info button to display information about the map</b>, including the aforementioned terrain breakdown and special rules (if applicable).
+					<p>Other features once you have loaded a map:
+					<ul>
+						<li><font color="purple">Purple squares</font> designate starting areas.</li>
+						<li><font color="red">Dashed red lines</font> indicate stairs.</li>
+						<li>Higher elevations are shown in progressively darker shades of red.</li>
+					</ul>
+					<p><b>To draw a line of fire, click the Select Points button.</b>
+					<p>Select the coordinates of the attacker and the target using the dropdown boxes, then click the LINE button.<br>
+					All squares that the line of fire passes through are displayed and shown on the grid in <font color="red">red</font>.<br>
+					If a line of fire passes through an intersection of squares, the pair of squares opposite the line of fire (used for determining the final outcome) are displayed in <font color="magenta">pink</font> and shown in the list as a bracketed pair.<br>
+					The final outcome of the line of fire is displayed.<br>
+					You can turn off the line of fire by clicking the RESET button.  You also have the option to display gridlines, or the coodinates of each square.<br>
+				</div>
+			</form>
+			
+			<a href="#mainpage" data-rel="back" data-role="button" data-inline="true">Close</a>
+			
+		</div>
+	
+	<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+	
+	</div>  <!-- mainpage -->
+	 
+</body>
+  
+</html>

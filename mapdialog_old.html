@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Selectable - Serialize</title>
+	<link rel="stylesheet" href="jquery-ui-1.10.4.custom/development-bundle/themes/base/jquery.ui.all.css">
+	<script src="jquery-ui-1.10.4.custom/development-bundle/jquery-1.10.2.js"></script>
+	<script src="jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.core.js"></script>
+	<script src="jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.widget.js"></script>
+	<script src="jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.mouse.js"></script>
+	<script src="jquery-ui-1.10.4.custom/development-bundle/ui/jquery.ui.selectable.js"></script>
+	<script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+	<script src="loadxmldoc.js"></script>
+	<link rel="stylesheet" href="jquery-ui-1.10.4.custom/development-bundle/demos/demos.css">
+	<link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css">
+
+	<style>
+	#feedback { font-size: 1.4em; }
+	#selectable .ui-selecting { background: #FECA40; }
+	#selectable .ui-selected { background: #F39814; color: white; }
+	#selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+	#selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+	</style>
+	<script>
+	$(function() {
+		$( "#selectable" ).selectable({
+			stop: function() {
+				var result = $( "#select-result" ).empty();
+				$( ".ui-selected", this ).each(function() {
+					var index = $( "#selectable li" ).index( this );
+					result.append( " #" + ( index + 1 ) );
+				});
+			}
+		});
+	});
+	
+	$(function() {
+		$("#selectable").selectable({
+			selecting: function(event, ui){
+				if( $(".ui-selected, .ui-selecting").length > 1){
+					$(ui.selecting).removeClass("ui-selecting");
+				}
+			}
+		});
+	});
+	</script>
+</head>
+<body>
+
+<p id="feedback">
+<span>You've selected:</span> <span id="select-result">none</span>.
+</p>
+<form class="ui-filterable">
+    <input id="filterBasic-input" data-type="search">
+</form>
+<ul id="selectable" data-role="listview" data-filter="true" data-input="#filterBasic-input">
+	<li class="ui-widget-content">Item 1</li>
+	<li class="ui-widget-content">Item 2</li>
+	<li class="ui-widget-content">Item 3</li>
+	<li class="ui-widget-content">Item 4</li>
+	<li class="ui-widget-content">Item 5</li>
+	<li class="ui-widget-content">Item 6</li>
+</ul>
+
+<div class="demo-description">
+<p>Write a function that fires on the <code>stop</code> event to collect the index values of selected items.  Present values as feedback, or pass as a data string.</p>
+</div>
+
+<script type="text/javascript">
+		//var mdd = document.createElement('ul');
+		//mdd.id = "mapDropdown";
+		//document.body.appendChild(mdd); 
+		var mdd = document.getElementById("selectable");
+		
+		var mapIndex = loadXMLDoc("mapindex.xml");
+		var mapItems = mapIndex.getElementsByTagName("map");
+		
+		for (var i = 0; i < mapItems.length; i++)
+		{
+			var mapItemValues = mapItems[i].children;
+			var mapOption = document.createElement('option');
+			var mapLI = document.createElement('li');
+			var mapLabel = document.createElement('label');
+			mapOption.value = mapItemValues[0].textContent;
+			mapOption.textContent = mapItemValues[1].textContent;
+			mapLabel.textContent = mapOption.textContent;
+			mapLI.className = 'ui-widget-content';
+			mapLI.appendChild(mapOption);
+			//mapLI.appendChild(mapLabel);
+			mapLI.innerHTML = mapLabel.textContent;
+			mdd.appendChild(mapLI);
+		}
+</script>
+
+</body>
+</html>

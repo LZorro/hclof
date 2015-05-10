@@ -1,0 +1,1598 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<library>
+	<map>
+		<universe>Marvel</universe>
+		<title>The Garden</title>
+		<set>Infinity Gauntlet</set>
+		<inout>Outdoor</inout>
+		<tile>
+			<row r='1'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>hindering</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='2'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='3'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='4'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='5'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='6'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='7'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='8'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='9'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='10'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='11'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='12'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='13'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='14'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='15'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='16'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='17'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='18'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='19'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='20'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='21'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='22'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='23'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+			<row r='24'>
+				<column c='A'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='B'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='C'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='D'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='E'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='F'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='G'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='H'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='I'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='J'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='K'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='L'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='M'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='N'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='O'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+				<column c='P'>
+					<terrain>clear</terrain>
+					<elevated>1</elevated>
+				</column>
+			</row>
+		</tile>
+	</map>
+</library>
+
+	

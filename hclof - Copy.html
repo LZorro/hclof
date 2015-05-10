@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+	<title>Heroclix Line of Fire Tool - Tim Volpe</title>
+  
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<link rel="stylesheet" href="grid.css">
+	<link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css">  
+	<script type="text/javascript" src="js/plotline.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/loadxmldoc.js"></script>
+    <script type="text/javascript" src="js/lof.js"></script>
+	<script type="text/javascript" src="js/pageutil.js"></script>
+	<script type="text/javascript" src="js/grid.js"></script>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>	
+	<script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+</head> 
+
+
+<body class="size-960">
+	<div data-role="page" id="mainpage">  
+		Heroclix Line of Fire Tool
+
+		<form>
+			<font color=blue>Attacker:</font>
+			<select data-role="none" id='attackCol'></select>
+			<select data-role="none" id="attackRow" ></select>
+			<font color=green>Target:</font>
+			<select data-role="none" id="targetCol" ></select>
+			<select data-role="none" id="targetRow" ></select>
+			<button type="button" data-role="none" onclick="getSquares()">LINE</button>
+			<button type="button" data-role="none" onclick="resetPage(false)">RESET</button>
+			<p><input id="toggleGrid" type="checkbox" data-role="none" onclick="showGrid(this);">Show grid</input>
+			<input id="toggleCoordinates" type="checkbox" data-role="none" onclick="showCoordinates(this);">Show Coordinates</input>
+	
+			<p>Drawing a line from: <input data-role="none" type="text" readonly id="result" size="40"></p>
+			<p>Line passes through squares: <textarea data-role="none" id="squareList" readonly cols='45' rows='4'></textarea></p>
+			<div>Line of Fire is: <input data-role="none" style='font-weight:bold' size=50 readonly id='lofResult'></input></div><br>
+		</form>
+
+		<div>
+			<a href="#mapdialog" data-role="button" data-inline="true" data-rel="dialog" data-transition="slidedown">Load Map</a>
+		</div>
+
+		<form>
+			<div>Map Title: <span style='font-weight:bold' id='mapTitle'></span></div>
+			<div>Set: <span style='font-weight:bold' id='mapSet'></span></div>
+			<div>Universe: <span style='font-weight:bold' id='mapUniverse'></span></div>
+			<div><span style='font-weight:bold' id='mapInOut'></span></div>
+			<div id='mapSpecial' style='visibility:hidden'><u>Special Rules:<br></u>
+			<textarea data-role="none" readonly rows="5" cols="50" id='mapSpecialRules'></textarea></div>
+			<div>
+				<table id="mainStatsBox" class="breakdown">
+					<tr>
+						<th>H</th>
+						<th>B</th>
+						<th>Wall</th>
+						<th>E</th>
+						<th>W</th>
+						<th>S</th>
+						<th>I</th>
+					</tr>
+					<tr>
+						<td id="breakdown" class="H"></td>
+						<td id="breakdown" class="B"></td>
+						<td id="breakdown" class="Wall"></td>
+						<td id="breakdown" class="E"></td>
+						<td id="breakdown" class="W"></td>
+						<td id="breakdown" class="S"></td>
+						<td id="breakdown" class="I"></td>
+					</tr>
+				</table>				
+			</div>
+		</form>
+
+		<script type="text/javascript"> 
+			resetDropdowns(24,16); 
+			createGrid(24,16); 
+		</script>
+		
+		<div class="footer">
+			<p>This tool is intended as use for a reference only.  Please refer to the Rulebook for proper rulings, or ask your judge.
+			<br>
+			<p>This tool is &copy;2014 Tim Volpe.  All Rights Reserved.  <a href="devblog.html">Dev Blog</a><br>
+			<a href="http://www.heroclix.com" rel="_blank">Heroclix</a> is &copy; and &trade; WizKids/NECA.	
+		</div>
+
+	</div>  <!-- mainpage -->
+	 
+	<div data-role="page" id="mapdialog">
+
+		<div style="width:300px">
+			<!-- 
+				//  Ideally we would like to have a filterable widget applied to a non-native select of a size greater than 1
+			<form>
+				<input data-type="search" id="searchForSelect">
+			</form>
+			-->
+			<select data-input="#searchForSelect" data-role="none" data-filter="true" id="library" onchange="loadStats()" style="width:300px" size=10>	
+			</select>
+		</div>
+		
+		<div>
+			Set:  <span style='font-weight:bold' id='loadmapSet'></span>
+		</div>
+	
+		<div>
+			<form>
+				<input data-role="none" name="sort" type="radio" onchange="loadLibrary()" id="filterDefault" checked="true" value="default">Default</input>
+				<input data-role="none" name="sort" type="radio" onchange="loadLibrary()" id="filterAlpha" value="alpha">A-Z</input>
+			</form>
+	
+			<form>
+				<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" checked="true" id="filterMarvel">Marvel</input>
+				<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" checked="true" id="filterDC">DC</input>
+				<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" checked="true" id='filterOther'>Other</input>
+				<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" id="filterLotR">Lord of the Rings</input>
+				<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" id="filterStarTrek">Star Trek</input>
+			</form>
+	
+			<form>
+				<input data-role="none" name="age" type="radio" onchange="loadLibrary()" id="filterModern">Modern Age</input>
+				<input data-role="none" name="age" type="radio" onchange="loadLibrary()" id="filterGolden" checked="true" >Golden Age</input>
+			</form>
+	
+			<form>
+				<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filterIndoor">Indoor</input>
+				<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filterOutdoor">Outdoor</input>
+			</form>
+		</div>
+	
+		<div>
+			<table id="loadStatsBox" class="breakdown">
+				<tr>
+					<th><button data-role="none" onclick="sortLibrary('H')">H</button></th>
+					<th><button data-role="none" onclick="sortLibrary('B')">B</button></th>
+					<th><button data-role="none" onclick="sortLibrary('L')">Wall</button></th>
+					<th><button data-role="none" onclick="sortLibrary('E')">E</button></th>
+					<th><button data-role="none" onclick="sortLibrary('W')">W</button></th>
+					<th><button data-role="none" onclick="sortLibrary('S')">S</button></th>
+					<th><button data-role="none" onclick="sortLibrary('I')">I</button></th>
+				</tr>
+				<tr>
+					<td id="breakdown" class="H"></td>
+					<td id="breakdown" class="B"></td>
+					<td id="breakdown" class="Wall"></td>
+					<td id="breakdown" class="E"></td>
+					<td id="breakdown" class="W"></td>
+					<td id="breakdown" class="S"></td>
+					<td id="breakdown" class="I"></td>
+				</tr>
+			</table>
+		</div>
+	
+		<a href="#mainpage" data-rel="back" data-role="button" data-inline="true" onclick="loadMapDetails()">Load</a>
+		<a href="#mainpage" data-rel="back" data-role="button" data-inline="true">Close</a>
+	
+		<script type="text/javascript"> loadLibrary(); </script>
+	
+	</div>  <!-- end mapDialog -->
+	
+	 
+</body>
+  
+</html>

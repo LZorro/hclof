@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!-- definitions -->
+<xs:simpleType name="wallType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="hindering"/>
+      <xs:enumeration value="blocking"/>
+      <xs:enumeration value="water"/>
+      <xs:enumeration value="elevated"/>
+      <xs:enumeration value="stair"/>
+      <xs:enumeration value="start"/>
+      <xs:enumeration value="special"/>
+      <xs:enumeration value="wall"/>
+      <xs:enumeration value="indoor"/>
+    </xs:restriction>
+</xs:simpleType>
+
+  <xs:element name="library">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="map"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="map">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="universe" type="xs:string"/>
+        <xs:element name="title" type="xs:string"/>
+        <xs:element name="set" type="xs:string"/>
+        <xs:element name="inout">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="Indoor" />
+              <xs:enumeration value="Outdoor"/>
+              <xs:enumeration value="Indoor/Outdoor"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="totalRows" type="xs:integer"/>
+        <xs:element name="totalCols" type="xs:integer"/>
+        <xs:element ref="tile"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="tile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="row" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="row">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="column" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="column">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cell"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cell">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="terrain">
+          <xs:simpleType>
+            <xs:restriction base="xs:string">
+              <xs:enumeration value="clear" />
+              <xs:enumeration value="hindering" />
+              <xs:enumeration value="blocking" />
+              <xs:enumeration value="water" />
+              <xs:enumeration value="indoor" />
+              <xs:enumeration value="start" />
+              <xs:enumeration value="special" />
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="elevated" type="xs:integer"/>
+        <xs:element name="north" type="wallType" minOccurs="0" />
+        <xs:element name="east" type="wallType" minOccurs="0" />
+        <xs:element name="west" type="wallType" minOccurs="0" />
+        <xs:element name="south" type="wallType" minOccurs="0" />
+        <xs:element name="indoor" type="xs:string" minOccurs="0" />
+      </xs:sequence>
+      <xs:attribute name="col" type="xs:string" use="required"/>
+      <xs:attribute name="row" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

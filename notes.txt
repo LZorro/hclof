@@ -1,0 +1,77 @@
+Notes
+
+- upload ajax-loader.gif and whatever (jquery) files necessary to website
+   also, get local copy of standard jquery, so I'm not referencing an external site
+   
+- FIX LOF ALGORITHM
+	counts outdoor grounded blocking terrain as blocking when drawing lof from elevated to elevated (should be clear)
+		if the endpoints are both on the rim, it's okay...but away from the rim causes problems
+	rewrite to account for variable elevations (or at least 6) - thanks to Ryut
+	
+- Speaking of level 6, adjust CSS for this	
+	
+- add "Want to help? Write to me!" link on index.html
+
+- Rewrite map sorting algorithm so that maps without a type of terrain are filtered out
+	(eg. maps with no elevated terrain don't show up on the list sorted by elevated terrain)
+   
+Issued to look into:
+ - Fear Itself: Paris - blocking terrain B2 and I23
+ - Fear Itself: South Africa - G2, G23
+ - WXM: Candian Wilderness - check water G2-H2
+ - ASM: Bell Tower - check elevated/special terrain division, figure out how to get elevated/indoor displaying properly
+ - NML: Dockside (pre) - ticket booth elevated, is it starting or separate?
+ -  same for Dockside Post
+ - NML: Robinson (post) - check southern start area (esp. right)
+ - NML: Power Plant (post) - D3 elevated
+ - NML: Blackgate Prison (pre) - Outdoor? Really?  - also, check mess that is post
+ - BMFF: Wayne Manor - 17 NOP, no doorway?
+ - CW: Negative Zone Prison - E11: pointing wrong way?
+ - DC75 WoL FF: Okaara - rows 12, 13, 14 - blocking indoor or outdoor? 1 or 2?
+ - IG: Collector's Ship - north start area, blocking included or separate?
+ - AVM: Stark Tower - check special terrain, which elevation is it? (esp. north)
+ - GSX: Madripoor - blocking in southern start included in start?
+ - DC75: Hawkworld - check elevated terrain isn't part of starts
+ - DR: Training Complex - T19 indoor/outdoor? that elevated area
+ - SoG: Crime Alley - ways to get into theaters?
+ 
+ 
+ STILL TO CODE:
+ - Axis Chemicals
+ - Small Town
+ - Central Port
+ - Rooftops
+ - Docklands
+ - Dawn of Man
+ - Anti-Matter Fortress
+ - Mars
+ - Karnak
+ - Dr Manhattan's Lab
+ - The Farm
+ - Sakaar (finish)
+ - Gamma Base
+ - Starcore Space Station
+ - Arhkam Asylum
+ - Gotham Bank
+ - Quinjet Hangar
+ - European Castle
+ - Clock Tower
+ - Crime Alley
+ - Teen Titans Tower Grounds
+ - NOWHERE Arctic Base
+ - Smallville
+ - Metropolis
+ - Svartalfheim (TDW)
+ - Royal Naval Academy
+ - Hall of Doom
+ - Slaughter Swamp
+ - Triskelion Helibay
+ - SHIELD Helicarrier (TWS)
+ - The Kyln
+ - Nova Corps Headquarters
+ - Central City Park
+ - The Flash Museum
+ - Liberty Island
+ - Xavier Mansion Grounds
+ 
+ 
