@@ -1,14 +1,7 @@
 range = 0;
-
-/**
-	* Starts the Line of Fire process
-	* Called when LINE button is clicked on Select Points panel
-*/	
-function getSquares() {
-	// clears page of any previously highlighted LoF
-	resetPage(false);
 	
-	// gets values from Select Points panel
+function getSquares() {
+	resetPage(false);
 	var ac = document.getElementById("attackCol");
 	var ar = document.getElementById("attackRow");
 	var tc = document.getElementById("targetCol");
@@ -30,24 +23,17 @@ function getSquares() {
 	var gridtable = document.getElementsByClassName('grid');
 	var attackSquare = gridtable[0].rows[arNum].cells[acNum];
 	var targetSquare = gridtable[0].rows[trNum].cells[tcNum];
-
-	// highlights all squares of the LoF
+			
 	plotLine(arNum, acNum, trNum, tcNum); 
-	// highlights start (attacker) and end (target) squares
 	attackSquare.className = attackSquare.className + ' attacker';
 	targetSquare.className = targetSquare.className + ' target';
 			
 	document.getElementById("result").value = acVal + arVal + " to " + tcVal + trVal + " , a " + width + "x" + height + " box."
 		+ ", a range of " + range;
-
-	// calculates the type of line (hindered, blocking, etc.) - result written to Line of Fire is: line 
+				
 	determineLoF(attackSquare, targetSquare);
-	
 }  // getSquares()
-
-/**
-	* Steps through the squares listed in the LoF and calculates its outcome
-*/		
+		
 function determineLoF(atkSquare, tarSquare)
 {
 	var resultTA = document.getElementById('lofResult');
@@ -464,11 +450,7 @@ function lookForWall(firstsq, lastcrosssq, crosssq, nextsq, diag, sofar)
 	else
 		return sofar;	
 }  // lookForWall()
-
-/**
-	* @param full Boolean - if true, sets grid to blank and clears out Info panel (called when loading a new map)
-	* if false, only clears grid of Line of Fire highlighted squares (called when creating or clearing LoF)
-*/	
+		
 function resetPage(full) {
 	document.getElementById("result").value = "";
 	document.getElementById("lofResult").value = "";
