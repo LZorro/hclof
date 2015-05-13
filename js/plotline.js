@@ -17,7 +17,7 @@ function plotLine (y1, x1, y2, x2)
   
 	// first point 
 	sq = createSquare(y1, x1);
-	sq.className = sq.className + ' clicked'; //click();
+	sq.gridSquare.className += ' clicked'; //click();
 	range = 0;
 	
 	// calculating which direction to start counting
@@ -55,33 +55,33 @@ function plotLine (y1, x1, y2, x2)
 				if (error + errorprev < ddx)
 				{  // bottom square also 
 					sq = createSquare(y-ystep, x);
-					sq.className = sq.className + ' clicked';	
-					traversalList[length] = createTraversalListElement(y-ystep, x, sq);
+					sq.gridSquare.className += ' clicked';	
+					traversalList[traversalList.length] = createTraversalListElement(sq);
 					passThrough += sq.innerText + ' ';
 				}
 				else if (error + errorprev > ddx)
 				{ // left square also 
 					sq = createSquare(y, x-xstep);
-					sq.className = sq.className + ' clicked'; 
-					traversalList[length] = createTraversalListElement(y, x-xstep, sq);
+					sq.gridSquare.className += ' clicked'; 
+					traversalList[traversalList.length] = createTraversalListElement(sq);
 					passThrough += sq.innerText + ' ';
 				}
 				else
 				{  // corner: bottom and left squares also 
 					sq = createSquare(y-ystep, x);
-					sq.className = sq.className + ' wiggle';  
+					sq.gridSquare.className += ' wiggle';  
 					passThrough += '[' + sq.innerText + ',';
 					sq2 = createSquare(y, x-xstep);
-					sq2.className = sq2.className  + ' wiggle';  
+					sq2.gridSquare.className += ' wiggle';  
 					passThrough += sq2.innerText + '] ';
-					traversalList[length] = createTraversalListElement(y-ystep, x, sq, y, x-xstep, sq2);
+					traversalList[traversalList.length] = createTraversalListElement(sq, sq2);
 				} 
 			} 
 	  
 			sq = createSquare(y,x);
-			sq.className = sq.className + ' clicked'; 
+			sq.gridSquare.className += ' clicked'; 
 			passThrough += sq.innerText + ' ';
-			traversalList[length] = createTraversalListElement(y, x, sq);
+			traversalList[traversalList.length] = createTraversalListElement(sq);
 			range++;
 
 			errorprev = error; 
@@ -101,34 +101,34 @@ function plotLine (y1, x1, y2, x2)
 				if (error + errorprev < ddy) 
 				{
 					sq = createSquare(y, x-xstep);
-					sq.className = sq.className + ' clicked'; 
+					sq.gridSquare.className += ' clicked'; 
 					passThrough += sq.innerText + ' ';
-					traversalList[length] = createTraversalListElement(y, x-xstep, sq);
+					traversalList[traversalList.length] = createTraversalListElement(sq);
 				}
 				else if (error + errorprev > ddy) 
 				{
 					sq = createSquare(y-ystep,x);
-					sq.className = sq.className + ' clicked'; 
+					sq.gridSquare.className += ' clicked'; 
 					passThrough += sq.innerText + ' ';
-					traversalList[length] = createTraversalListElement(y-ystep, x, sq);
+					traversalList[traversalList.length] = createTraversalListElement(sq);
 				}
 				else
 				{ 
 					sq = createSquare(y, x-xstep);
-					sq.className = sq.className + ' wiggle';
+					sq.gridSquare.className += ' wiggle';
 					passThrough += '[' + sq.innerText + ',';
 					sq2 = createSquare(y-ystep, x);
-					sq2.className = sq2.className + ' wiggle'; 
+					sq2.gridSquare.className += ' wiggle'; 
 					passThrough += sq2.innerText + '] ';
-					traversalList[length] = createTraversalListElement(y-ystep, x, sq, y, x-xstep, sq2);
+					traversalList[traversalList.length] = createTraversalListElement(sq, sq2);
 		
 				} 
 			} 
 	  
 			sq = createSquare(y,x);
-			sq.className = sq.className + ' clicked'; 
+			sq.gridSquare.className += ' clicked'; 
 			passThrough += sq.innerText + ' ';
-			traversalList[length] = createTraversalListElement(y, x, sq);
+			traversalList[traversalList.length] = createTraversalListElement(sq);
 			range++;
 			errorprev = error; 
 		} 
@@ -140,31 +140,30 @@ function plotLine (y1, x1, y2, x2)
 
 function createSquare(row, col) 
 {
+	var returnSquare = {};
+	returnSquare.row = row;
+	returnSquare.col = col;
 	var gridtable = document.getElementsByClassName('grid');
 	if (gridtable.length > 0)
-		return gridtable[0].rows[row].cells[col];
+		returnSquare.gridSquare = gridtable[0].rows[row].cells[col];
+	returnSquare.terrain = determineTerrainType(returnSquare.gridSquare.className);
+	returnSquare.elevation = getElevation(returnSquare.gridSquare.className);
+	returnSquare.colAlpha = returnSquare.gridSquare.innerText[0];
+	
+	return returnSquare;
 }
 
-function createTraversalListElement(row, col, square, crossrow, crosscol, crosssquare)
+function createTraversalListElement(square, crosssquare)
 {
-	var retValue;
-	retValue.terrain = determineTerrainType(square.className);
-	retValue.elevation = getElevation(square.className);
-	retValue.row = row;
-	retValue.col = col;
-	if (crossrow === undefined && crosscol === undefined && crosssquare === undefined)
+	var retValue = {};
+	retValue.square = square;
+	if (crosssquare === undefined && crosscol === undefined)
 	{
-		retValue.crossrow = "";
-		retValue.crosscol = "";
-		retValue.crossterrain = "";
-		retValue.crosselevation = "";
+		retValue.crosssquare = "";
 	}
 	else
 	{
-		retValue.crossrow = crossrow;
-		retValue.crosscol = crosscol;
-		retValue.crossterrain = determineTerrainType(crosssquare.classname);
-		retValue.crosselevation = getElevation(crosssquare.classname);
+		retValue.crosssquare = crosssquare;
 	}
 	return retValue;
 }

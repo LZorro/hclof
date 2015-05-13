@@ -28,14 +28,16 @@ function getSquares() {
 	var height = Math.abs(arNum - trNum) + 1;
 						
 	var gridtable = document.getElementsByClassName('grid');
-	var attackSquare = gridtable[0].rows[arNum].cells[acNum];
-	var targetSquare = gridtable[0].rows[trNum].cells[tcNum];
+	//var attackSquare = gridtable[0].rows[arNum].cells[acNum];
+	var attackSquare = createSquare(arNum, acNum);
+	//var targetSquare = gridtable[0].rows[trNum].cells[tcNum];
+	var targetSquare = createSquare(trNum, tcNum);
 
 	// highlights all squares of the LoF
 	plotLine(arNum, acNum, trNum, tcNum); 
 	// highlights start (attacker) and end (target) squares
-	attackSquare.className = attackSquare.className + ' attacker';
-	targetSquare.className = targetSquare.className + ' target';
+	attackSquare.gridSquare.className += ' attacker';
+	targetSquare.gridSquare.className += ' target';
 			
 	document.getElementById("result").value = acVal + arVal + " to " + tcVal + trVal + " , a " + width + "x" + height + " box."
 		+ ", a range of " + range;
@@ -49,6 +51,50 @@ function getSquares() {
 	* Steps through the squares listed in the LoF and calculates its outcome
 */		
 function determineLoF(atkSquare, tarSquare)
+{
+	var resultTA = document.getElementById('lofResult');
+	var currentSquare;
+	var nextSquare;
+	var crossSquare;
+	var highestLoFType = 0;
+	var isDiagonal = "";
+	
+	// step through the traversal list (created in plotline()), comparing each square to the next one in line
+	currentSquare = atkSquare;
+	for (var i = 0; i < traversalList.length; i++)
+	{
+		// if there is a crosssquare present, this is a diagonal pairing
+		// nextSquares become the proper amalgation of the two
+		if (traversalList[i].crosssquare != "")
+		{
+			//var lastCrossSquare = traversalList[i].square;
+			crossSquare = traversalList[i].crosssquare;
+			nextSquare = traversalList[i].square;		// there will always be a next square when coming out of a diagonal
+			isDiagonal = "enter";
+			
+			highestLoFType = compareLeastRestrictiveTerrain(determineTerrainType(nextSquare.className), highestLoFType);
+		}
+		else
+		// ...otherwise the square is normal, use it for comparison
+		{
+			if (isDiagonal == "enter")
+			{
+				isDiagonal = "exit";
+			}
+			else
+			{
+				isDiagonal = "";
+				crossSquare = "";
+			}
+			nextSquare = traversalList[i].square;
+		}
+		
+		// finds most restrictive path based on terrian, then sees if a wall is in the way
+		highestLoFType = compareLeastRestrictiveTerrain(determineTerrainType(nextSquare.className), highestLoFType);
+		highestLoFType = lookForWall(currentSquare, lastCrossSquare, crossSquare, nextSquare, isDiagonal, highestLoFType);
+	}
+}
+function determineLoF_old(atkSquare, tarSquare)
 {
 	var resultTA = document.getElementById('lofResult');
 	var traversal = document.getElementsByTagName('textarea')[0].value;
@@ -315,7 +361,7 @@ function getHighestElevation(check, sofar)
 		return sofar;
 }  // getHighestElevation()
 		
-function lookForWall(firstsq, lastcrosssq, crosssq, nextsq, diag, sofar) 
+function lookForWall_old(firstsq, lastcrosssq, crosssq, nextsq, diag, sofar) 
 {
 	var ULsquare, URsquare, LLsquare, LRsquare;
 	var wallExists = false;
@@ -465,6 +511,11 @@ function lookForWall(firstsq, lastcrosssq, crosssq, nextsq, diag, sofar)
 		return sofar;	
 }  // lookForWall()
 
+function lookForWall()
+{
+
+}
+
 /**
 	* @param full Boolean - if true, sets grid to blank and clears out Info panel (called when loading a new map)
 	* if false, only clears grid of Line of Fire highlighted squares (called when creating or clearing LoF)
@@ -472,7 +523,8 @@ function lookForWall(firstsq, lastcrosssq, crosssq, nextsq, diag, sofar)
 function resetPage(full) {
 	document.getElementById("result").value = "";
 	document.getElementById("lofResult").value = "";
-	document.getElementsByTagName('textarea')[0].value = "";		
+	document.getElementsByTagName('textarea')[0].value = "";	
+	traversalList = [];
 			
 	if (full)
 	{
@@ -501,21 +553,21 @@ function resetPage(full) {
 				var square = createSquare(r, c);
 				if (!full)
 				{
-					if (square.className.indexOf('clicked') > -1)
-						square.className = square.className.replace('clicked','');
-					if (square.className.indexOf('wiggle') > -1)
-						square.className = square.className.replace('wiggle','');
-					if (square.className.indexOf('attacker') > -1)
-						square.className = square.className.replace('attacker','');
-					if (square.className.indexOf('target') > -1)
-						square.className = square.className.replace('target','');
+					if (square.gridSquare.className.indexOf('clicked') > -1)
+						square.gridSquare.className = square.gridSquare.className.replace('clicked','');
+					if (square.gridSquare.className.indexOf('wiggle') > -1)
+						square.gridSquare.className = square.gridSquare.className.replace('wiggle','');
+					if (square.gridSquare.className.indexOf('attacker') > -1)
+						square.gridSquare.className = square.gridSquare.className.replace('attacker','');
+					if (square.gridSquare.className.indexOf('target') > -1)
+						square.gridSquare.className = square.gridSquare.className.replace('target','');
 					if (document.getElementById("toggleCoordinates").checked)
 						square.style.fontSize = "13px";
 					else
 						square.style.fontSize = "0px";
 				}
 				else
-					square.className = '';
+					square.gridSquare.className = '';
 			}
 		}
 	}

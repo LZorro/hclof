@@ -76,26 +76,26 @@ function findCells(x) {
 
 		if (elevation > 1) 
 		{
-			square.className += ' elevated' + elevation;
+			square.gridSquare.className += ' elevated' + elevation;
 			isClear = false;
 		}
 			
 		if (terrainType != "clear")
 		{
-			square.className += ' ' + terrainType;
+			square.gridSquare.className += ' ' + terrainType;
 			isClear = false;
 		}
 		
 		if (isIndoor.length > 0)
 		{
-			square.className += ' indoor';
+			square.gridSquare.className += ' indoor';
 			if (isClear)
-				square.className += ' indoorclear';
+				square.gridSquare.className += ' indoorclear';
 		}
 		
 		if (isSpecial.length > 0)
 		{
-			square.className += ' SPtype' + isSpecial[0].childNodes[0].nodeValue;
+			square.gridSquare.className += ' SPtype' + isSpecial[0].childNodes[0].nodeValue;
 		}
 		
 		var totalRows = x.childNodes[0].getElementsByTagName("totalRows")[0].textContent;
@@ -106,22 +106,22 @@ function findCells(x) {
 		if (isWallNorth.length > 0 && (r != "1"))
 		{
 			var wallType = isWallNorth[0].childNodes[0].nodeValue;
-			square.className += ' north' + wallType;
+			square.gridSquare.className += ' north' + wallType;
 		}
 		if (isWallSouth.length > 0 && (r != totalRows))
 		{
 			var wallType = isWallSouth[0].childNodes[0].nodeValue;
-			square.className += ' south' + wallType;
+			square.gridSquare.className += ' south' + wallType;
 		}
 		if (isWallEast.length > 0 && (c != totalColsAlpha))
 		{
 			var wallType = isWallEast[0].childNodes[0].nodeValue;
-			square.className += ' east' + wallType;
+			square.gridSquare.className += ' east' + wallType;
 		}
 		if (isWallWest.length > 0 && (c != "A"))
 		{
 			var wallType = isWallWest[0].childNodes[0].nodeValue;
-			square.className += ' west' + wallType;
+			square.gridSquare.className += ' west' + wallType;
 		}
 		
 	}
