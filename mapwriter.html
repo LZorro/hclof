@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+	<title>Heroclix Line of Fire Tool XML Map Writer- Tim Volpe</title>
+  
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<style type="text/css">
+		@media screen and (-webkit-min-device-pixel-ratio: 0) {
+			select:focus, textarea:focus, input:focus {
+				font-size: 16px;
+			}
+		}
+	</style>
+
+	<link rel="stylesheet" href="writer.css">
+	<link rel="stylesheet" href="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.css"> 
+    <script type="text/javascript" src="js/lof.js"></script>	
+	<script type="text/javascript" src="js/plotline.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/loadxmldoc.js"></script>
+	<script type="text/javascript" src="js/pageutil.js"></script>
+	<script type="text/javascript" src="js/doc_writer.js"></script>
+	<script type="text/javascript" src="js/grid_writer.js"></script>
+	<script src="jquery.mobile-1.4.2/jquery-1.11.1.min.js"></script>	
+	<script src="jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+</head> 
+
+
+<body>
+	<div data-role="page" id="mainpage">  
+		
+		<div data-role="header">
+			<h1>Heroclix&trade; Line of Fire Tool XML Map Writer</h1>
+		</div>
+
+		<div style="width: 100%; overflow: hidden;">
+			<div style="width: 200px; float: left;">
+				Terrain: <select data-role="none" id="terrainType" >
+					<option value="hindering" style="color:green">Hindering</option>
+					<option value="blocking">Blocking</option>
+					<option value="water">Water</option>
+					<option value="wall">Wall</option>
+					<option value="elevated">Elevated</option>
+					<option value="stair">Stairs</option>
+					<option value="indoorclear">Indoor</option>
+					<option value="special">Special</option>
+					<option value="start">Start</option>
+				</select><br/>
+				Elevation: <input data-role="none" id="elevation" type="number" style="width:50px" min="1" value="1"><br/>
+				Indoor: <input data-role="none" id="isIndoor" type="checkbox"><br/>
+				<br/>
+				Size: <input data-role="none" id="columns" type="number" style="width:50px" value="16"> x <input data-role="none" id="rows" type="number" style="width:50px" value="24"><br>
+				<button type="button" data-role="none" onclick="reloadGrid()">RESET</button><br/>
+				<br/>
+				<br/>
+				<button type="button" data-role="none" onclick="defaultStart()">Default Start</button><br/>
+				<br/>
+				<br/>
+				Title: <input data-role="none" id="mapTitle" style="width: 150px;" type="textarea" value="DEFAULT"><br/>
+				Set: <input data-role="none" id="mapSet" style="width: 150px;" type="textarea" value="DEFAULT"><br/>
+				Universe: <input data-role="none" id="mapUniverse" style="width: 120px;" type="textarea" value="DC"><br/>
+				I/O: <select data-role="none" id="mapInOut">
+					<option value="Outdoor">Outdoor</option>
+					<option value="Indoor">Indoor</option>
+					<option value="Indoor/Outdoor">Indoor/Outdoor</option>
+				</select><br/>
+				Special Rules:<br/>
+				<input data-role="none" id="mapSpecialRules" style="height: 100px;" type="textarea"><br/>
+				Spec. Type: <select data-role="none" id="SPType" style="width: 100px;">
+					<option value="C">Clear (N/A)</option>
+					<option value="H">Hindering</option>
+					<option value="B">Blocking</option>
+				</select><br/><br/>
+				<br/>
+				Filename: <input data-role="none" id="fileName" style="width: 150px;" type="textarea"><br/>
+				<button type="button" data-role="none" id="writeFileButton" onclick="writeFile()">WRITE FILE</button><br/>
+				<br/>
+				<a id="downloadlink" style="display: none">Download</a><br/>
+			</div>
+		
+			<div style="margin-left: 200px; text-align:left;" id="tablehere">
+				<div id='mapdiv' style="position: relative;">
+					<div id='griddiv' style="position: relative;"></div>
+				</div>
+			</div>
+			
+		</div>
+		
+		<!--
+		<div id='griddiv' style="position: relative;">
+			<div id="mapElementsDiv" style="position: absolute;">
+				<canvas id="mapElements" style="position: absolute;"></canvas>
+			</div>
+		</div>
+		-->
+		
+		<script type="text/javascript"> 
+			reloadGrid();
+			function reloadGrid()
+			{
+				var r = parseInt(document.getElementById("rows").value);
+				var c = parseInt(document.getElementById("columns").value);
+			
+				createGrid(r,c); 
+				/*createOverlay();*/
+			}
+		</script>
+		
+		<div class="footer">
+			
+		</div>
+
+
+	
+	<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+	
+
+	
+	</div>  <!-- mainpage -->
+	 
+</body>
+  
+</html>
