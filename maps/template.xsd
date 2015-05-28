@@ -40,6 +40,7 @@
         </xs:element>
         <xs:element name="totalRows" type="xs:integer"/>
         <xs:element name="totalCols" type="xs:integer"/>
+		<xs:element name="specialRules" type="xs:string" minOccurs="0" />
         <xs:element ref="tile"/>
       </xs:sequence>
     </xs:complexType>
@@ -87,6 +88,7 @@
         <xs:element name="west" type="wallType" minOccurs="0" />
         <xs:element name="south" type="wallType" minOccurs="0" />
         <xs:element name="indoor" type="xs:string" minOccurs="0" />
+		<xs:element name="special" type="xs:string" minOccurs="0" />
       </xs:sequence>
       <xs:attribute name="col" type="xs:string" use="required"/>
       <xs:attribute name="row" type="xs:string" use="required"/>
