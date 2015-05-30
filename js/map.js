@@ -76,7 +76,7 @@ function findCells(x) {
 
 		if (elevation > 1) 
 		{
-			square.gridSquare.className += ' elevated' + elevation;
+			square.gridSquare.className += ' elevation' + elevation;
 			isClear = false;
 		}
 			

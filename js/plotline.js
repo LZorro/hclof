@@ -150,6 +150,7 @@ function createSquare(row, col)
 	returnSquare.elevation = getElevation(returnSquare.gridSquare.className);
 	returnSquare.colAlpha = returnSquare.gridSquare.innerText[0];
 	returnSquare.isIndoor = ((isSquareIndoor(returnSquare.gridSquare)) || (document.getElementById('mapInOut').textContent == "Indoor"));
+	returnSquare.isSpecial = (returnSquare.gridSquare.className.indexOf("SPtype") > -1);
 	
 	return returnSquare;
 }

@@ -42,6 +42,8 @@ function getSquares() {
 	document.getElementById("result").value = acVal + arVal + " to " + tcVal + trVal + " , a " + width + "x" + height + " box."
 		+ ", a range of " + range;
 
+	isCrossedSpecial = false;
+		
 	// calculates the type of line (hindered, blocking, etc.) - result written to Line of Fire is: line 
 	determineLoF(attackSquare, targetSquare);
 	
@@ -58,10 +60,10 @@ function determineLoF(atkSquare, tarSquare)
 	var currentSquare;
 	var crossSquare;
 	var oppositeSquare;
-	var tempSquare;
+	var lowerSquare;
 	var highestLoFType = 0;
 	var isDiagonal = "";
-	var isRim = "";
+	var isRim = false;
 	
 	// step through the traversal list (created in plotLine()), comparing each square to the next one in line
 	lastSquare = atkSquare;
@@ -86,7 +88,7 @@ function determineLoF(atkSquare, tarSquare)
 				useSquare.elevation = currentSquare.elevation;
 			else
 			{
-				// ...otherwise, if we're going up, use the higher one, otherwise use the lower one
+				// ...otherwise, if we're going up, use the higher one, otherwise use the lower one 
 				if (oppositeSquare.elevation > lastSquare.elevation)  
 					useSquare.elevation = (currentSquare.elevation > crossSquare.elevation) ? currentSquare.elevation : crossSquare.elevation;
 				else
@@ -95,6 +97,9 @@ function determineLoF(atkSquare, tarSquare)
 			
 			// indoor: if either one is indoor, it's indoor
 			useSquare.isIndoor = (currentSquare.isIndoor || crossSquare.isIndoor);
+			
+			// special: in case we're crossing special terrain (to make adding text to the final result easier)
+			useSquare.isSpecial = (currentSquare.isSpecial || crossSquare.isSpecial);
 			
 		}
 		else
@@ -112,31 +117,56 @@ function determineLoF(atkSquare, tarSquare)
 			useSquare = currentSquare = traversalList[i].square;
 		}
 		
+		 if (useSquare.isSpecial)
+			isCrossedSpecial = true;
+		
 		// if there is a change in elevation, we might possibly ignore the terrain result
 		// it may also be blocked due to elevated terrain in the way
 		var tempTerrainLine = compareLeastRestrictiveTerrain(useSquare.terrain, highestLoFType);
 		if (atkSquare.elevation != tarSquare.elevation)
 		{
-			// keep track if the attacker or target is the lower elevation
-			tempSquare = (atkSquare.elevation < tarSquare.elevation) ? atkSquare : tarSquare; 
+			if ((useSquare.elevation != lastSquare.elevation) && !isRim && (isDiagonal != "exit"))
+			{
+				isRim = true;
+			}
+			else 
+				isRim = false;
 			
-			if ((useSquare.elevation == tempSquare.elevation) && ((useSquare.terrain == "blocking" || useSquare.terrain == 2)))
+			// keep track if the attacker or target is the lower elevation
+			lowerSquare = (atkSquare.elevation < tarSquare.elevation) ? atkSquare : tarSquare; 
+			
+			// blocked if there is blocking terrain on the lower elevation
+			if ((useSquare.elevation == lowerSquare.elevation) && ((useSquare.terrain == "blocking" || useSquare.terrain == 2)))
 			{
 				highestLoFType = 2;
 				resultTA.value = "BLOCKED (by lower blocking terrain)";
 			}
-			else if ((useSquare.elevation > tempSquare.elevation) && (useSquare != atkSquare) && (useSquare != tarSquare))
+			// blocked if there is a square of elevated terrain between the attacker and target
+			else if ((useSquare.elevation != lastSquare.elevation) && !isRim)// && !isSquareEqual(lowerSquare, atkSquare) && !isSquareEqual(lowerSquare,tarSquare))
 			{
-				highestLoFType = 2;
-				resultTA.value = "BLOCKED (by elevated terrain)";
+				//if (isDiagonal == "enter")
+				//{
+			//	
+			//	}
+			//	else
+			//	{
+			//		isRim = isSquareEqual(useSquare, atkSquare) || isSquareEqual(useSquare, tarSquare);
+				//}
+				
+				//if (!isRim)
+				//{
+					highestLoFType = 2;	
+					resultTA.value = "BLOCKED (by elevated terrain)";
+				//}
 			}
-			else if ((useSquare == tarSquare) && (useSquare.terrain == "hindering" || useSquare.terrain == 1))
+			else if (isSquareEqual(lowerSquare,tarSquare) && (useSquare.terrain == "hindering" || useSquare.terrain == 1))
 				highestLoFType = 1;
 			
 			// unless it's one of these cases, terrain doesn't matter
 		}
 		else
 		{
+			// blocked if there's a higher elevation between the elevation we're on
 			if (useSquare.elevation > atkSquare.elevation)
 			{
 				highestLoFType = 2; 
@@ -144,6 +174,7 @@ function determineLoF(atkSquare, tarSquare)
 			}
 			else if (useSquare.elevation < atkSquare.elevation)
 			{
+				// if we're below the line we're on, and it's indoor blocking, it's blocked
 				if ((useSquare.terrain == 'blocking' || useSquare.terrain == 2) && useSquare.isIndoor)
 				{
 					highestLoFType = 2;
@@ -165,17 +196,30 @@ function determineLoF(atkSquare, tarSquare)
 		if (lookForWall(isDiagonal, lastSquare, currentSquare, crossSquare))
 			highestLoFType = 2;
 			
-		// print result	
-		if (highestLoFType == 1)
+		// print result	(if not already set by the elevation cases above)
+		if (highestLoFType == 2)
+		{
+			if (!resultTA.value)
+				resultTA.value = 'BLOCKED';
+		}
+		else if (highestLoFType == 1)
 			resultTA.value = 'HINDERED';
-		else if (highestLoFType == 2)
-			resultTA.value = 'BLOCKED';
 		else
 			resultTA.value = "CLEAR";
-		
+				
 		// set current to last before stepping forward
 		lastSquare = currentSquare;
-	}
+	} // end traversal
+	
+	if (resultTA.value.indexOf('HINDERED') > -1) 
+		resultTA.style.color = "green";
+	else if (resultTA.value.indexOf('BLOCKED') > -1)
+		resultTA.style.color = 'chocolate';
+	else
+		resultTA.style.color = 'black';
+				
+	if (isCrossedSpecial)
+		resultTA.value += " (see special rules)";
 }
 function determineLoF_old(atkSquare, tarSquare)
 {
@@ -417,12 +461,10 @@ function determineTerrainType(sq)
 		
 function getElevation(sq)
 {
-	if (sq.indexOf('elevated2') > -1)
-		return 2;
-	if (sq.indexOf('elevated3') > -1)
-		return 3;
-	if (sq.indexOf('elevated4') > -1)
-		return 4;
+	var elev_index = sq.indexOf("elevation");
+	
+	if (elev_index > -1)
+		return parseInt(sq.substr(elev_index+9, 1));
 	else
 		return 1;
 }  // getElevation()
@@ -461,6 +503,11 @@ function isSquareIndoor(gridSquareClass)
 	else
 		return false;
 } // isSquareIndoor
+
+function isSquareEqual(square1, square2)
+{
+	return (square1.row == square2.row) && (square1.col == square2.col);
+}
 		
 function lookForWall_old(firstsq, lastcrosssq, crosssq, nextsq, diag, sofar) 
 {
@@ -608,33 +655,86 @@ function lookForWall(isdiag, lastsq, currsq, crosssq)
 	{
 		// checking the diagonal case
 		// normalize squares - the fourth square can be calculated from the other three
-		// we know these three squares are adjacent to each other in an L shape
+		// chances are not all of these cases will be hit, but we're being thorough
 		if (lastsq.row < currsq.row)
 		{
 			// case where last is above curr (both left or right)
 			if (lastsq.col < crosssq.col)
 			{
-				// last is left of cross, so last is upper left !
+				// last is left of cross, so last is upper left 
 				ULsquare = lastsq;
 				LLsquare = currsq;
-				URsquare = crosssq;
-				LRsquare = createSquare(currsq.row, crosssq.col);
+				if (crosssq.row == lastsq.row)
+				{
+					URsquare = crosssq;									// L +
+					LRsquare = createSquare(currsq.row, crosssq.col);	// C x
+				}
+				else
+				{
+					URsquare = createSquare(lastsq.row, crosssq.col);	// L x
+					LRsquare = crosssq;									// C +
+				}
 				slope = -1;
 			}
 			else
 			{
 				// last is right of cross, so last is upper right
-				// check to see if this case comes up again
-				ULsquare = crosssq;
 				URsquare = lastsq;
-				LLsquare = createSquare(currsq.row, crosssq.col);
 				LRsquare = currsq;
+				if (crosssq.row == lastsq.row)
+				{
+					ULsquare = crosssq;									// + L
+					LLsquare = createSquare(currsq.row, crosssq.col);	// x C
+				}
+				else
+				{
+					ULsquare = createSquare(lastsq.row, crosssq.col);	// x L
+					LLsquare = crosssq;									// + C
+				}			
 				slope = 1;
+			}
+		}
+		else if (lastsq.row > currsq.row)
+		{
+			// case where last is below curr (both left or right)
+			if (lastsq.col < crosssq.col)
+			{
+				// last is left of cross, so last is lower left 
+				LLsquare = lastsq;
+				ULsquare = currsq;
+				if (crosssq.row == lastsq.row)
+				{
+					LRsquare = crosssq;									// C x
+					URsquare = createSquare(currsq.row, crosssq.col);	// L +
+				}
+				else
+				{
+					LRsquare = createSquare(lastsq.row, crosssq.col);	// C +
+					URsquare = crosssq;									// L x
+				}
+				slope = 1;
+			}
+			else
+			{
+				// last is right of cross, so last is lower right
+				LRsquare = lastsq;
+				URsquare = currsq;
+				if (crosssq.row == lastsq.row)
+				{
+					LLsquare = crosssq;									// x C
+					ULsquare = createSquare(currsq.row, crosssq.col);	// + L
+				}
+				else
+				{
+					LLsquare = createSquare(lastsq.row, crosssq.col);	// + C
+					ULsquare = crosssq;									// x L
+				}			
+				slope = -1;
 			}
 		}
 		else  
 		{
-			// case where both last and curr are in same row, or last is below curr
+			// case where both last and curr are in same row
 			if (lastsq.col < currsq.col)
 			{
 				// last is to left of curr (both top or bottom)
@@ -643,40 +743,72 @@ function lookForWall(isdiag, lastsq, currsq, crosssq)
 					// last is above cross, so last is on upper left
 					ULsquare = lastsq;
 					URsquare = currsq;
-					LLsquare = crosssq;
-					LRsquare = createSquare(crosssq.row, currsq.col);
+					if (crosssq.col == lastsq.col)
+					{
+						LLsquare = crosssq;									// L C
+						LRsquare = createSquare(crosssq.row, currsq.col);	// + x
+					}
+					else
+					{
+						LLsquare = createSquare(crosssq.row, lastsq.col);	// x +
+						LRsquare = crosssq;									// L C
+					}
 					slope = -1;  // slope = \ 
 				}
 				else
 				{
 					// last is below cross, so last is lower left
-					ULsquare = crosssq;
-					URsquare = createSquare(crosssq.row, currsq.col);
 					LLsquare = lastsq;
 					LRsquare = currsq;
+					if (crosssq.col == lastsq.col)
+					{
+						ULsquare = crosssq;									// + x
+						URsquare = createSquare(crosssq.row, currsq.col);	// L C
+					}
+					else
+					{
+						ULsquare = createSquare(crosssq.row, lastsq.col);	// x + 
+						URsquare = crosssq;									// L C
+					}
 					slope = 1; // slope = /  
 				}
 			}
 			else
 			{
-				// last is below curr (both left or right)
-				if (lastsq.col < crosssq.col)
+				// last is to right of curr (both top or bottom)
+				if (lastsq.row < crosssq.row)
 				{
-					// last is left of cross, so last is lower left
+					// last is above cross, so last is on upper right
+					URsquare = lastsq;
 					ULsquare = currsq;
-					URsquare = createSquare(currsq.row, crosssq.col);
-					LLsquare = lastsq;
-					LRsquare = crosssq;
-					slope = 1;
+					if (crosssq.col == lastsq.col)
+					{
+						LRsquare = crosssq;									// C L
+						LLsquare = createSquare(crosssq.row, currsq.col);	// x +
+					}
+					else
+					{
+						LRsquare = createSquare(crosssq.row, lastsq.col);	// C L 
+						LLsquare = crosssq;									// + x
+					}
+					slope = 1;  
 				}
 				else
 				{
-					// last is right of cross, so last is lower right
-					ULsquare = createSquare(currsq.row, crosssq.col);
-					URsquare = currsq;
-					LLsquare = crosssq;
+					// last is below cross, so last is lower right
 					LRsquare = lastsq;
-					slope = -1;
+					LLsquare = currsq;
+					if (crosssq.col == lastsq.col)
+					{
+						URsquare = crosssq;									// x +
+						ULsquare = createSquare(crosssq.row, currsq.col);	// C L
+					}
+					else
+					{
+						URsquare = createSquare(crosssq.row, lastsq.col);	// + x
+						ULsquare = crosssq;									// C L
+					}
+					slope = -1;   
 				}
 			}
 		} // end normalization

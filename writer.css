@@ -63,19 +63,19 @@
 .grid td.hindering {
 	background-color:#EAF1DD !important;
 }
-.grid td.elevated2 {
+.grid td.elevation2 {
 	background-color:#F2DDDC;
 }
-.grid td.elevated3 {
+.grid td.elevation3 {
 	background-color:#F2CCCB;
 }
-.grid td.elevated4 {
+.grid td.elevation4 {
 	background-color:#F2BBBA;
 }
-.grid td.elevated5 {
+.grid td.elevation5 {
 	background-color:#F2AAA0;
 }
-.grid td.elevated6 {
+.grid td.elevation6 {
 	background-color:#F29990;
 }
 .grid td.blocking {

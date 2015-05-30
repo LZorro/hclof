@@ -162,7 +162,7 @@ function selectSquare(el, row, col, i)
 	
 	var isIndoor = document.getElementById("isIndoor").checked;
 	
-	// if it's a border piece. mark it appropriately
+	// if it's a border piece, mark it appropriately
 	isBorder = getBorder(el);
 	if (isBorder)
 	{
@@ -175,7 +175,7 @@ function selectSquare(el, row, col, i)
 		if (elevation > 1)
 		{
 			if (!isBorder)
-				terrainType += elevation;
+				terrainType = " elevation" + elevation;
 		}
 		else
 			terrainType = '';
