@@ -39,8 +39,8 @@ function getSquares() {
 	attackSquare.gridSquare.className += ' attacker';
 	targetSquare.gridSquare.className += ' target';
 			
-	document.getElementById("result").value = acVal + arVal + " to " + tcVal + trVal + " , a " + width + "x" + height + " box."
-		+ ", a range of " + range;
+	document.getElementById("result").value = acVal + arVal + " (e" + attackSquare.elevation + ") to " + tcVal + trVal + " (e" + targetSquare.elevation + ") , a " 
+		+ width + "x" + height + " box." + ", a range of " + range;
 
 	isCrossedSpecial = false;
 		
@@ -61,9 +61,14 @@ function determineLoF(atkSquare, tarSquare)
 	var crossSquare;
 	var oppositeSquare;
 	var lowerSquare;
+	var upperSquare;
 	var highestLoFType = 0;
-	var isDiagonal = "";
-	var isRim = false;
+	var isDiagonal = false;
+	var elevationChange = false;
+	var tempTerrainLine;
+	var reason = "";
+	
+	elevationChange = (atkSquare.elevation != tarSquare.elevation);  // keep track if there is an overall change in elevation
 	
 	// step through the traversal list (created in plotLine()), comparing each square to the next one in line
 	lastSquare = atkSquare;
@@ -72,143 +77,134 @@ function determineLoF(atkSquare, tarSquare)
 		// if there is a crosssquare present, this is a diagonal pairing...
 		if (traversalList[i].crosssquare != "")
 		{
-			//var lastCrossSquare = traversalList[i].square;
 			crossSquare = traversalList[i].crosssquare;
-			currentSquare = traversalList[i].square;		
-			oppositeSquare = traversalList[i+1].square;		// cheat by looking at the diagonal square ahead (it will be there)
-			isDiagonal = "enter";
+			oppositeSquare = traversalList[i].square;
+			currentSquare = traversalList[i+1].square;		// cheat by looking at the diagonal square ahead (it will be there)
+			isDiagonal = true;
 			
-			// currentSquare become the proper amalgation of the two (we only really care about terrain and elevation, so not all the information will get copied over)
+			// make considerations based on the diagonals squares we're passing through
+			
+			// useSquare becomes the proper amalgation of the two (we only really care about terrain and elevation, so not all the information will get copied over)
 			// 	terrain is whichever is less restrictive	
 			useSquare = {};
-			useSquare.terrain = (terrainNumber(currentSquare.terrain) < terrainNumber(crossSquare.terrain)) ? currentSquare.terrain : crossSquare.terrain;
+			useSquare.terrain = (terrainNumber(oppositeSquare.terrain) < terrainNumber(crossSquare.terrain)) ? oppositeSquare.terrain : crossSquare.terrain;
 			
-			// elevation: if they're the same, great, use it...
-			if (crossSquare.elevation == currentSquare.elevation)
-				useSquare.elevation = currentSquare.elevation;
-			else
-			{
-				// ...otherwise, if we're going up, use the higher one, otherwise use the lower one 
-				if (oppositeSquare.elevation > lastSquare.elevation)  
-					useSquare.elevation = (currentSquare.elevation > crossSquare.elevation) ? currentSquare.elevation : crossSquare.elevation;
-				else
-					useSquare.elevation = (currentSquare.elevation < crossSquare.elevation) ? currentSquare.elevation : crossSquare.elevation;
-			}
-			
+			// elevation: if they're the same, great, use it, otherwise use the lower one
+			useSquare.elevation = (oppositeSquare.elevation <= crossSquare.elevation) ? oppositeSquare.elevation : crossSquare.elevation;
+	
 			// indoor: if either one is indoor, it's indoor
-			useSquare.isIndoor = (currentSquare.isIndoor || crossSquare.isIndoor);
+			useSquare.isIndoor = (oppositeSquare.isIndoor || crossSquare.isIndoor);
 			
 			// special: in case we're crossing special terrain (to make adding text to the final result easier)
-			useSquare.isSpecial = (currentSquare.isSpecial || crossSquare.isSpecial);
+			useSquare.isSpecial = (oppositeSquare.isSpecial || crossSquare.isSpecial);
+			if (useSquare.isSpecial) 
+				isCrossedSpecial = true;
+			
+			tempTerrainLine = compareLeastRestrictiveTerrain(useSquare.terrain, highestLoFType);
+			var testElevation = (currentSquare.elevation < lastSquare.elevation) ? currentSquare.elevation : lastSquare.elevation;  // the lower of the two lof-diagonal squares
+			if (useSquare.elevation > testElevation)
+			{
+				// if we're "squeezing through a canyon"
+				highestLoFType = 2;	
+				reason = " (by elevated terrain)";
+			}
+			else if (!elevationChange)
+			{
+				// ignore the terrain if we're changing elevations
+				highestLoFType = tempTerrainLine;
+			}
 			
 		}
 		else
 		// ...otherwise the square is normal, use it for comparison
 		{
-			if (isDiagonal == "enter")
-			{
-				isDiagonal = "exit";
-			}
-			else
-			{
-				isDiagonal = "";
-				crossSquare = "";		
-			}
-			useSquare = currentSquare = traversalList[i].square;
+			isDiagonal = false;
+			crossSquare = "";		
+			currentSquare = traversalList[i].square;
 		}
 		
-		 if (useSquare.isSpecial)
+		 if (currentSquare.isSpecial)
 			isCrossedSpecial = true;
 		
 		// if there is a change in elevation, we might possibly ignore the terrain result
 		// it may also be blocked due to elevated terrain in the way
-		var tempTerrainLine = compareLeastRestrictiveTerrain(useSquare.terrain, highestLoFType);
-		if (atkSquare.elevation != tarSquare.elevation)
+		tempTerrainLine = compareLeastRestrictiveTerrain(currentSquare.terrain, highestLoFType);
+		if (elevationChange)
 		{
-			if ((useSquare.elevation != lastSquare.elevation) && !isRim && (isDiagonal != "exit"))
-			{
-				isRim = true;
-			}
-			else 
-				isRim = false;
 			
 			// keep track if the attacker or target is the lower elevation
-			lowerSquare = (atkSquare.elevation < tarSquare.elevation) ? atkSquare : tarSquare; 
+			if (atkSquare.elevation < tarSquare.elevation)
+			{
+				lowerSquare = atkSquare;
+				upperSquare = tarSquare;
+			}
+			else
+			{
+				lowerSquare = tarSquare; 
+				upperSquare = atkSquare;
+			}
 			
 			// blocked if there is blocking terrain on the lower elevation
-			if ((useSquare.elevation == lowerSquare.elevation) && ((useSquare.terrain == "blocking" || useSquare.terrain == 2)))
+			if ((currentSquare.elevation == lowerSquare.elevation) && ((currentSquare.terrain == "blocking" || currentSquare.terrain == 2)))
 			{
 				highestLoFType = 2;
-				resultTA.value = "BLOCKED (by lower blocking terrain)";
+				reason = " (by lower blocking terrain)";
+			}
+			// hindered only if the target is sitting in hindering terrain
+			else if (isSquareEqual(currentSquare,tarSquare) && (currentSquare.terrain == "hindering" || currentSquare.terrain == 1))
+			{
+				highestLoFType = 1;
 			}
 			// blocked if there is a square of elevated terrain between the attacker and target
-			else if ((useSquare.elevation != lastSquare.elevation) && !isRim)// && !isSquareEqual(lowerSquare, atkSquare) && !isSquareEqual(lowerSquare,tarSquare))
-			{
-				//if (isDiagonal == "enter")
-				//{
-			//	
-			//	}
-			//	else
-			//	{
-			//		isRim = isSquareEqual(useSquare, atkSquare) || isSquareEqual(useSquare, tarSquare);
-				//}
-				
-				//if (!isRim)
-				//{
+			else if (currentSquare.elevation > lowerSquare.elevation && currentSquare.elevation <= upperSquare.elevation)//(currentSquare.elevation != lastSquare.elevation)
+			{	
+				if (!(isSquareEqual(currentSquare, atkSquare) || isSquareEqual(currentSquare, tarSquare)))
+				{
 					highestLoFType = 2;	
-					resultTA.value = "BLOCKED (by elevated terrain)";
-				//}
+					reason = " (by elevated terrain)";
+				}	
 			}
-			else if (isSquareEqual(lowerSquare,tarSquare) && (useSquare.terrain == "hindering" || useSquare.terrain == 1))
-				highestLoFType = 1;
-			
 			// unless it's one of these cases, terrain doesn't matter
 		}
 		else
 		{
 			// blocked if there's a higher elevation between the elevation we're on
-			if (useSquare.elevation > atkSquare.elevation)
+			if (currentSquare.elevation > atkSquare.elevation)
 			{
 				highestLoFType = 2; 
-				resultTA.value = "BLOCKED (by elevated terrain)";
+				reason = " (by elevated terrain)";
 			}
-			else if (useSquare.elevation < atkSquare.elevation)
+			else if (currentSquare.elevation < atkSquare.elevation)
 			{
 				// if we're below the line we're on, and it's indoor blocking, it's blocked
-				if ((useSquare.terrain == 'blocking' || useSquare.terrain == 2) && useSquare.isIndoor)
+				if ((currentSquare.terrain == 'blocking' || currentSquare.terrain == 2) && currentSquare.isIndoor)
 				{
 					highestLoFType = 2;
-					resultTA.value = "BLOCKED (by lower indoor blocking terrain)";
+					reason = " (by lower indoor blocking terrain)";
 				}
 				// otherwise we're ignoring any other type of lower terrain
 			}
 			else			
 				highestLoFType = tempTerrainLine;  // if it's on the same elevation as the LoF, keep the result of the terrain
 		}
-		
-		// finds most restrictive path based on terrian, then sees if a wall is in the way
-		//highestLoFType = compareLeastRestrictiveTerrain(nextSquare.terrain, highestLoFType);
-		//highestLoFType = lookForWall(lastSquare, oppositeSquare, crossSquare, currentSquare, isDiagonal, highestLoFType);
-		
-		//highestLoFType = lookForWall(isDiagonal, highestLoFType, lastSquare, currentSquare, crossSquare);
-		
+
 		// check for walls
-		if (lookForWall(isDiagonal, lastSquare, currentSquare, crossSquare))
-			highestLoFType = 2;
+	//	if (lookForWall(isDiagonal, lastSquare, currentSquare, crossSquare))
+	//		highestLoFType = 2;
 			
 		// print result	(if not already set by the elevation cases above)
 		if (highestLoFType == 2)
-		{
-			if (!resultTA.value)
-				resultTA.value = 'BLOCKED';
-		}
+			resultTA.value = 'BLOCKED';
 		else if (highestLoFType == 1)
 			resultTA.value = 'HINDERED';
 		else
 			resultTA.value = "CLEAR";
+		resultTA.value += reason;
 				
 		// set current to last before stepping forward
 		lastSquare = currentSquare;
+		if (isDiagonal)
+			i++;  // skip over the square (end of diagonal) that we just processed
 	} // end traversal
 	
 	if (resultTA.value.indexOf('HINDERED') > -1) 
