@@ -2,15 +2,6 @@ Notes
 
 - upload ajax-loader.gif and whatever (jquery) files necessary to website
    also, get local copy of standard jquery, so I'm not referencing an external site
-   
-- FIX LOF ALGORITHM
-	counts outdoor grounded blocking terrain as blocking when drawing lof from elevated to elevated (should be clear)
-		if the endpoints are both on the rim, it's okay...but away from the rim causes problems
-	rewrite to account for variable elevations (or at least 6) - thanks to Ryut
-	
-- Speaking of level 6, adjust CSS for this	
-	
-- add "Want to help? Write to me!" link on index.html
 
 - Rewrite map sorting algorithm so that maps without a type of terrain are filtered out
 	(eg. maps with no elevated terrain don't show up on the list sorted by elevated terrain)

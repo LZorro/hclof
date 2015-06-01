@@ -189,8 +189,8 @@ function determineLoF(atkSquare, tarSquare)
 		}
 
 		// check for walls
-	//	if (lookForWall(isDiagonal, lastSquare, currentSquare, crossSquare))
-	//		highestLoFType = 2;
+		if (lookForWall(isDiagonal, lastSquare, currentSquare, crossSquare))
+			highestLoFType = 2;
 			
 		// print result	(if not already set by the elevation cases above)
 		if (highestLoFType == 2)
@@ -216,223 +216,8 @@ function determineLoF(atkSquare, tarSquare)
 				
 	if (isCrossedSpecial)
 		resultTA.value += " (see special rules)";
-}
-function determineLoF_old(atkSquare, tarSquare)
-{
-	var resultTA = document.getElementById('lofResult');
-	var traversal = document.getElementsByTagName('textarea')[0].value;
-	var nextPoint = '';
-	var crossPoint = '';
-	var highestLoFType = 0;
-	var typePerElevation = [0,0,0,0];
-	var attackElevation, targetElevation, lineElevation;
-	var nextR, nextC, crossR, crossC;
-	var nextSquare, nextType, crossSquare, crossType;
-	var lastSquare, lastCrossSquare;
-	var nextElevation, crossElevation;
-	var checkType, checkElevation;
-	var isDiagonal;
-	var isIndoorBlocked = false;
-	isCrossedSpecial = false;
-			
-	attackElevation = getElevation(atkSquare.className);
-	targetElevation = getElevation(tarSquare.className);
-	lineElevation = 1;
-	lastSquare = atkSquare;
-	lastCrossSquare = '';
-			
-	// console.log("traversing:-" + traversal +'-');
-			
-	// 'traversal' is a list of all the squares the line passes through.
-	// This loop steps through each square, updating the line of fire status along the way.
-	while (traversal != '')
-	{
-		var buffer = traversal.indexOf(' ');
-		var readPoint = traversal.substr(0, buffer+1);
-				
-		if (readPoint.substr(0,1) == '[')
-		{
-			isDiagonal = true;
-			// if the first char is a [, it's an intersection through corner - determine least restrictive lof between these 2 squares
-			// reset string to read 2 squares instead of one
-			traversal = traversal.replace(readPoint, '');
-			nextPoint = readPoint.substr(1,readPoint.indexOf(',')-1);
-			crossPoint = readPoint.substr(readPoint.indexOf(',')+1, readPoint.length - readPoint.indexOf(']') + 1);
-			// console.log("looking at:-" + nextPoint + '- and -' + crossPoint + '-, leaving -' + traversal +'-');	
+} // determineLoF()
 
-			// +1 compensation for table headers
-			nextsq.row = parseInt(nextPoint.substr(1)) - 1 + 1;
-			nextC = nextPoint.substr(0,1).charCodeAt() - 65 + 1;
-			// console.log('reading row/col: ' + nextsq.row + ' ' + nextC);
-			nextSquare = createSquare(nextsq.row, nextC);
-			nextType = determineTerrainType(nextSquare.className);
-			nextElevation = getElevation(nextSquare.className);
-						
-			crossR = parseInt(crossPoint.substr(1)) - 1 + 1;
-			crossC = crossPoint.substr(0,1).charCodeAt() - 65 + 1;
-			crossSquare = createSquare(crossR, crossC);
-			crossType = determineTerrainType(crossSquare.className);
-			crossElevation = getElevation(crossSquare.className);
-			// console.log('cross-checking row/col: ' + crossR + ' ' + crossC);
-					
-			// determine the terrain type of the next/cross pair
-			if (nextType == crossType)
-				checkType = nextType;
-			else 
-			{
-				var nextNum = compareLeastRestrictiveTerrain(nextType, 0);
-				var crossNum = compareLeastRestrictiveTerrain(crossType, 0);
-				// if there is elevated, consider it blocking
-				if (crossElevation > nextElevation)
-					crossNum += 2;		
-				if (nextElevation > crossElevation)
-					nextNum += 2;
-				if (nextNum > crossNum)
-					checkType = crossNum;
-				else
-					checkType = nextNum;
-			}
-			// console.log(nextType + ' + ' + crossType + ' = ' + checkType);
-			
-			// determine the elevation of the next/cross pair
-			if (nextElevation <= crossElevation)
-				checkElevation = nextElevation;
-			else 
-				checkElevation = crossElevation;
-			// console.log("Elevations " + nextElevation + ' + ' + crossElevation + ' = ' + checkElevation);
-		} 
-		else
-		{
-			// at this point, we are reading one square from the traversal list
-			
-			// this is so we're only reading one square from now on, rather than bundling it into a diagonal pair
-			if (isDiagonal == true)
-				isDiagonal = 'exit';
-			else
-				isDiagonal = false;
-			
-			traversal = traversal.replace(readPoint, '');	
-			nextPoint = readPoint.substr(0,readPoint.length - 1);  // remove space at the end
-			crossPoint = '';
-			// console.log("looking at:-" + nextPoint + '- , leaving -' + traversal +'-');	
-			// +1 compensation for table headers
-			nextsq.row = parseInt(nextPoint.substr(1)) - 1 + 1;
-			nextC = nextPoint.substr(0,1).charCodeAt() - 65 + 1;
-			// console.log('reading row/col: ' + nextsq.row + ' ' + nextC);
-			nextSquare = createSquare(nextsq.row, nextC);
-			nextType = determineTerrainType(nextSquare.className);
-			nextElevation = getElevation(nextSquare.className);
-			checkType = nextType;
-			checkElevation = nextElevation;
-		}
-						
-		// console.log('highestLoFType was: ' + highestLoFType + ", " + lineElevation);
-		highestLoFType = compareLeastRestrictiveTerrain(checkType, highestLoFType);
-		highestLoFType = lookForWall(lastSquare, lastCrossSquare, crossSquare, nextSquare, isDiagonal, highestLoFType);
-		// if we cross a square of blocking terrain, and it's either indoor, or anywhere on an indoor map, it's probably blocked
-		if (highestLoFType >= 2 && ((document.getElementById('mapInOut').textContent == "Indoor") || nextSquare.className.indexOf('indoor') > -1))
-			isIndoorBlocked = true;
-				
-		typePerElevation[checkElevation-1] = compareLeastRestrictiveTerrain(checkType, typePerElevation[checkElevation-1]);
-		typePerElevation[checkElevation-1] = lookForWall(lastSquare, lastCrossSquare, crossSquare, nextSquare, isDiagonal, typePerElevation[checkElevation-1]);
-		if (nextSquare != tarSquare)  // checks for elevated rim
-			lineElevation = getHighestElevation(checkElevation, lineElevation);
-		// console.log('highestLoFType now: ' + highestLoFType + ", " + lineElevation);
-				
-		// keep track of 'nextSquare' to make the next comparison in the loop		
-		if (isDiagonal == true)
-		{
-			lastCrossSquare = crossSquare;
-			crossSquare = nextSquare;
-		}
-		else
-			lastSquare = nextSquare;
-		
-	}  // end traversal loop
-			
-	// determine if elevated terrain blocks line of fire in any way
-	if (attackElevation == targetElevation)
-	{
-		if (lineElevation > attackElevation) // or line > target, same thing in this case
-		{
-			resultTA.value = 'BLOCKED (by elevation)';
-		}
-		else if (lineElevation < attackElevation)
-		{
-			if (typePerElevation[attackElevation-1] == 1)
-				resultTA.value = 'HINDERED (level ' + attackElevation + ' only)';
-			else if (typePerElevation[attackElevation-1] == 2)
-				resultTA.value = 'BLOCKED (level ' + attackElevation + ' only)';
-			else
-			{
-				if (isIndoorBlocked)
-					resultTA.value = 'BLOCKED (by grounded indoor terrain)';
-				else
-					resultTA.value = 'CLEAR (passing over lower elevation terrain)';
-			}
-		}
-		else
-		{
-			// if lineElevation is equal to attack (and also target), we ignore this case, as the result will be
-			// whatever the most restrictive terrain type will be, which is set later after this if statement
-					
-			// determine line of fire status based on terrain type
-			if (highestLoFType == 1)
-			{
-				resultTA.value = 'HINDERED';
-			}
-			else if (highestLoFType == 2)
-			{
-				resultTA.value = 'BLOCKED';
-			}
-			else
-				resultTA.value = "CLEAR";
-		}
-	}
-	else // attacker and target are on different elevations
-	{
-		var higherElevation, lowerElevation
-		if (attackElevation > targetElevation)
-		{
-			higherElevation = attackElevation;
-			lowerElevation  = targetElevation;
-		}
-		else 
-		{
-			higherElevation = targetElevation;
-			lowerElevation  = attackElevation;
-		}
-		
-		if (lineElevation > lowerElevation)
-		{
-			resultTA.value = 'BLOCKED (by elevated)';
-		}
-		else 
-		{
-			if (typePerElevation[lowerElevation-1] == 2)
-				resultTA.value = 'BLOCKED (by grounded blocking)';
-			else if (typePerElevation[targetElevation-1] == 1)
-			{
-				if (determineTerrainType(tarSquare.className) == "hindering")
-					resultTA.value = 'HINDERED (target in hindering)';
-				else
-				resultTA.value = 'CLEAR (ignoring grounded hindering)';
-			}
-			else
-				resultTA.value = 'CLEAR (ignoring grounded hindering)';
-		}
-	}
-			
-	if (resultTA.value.indexOf('HINDERED') > -1) 
-		resultTA.style.color = "green";
-	else if (resultTA.value.indexOf('BLOCKED') > -1)
-		resultTA.style.color = 'chocolate';
-	else
-		resultTA.style.color = 'black';
-				
-	if (isCrossedSpecial)
-		resultTA.value += " (see special rules)";
-}  // determineLoF()
 		
 function determineTerrainType(sq)
 {
@@ -505,141 +290,6 @@ function isSquareEqual(square1, square2)
 	return (square1.row == square2.row) && (square1.col == square2.col);
 }
 		
-function lookForWall_old(firstsq, lastcrosssq, crosssq, nextsq, diag, sofar) 
-{
-	var ULsquare, URsquare, LLsquare, LRsquare;
-	var wallExists = false;
-	var slope;
-			
-	// console.log('Checking walls...');
-	if (diag == 'exit')	// determine if we want to bother with 
-	{
-		// rearrange squares to keep it straight in my brain
-		// we know first and next are diagonally opposite; so are lastcross and cross
-		if (firstsq.row < nextsq.row) 
-		{
-			if (firstsq.col < nextsq.col)
-			{
-				ULsquare = firstsq;
-				LRsquare = nextsq;
-				slope = -1;
-			}
-			else
-			{
-				URsquare = firstsq;
-				LLsquare = nextsq;
-				slope = 1;
-			}
-		}
-		else 
-		{
-			if (firstsq.col < nextsq.col) {
-				LLsquare = firstsq;
-				URsquare = nextsq;
-				slope = 1;
-			}
-			else 
-			{
-				LRsquare = firstsq;
-				ULsquare = nextsq;
-				slope = -1;
-			}
-		}
-		
-		if (lastcrosssq.row < crosssq.row)
-		{
-			if (lastcrosssq.col < nextsq.col)
-			{
-				ULsquare = lastcrosssq;
-				LRsquare = crosssq;
-			}
-			else
-			{
-				URsquare = lastcrosssq;
-				LLsquare = crosssq;
-			}
-		}
-		else
-		{
-			if (firstsq.col < nextsq.col)
-			{
-				LLsquare = lastcrosssq;
-				URsquare = crosssq;
-			}
-			else 
-			{
-				LRsquare = lastcrosssq;
-				ULsquare = crosssq;
-			}
-		}
-				
-		// get the relevant wall segments
-		var northwall, southwall, eastwall, westwall;
-		if (ULsquare && URsquare) 
-		{
-			if (ULsquare.gridSquare.className.indexOf('eastwall') > -1 && URsquare.gridSquare.className.indexOf('westwall') > -1)
-				northwall = true;
-			else
-				northwall = false;
-		}
-		if (LLsquare && LRsquare)
-		{
-			if (LLsquare.gridSquare.className.indexOf('eastwall') > -1 && LRsquare.gridSquare.className.indexOf('westwall') > -1)
-				southwall = true;
-			else
-				southwall = false;
-		}
-		if (LRsquare && URsquare)
-		{
-			if (LRsquare.gridSquare.className.indexOf('northwall') > -1 && URsquare.gridSquare.className.indexOf('southwall') > -1)
-				eastwall = true;
-			else
-				eastwall = false;
-		}
-		if (ULsquare && LLsquare)
-		{
-			if (LLsquare.gridSquare.className.indexOf('northwall') > -1 && ULsquare.gridSquare.className.indexOf('southwall') > -1)
-				westwall = true;
-			else
-				westwall = false;
-		}
-				
-		// compare 6 cases:		|	_ _		_ |		_		| _		  _
-		//						|					  |				|
-		if (northwall && southwall)						// north/south always blocks
-			wallExists = true;
-		else if (eastwall && westwall)					// east/west always blocks
-			wallExists = true;
-		else if (northwall && westwall && slope == -1) 	// north/west, but only \ slope
-			wallExists = true;
-		else if (southwall && eastwall && slope == -1)	// south/east on \ slope
-			wallExists = true;
-		else if (northwall && eastwall && slope == 1)	// north/east on / slope
-			wallExists = true;
-		else if (southwall && westwall && slope == 1)	// south/west on / slope
-			wallExists = true;
-
-	}
-	else if (diag == "")
-	{
-		// console.log('comparing 2 squares');
-		// only really care about first and next, and the 1 line in between
-				
-		if ((firstsq.row < nextsq.row) && (firstsq.gridSquare.className.indexOf('southwall') > -1)) 
-			wallExists = true;
-		else if ((firstsq.row > nextsq.row) && (firstsq.gridSquare.className.indexOf('northwall') > -1)) 
-			wallExists = true;
-		else if ((firstsq.col < nextsq.col) && (firstsq.gridSquare.className.indexOf('eastwall') > -1)) 
-			wallExists = true;
-		else if ((firstsq.col > nextsq.col) && (firstsq.gridSquare.className.indexOf('westwall') > -1)) 
-			wallExists = true;
-	}
-			
-	if (wallExists)
-		return 2;
-	else
-		return sofar;	
-}  // lookForWall()
 
 function lookForWall(isdiag, lastsq, currsq, crosssq)
 {
@@ -652,23 +302,24 @@ function lookForWall(isdiag, lastsq, currsq, crosssq)
 		// checking the diagonal case
 		// normalize squares - the fourth square can be calculated from the other three
 		// chances are not all of these cases will be hit, but we're being thorough
+		// we assume that currentSquare is diagonally opposite from lastSquare
 		if (lastsq.row < currsq.row)
 		{
-			// case where last is above curr (both left or right)
-			if (lastsq.col < crosssq.col)
+			// case where last is above curr 
+			if (lastsq.col < currsq.col)
 			{
-				// last is left of cross, so last is upper left 
+				// last is left of curr, so last is upper left, curr lower right
 				ULsquare = lastsq;
-				LLsquare = currsq;
+				LRsquare = currsq;
 				if (crosssq.row == lastsq.row)
 				{
 					URsquare = crosssq;									// L +
-					LRsquare = createSquare(currsq.row, crosssq.col);	// C x
+					LLsquare = createSquare(currsq.row, lastsq.col);	// x C
 				}
 				else
 				{
-					URsquare = createSquare(lastsq.row, crosssq.col);	// L x
-					LRsquare = crosssq;									// C +
+					URsquare = createSquare(lastsq.row, currsq.col);	// L x
+					LLsquare = crosssq;									// + C
 				}
 				slope = -1;
 			}
@@ -676,37 +327,37 @@ function lookForWall(isdiag, lastsq, currsq, crosssq)
 			{
 				// last is right of cross, so last is upper right
 				URsquare = lastsq;
-				LRsquare = currsq;
+				LLsquare = currsq;
 				if (crosssq.row == lastsq.row)
 				{
 					ULsquare = crosssq;									// + L
-					LLsquare = createSquare(currsq.row, crosssq.col);	// x C
+					LRsquare = createSquare(currsq.row, lastsq.col);	// C x
 				}
 				else
 				{
-					ULsquare = createSquare(lastsq.row, crosssq.col);	// x L
-					LLsquare = crosssq;									// + C
+					ULsquare = createSquare(lastsq.row, currsq.col);	// x L
+					LRsquare = crosssq;									// C +
 				}			
 				slope = 1;
 			}
 		}
-		else if (lastsq.row > currsq.row)
+		else 
 		{
-			// case where last is below curr (both left or right)
-			if (lastsq.col < crosssq.col)
+			// case where last is below curr 
+			if (lastsq.col < currsq.col)
 			{
 				// last is left of cross, so last is lower left 
 				LLsquare = lastsq;
-				ULsquare = currsq;
+				URsquare = currsq;
 				if (crosssq.row == lastsq.row)
 				{
-					LRsquare = crosssq;									// C x
-					URsquare = createSquare(currsq.row, crosssq.col);	// L +
+					LRsquare = crosssq;									// x C
+					ULsquare = createSquare(currsq.row, lastsq.col);	// L +
 				}
 				else
 				{
-					LRsquare = createSquare(lastsq.row, crosssq.col);	// C +
-					URsquare = crosssq;									// L x
+					LRsquare = createSquare(lastsq.row, currsq.col);	// + C
+					ULsquare = crosssq;									// L x
 				}
 				slope = 1;
 			}
@@ -714,98 +365,18 @@ function lookForWall(isdiag, lastsq, currsq, crosssq)
 			{
 				// last is right of cross, so last is lower right
 				LRsquare = lastsq;
-				URsquare = currsq;
+				ULsquare = currsq;
 				if (crosssq.row == lastsq.row)
 				{
-					LLsquare = crosssq;									// x C
-					ULsquare = createSquare(currsq.row, crosssq.col);	// + L
+					LLsquare = crosssq;									// C x
+					URsquare = createSquare(currsq.row, lastsq.col);	// + L
 				}
 				else
 				{
-					LLsquare = createSquare(lastsq.row, crosssq.col);	// + C
-					ULsquare = crosssq;									// x L
+					LLsquare = createSquare(lastsq.row, currsq.col);	// C +
+					URsquare = crosssq;									// x L
 				}			
 				slope = -1;
-			}
-		}
-		else  
-		{
-			// case where both last and curr are in same row
-			if (lastsq.col < currsq.col)
-			{
-				// last is to left of curr (both top or bottom)
-				if (lastsq.row < crosssq.row)
-				{
-					// last is above cross, so last is on upper left
-					ULsquare = lastsq;
-					URsquare = currsq;
-					if (crosssq.col == lastsq.col)
-					{
-						LLsquare = crosssq;									// L C
-						LRsquare = createSquare(crosssq.row, currsq.col);	// + x
-					}
-					else
-					{
-						LLsquare = createSquare(crosssq.row, lastsq.col);	// x +
-						LRsquare = crosssq;									// L C
-					}
-					slope = -1;  // slope = \ 
-				}
-				else
-				{
-					// last is below cross, so last is lower left
-					LLsquare = lastsq;
-					LRsquare = currsq;
-					if (crosssq.col == lastsq.col)
-					{
-						ULsquare = crosssq;									// + x
-						URsquare = createSquare(crosssq.row, currsq.col);	// L C
-					}
-					else
-					{
-						ULsquare = createSquare(crosssq.row, lastsq.col);	// x + 
-						URsquare = crosssq;									// L C
-					}
-					slope = 1; // slope = /  
-				}
-			}
-			else
-			{
-				// last is to right of curr (both top or bottom)
-				if (lastsq.row < crosssq.row)
-				{
-					// last is above cross, so last is on upper right
-					URsquare = lastsq;
-					ULsquare = currsq;
-					if (crosssq.col == lastsq.col)
-					{
-						LRsquare = crosssq;									// C L
-						LLsquare = createSquare(crosssq.row, currsq.col);	// x +
-					}
-					else
-					{
-						LRsquare = createSquare(crosssq.row, lastsq.col);	// C L 
-						LLsquare = crosssq;									// + x
-					}
-					slope = 1;  
-				}
-				else
-				{
-					// last is below cross, so last is lower right
-					LRsquare = lastsq;
-					LLsquare = currsq;
-					if (crosssq.col == lastsq.col)
-					{
-						URsquare = crosssq;									// x +
-						ULsquare = createSquare(crosssq.row, currsq.col);	// C L
-					}
-					else
-					{
-						URsquare = createSquare(crosssq.row, lastsq.col);	// + x
-						ULsquare = crosssq;									// C L
-					}
-					slope = -1;   
-				}
 			}
 		} // end normalization
 		
@@ -858,7 +429,7 @@ function lookForWall(isdiag, lastsq, currsq, crosssq)
 	}
 		
 	return wallExists;
-}
+} // lookForWall()
 
 /**
 	* @param full Boolean - if true, sets grid to blank and clears out Info panel (called when loading a new map)
