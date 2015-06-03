@@ -1,0 +1,29 @@
+Line of Fire Testplan
+
+Elevation 1:
+	- Crosses / Enters / Exits:	
+		- Hindering Ortho/Diag
+		- Blocking	Ortho/Diag
+		- Water		Ortho/Diag
+		- Special	Ortho/Diag
+		- Wall		Ortho/Diag
+			- Horizontal
+			- Vertical
+			- Northwest corner
+			- Northeast corner
+			- Southwest corner
+			- Southeast corner
+Elevation 2:
+	- Crosses / Enters / Exits:	
+		- Lower elevated:
+			- Hindering Ortho/Diag
+			- Blocking	Ortho/Diag
+			- Water		Ortho/Diag
+			- Special	Ortho/Diag
+			- Wall		Ortho/Diag
+		- Higher elevated:
+			- Hindering Ortho/Diag
+			- Blocking	Ortho/Diag
+			- Water		Ortho/Diag
+			- Special	Ortho/Diag
+			- Wall		Ortho/Diag

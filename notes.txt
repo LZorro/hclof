@@ -3,10 +3,22 @@ Notes
 - upload ajax-loader.gif and whatever (jquery) files necessary to website
    also, get local copy of standard jquery, so I'm not referencing an external site
 
+- Add preview pictures to Load Map
+
+- Load Map has "other" size instead of 6x16, so we can include Team Base and Crisis Time Zone maps
+	- don't forget Quick-Start maps
+
+- Redesign page so all information is showing at once on left (Select Point, Map Info)
+	- Design so it's on a sliding panel, so we can "fullscreen" the map
+	
+- RESPONSIVE WEB DESIGN for mobile
+   
+   
+(optional)   
 - Rewrite map sorting algorithm so that maps without a type of terrain are filtered out
 	(eg. maps with no elevated terrain don't show up on the list sorted by elevated terrain)
    
-Issued to look into:
+Issues to look into:
  - Fear Itself: Paris - blocking terrain B2 and I23
  - Fear Itself: South Africa - G2, G23
  - WXM: Candian Wilderness - check water G2-H2
@@ -25,6 +37,11 @@ Issued to look into:
  - DC75: Hawkworld - check elevated terrain isn't part of starts
  - DR: Training Complex - T19 indoor/outdoor? that elevated area
  - SoG: Crime Alley - ways to get into theaters?
+ 
+ Importants maps:
+ - Justice League Trinity War
+ - Age of Ultron Movie
+ - Avengers Assemble
  
  
  STILL TO CODE:
