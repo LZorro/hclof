@@ -102,15 +102,19 @@ function determineLoF(atkSquare, tarSquare)
 			
 			tempTerrainLine = compareLeastRestrictiveTerrain(useSquare.terrain, highestLoFType);
 			var testElevation = (currentSquare.elevation < lastSquare.elevation) ? currentSquare.elevation : lastSquare.elevation;  // the lower of the two lof-diagonal squares
-			if (useSquare.elevation > testElevation)
+			if ((useSquare.elevation > testElevation))// && !(useSquare.elevation < atkSquare.elevation && useSquare.elevation < tarSquare.elevation))
 			{
-				// if we're "squeezing through a canyon"
-				highestLoFType = 2;	
-				reason = " (by elevated terrain)";
+				if (elevationChange)
+				{
+					// if we're "squeezing through a canyon"
+					highestLoFType = 2;	
+					reason = " (by elevated terrain)";
+				}
 			}
-			else if (!elevationChange)
+			else if (!elevationChange && !(useSquare.elevation < atkSquare.elevation && useSquare.elevation < tarSquare.elevation))
 			{
 				// ignore the terrain if we're changing elevations
+				// or if it's lower terrain we're passing across
 				highestLoFType = tempTerrainLine;
 			}
 			
@@ -150,19 +154,19 @@ function determineLoF(atkSquare, tarSquare)
 				highestLoFType = 2;
 				reason = " (by lower blocking terrain)";
 			}
-			// hindered only if the target is sitting in hindering terrain
-			else if (isSquareEqual(currentSquare,tarSquare) && (currentSquare.terrain == "hindering" || currentSquare.terrain == 1))
-			{
-				highestLoFType = 1;
-			}
 			// blocked if there is a square of elevated terrain between the attacker and target
-			else if (currentSquare.elevation > lowerSquare.elevation && currentSquare.elevation <= upperSquare.elevation)//(currentSquare.elevation != lastSquare.elevation)
+			else if (currentSquare.elevation > lowerSquare.elevation && currentSquare.elevation <= upperSquare.elevation)
 			{	
 				if (!(isSquareEqual(currentSquare, atkSquare) || isSquareEqual(currentSquare, tarSquare)))
 				{
 					highestLoFType = 2;	
 					reason = " (by elevated terrain)";
 				}	
+			}
+			// hindered only if the target is sitting in hindering terrain
+			else if (isSquareEqual(currentSquare,tarSquare) && (currentSquare.terrain == "hindering" || currentSquare.terrain == 1))
+			{
+				highestLoFType = compareLeastRestrictiveTerrain("hindering", highestLoFType);
 			}
 			// unless it's one of these cases, terrain doesn't matter
 		}
@@ -190,7 +194,11 @@ function determineLoF(atkSquare, tarSquare)
 
 		// check for walls
 		if (lookForWall(isDiagonal, lastSquare, currentSquare, crossSquare))
-			highestLoFType = 2;
+		{
+			// check if it's outdoor lower, or indoor, terrain
+			if (!(!elevationChange && lastSquare.elevation < atkSquare.elevation && currentSquare.elevation < atkSquare.elevation && !lastSquare.isIndoor && !currentSquare.isIndoor))
+				highestLoFType = 2;
+		}
 			
 		// print result	(if not already set by the elevation cases above)
 		if (highestLoFType == 2)
