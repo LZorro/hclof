@@ -6,7 +6,7 @@
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
 	
 	<style type="text/css">
 		@media screen and (-webkit-min-device-pixel-ratio: 0) {
@@ -33,30 +33,88 @@
 <body>
 	<div data-role="page" id="mainpage">  
 		
-		<div data-role="panel" data-display="overlay" data-position-fixed="true" data-dismissible="false" data-swipe-close="false" id="mapInfo">
+		<div data-role="header">
+			<h1>Heroclix&trade; Line of Fire Tool</h1>
+			<a href="#help" data-position-to="window" data-rel="popup" data-transition="slidedown" data-icon="star" class="ui-btn-right">Help</a>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#mapdialog" data-position-to="window" data-rel="popup" data-transition="slidedown" data-icon="plus">Load Map</a></li>
+					<li><a href="#lineInfo"  data-position-to="window" data-rel="popup" data-transition="slidedown" data-icon="action">Select Points</a></li>
+					<li><a href="#mapInfo"   data-position-to="window" data-rel="popup" data-transition="slidedown" data-icon="info">Map Info</a></li>
+				</ul>
+			</div>
+		</div>
+
 		
-			<a href="#mapdialog" data-position-to="window" data-rel="popup" data-role="button" data-transition="slidedown" data-icon="plus">Load Map</a>
-			<br>
-			<br>
+		<div id='mapdiv' style="position: relative;">
+			<div id='griddiv' style="position: relative;"></div>
+		</div>
 		
+		<!--
+		<div id='griddiv' style="position: relative;">
+			<div id="mapElementsDiv" style="position: absolute;">
+				<canvas id="mapElements" style="position: absolute;"></canvas>
+			</div>
+		</div>
+		-->
+		
+		<script type="text/javascript"> 
+			createGrid(24,16); 
+			/*createOverlay();*/
+		</script>
+		
+		<div class="footer">
+			<p>This tool is intended for use as a reference only.  Please refer to the Rulebook for proper rulings, or ask your judge.<br>
+			Line of Fire rules used are defined in the 2014 Rulebook.  Modern Age maps are current as of 2014.<br>
+			
+			<p>Do you want to help this project be the best it can be?  Volunteer and <a href="mailto:timothyvolpe@hotmail.com?subject=HCLoF Help">contact me here!</a>
+			
+			<p>This tool is &copy;2014 <a href="http://www.lzorro.com">Tim Volpe</a>.  All Rights Reserved.  <a href="devblog.html">Dev Blog</a><br>
+			<a href="http://www.heroclix.com" rel="_blank">Heroclix</a> is &copy; and &trade; WizKids/NECA.	
+		</div>
+
+
+	
+	<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+	
+		<div data-role="popup" data-overlay-theme="b" id="lineInfo">
+	
 			<form>
 				<font color=blue>Attacker:</font>
 				<select data-role="none" id='attackCol'></select>
-				<select data-role="none" id="attackRow" ></select><br>
+				<select data-role="none" id="attackRow" ></select>
 				<font color=green>Target:</font>
 				<select data-role="none" id="targetCol" ></select>
-				<select data-role="none" id="targetRow" ></select><br>
+				<select data-role="none" id="targetRow" ></select>
 				<button type="button" data-role="none" onclick="getSquares()">LINE</button>
-				<button type="button" data-role="none" onclick="resetPage(false)">RESET</button><br>
-				<p><input id="toggleGrid" type="checkbox" data-role="none" onclick="showGrid(this);">Show Gridlines</input><br>
+				<button type="button" data-role="none" onclick="resetPage(false)">RESET</button>
+				<p><input id="toggleGrid" type="checkbox" data-role="none" onclick="showGrid(this);">Show grid</input>
 				<input id="toggleCoordinates" type="checkbox" data-role="none" onclick="showCoordinates(this);">Show Coordinates</input>
 	
-				<p>Drawing a line from: <textarea data-role="none" type="text" readonly id="result" cols="25" rows="2"></textarea></p>
-				<p>Line passes through squares: <textarea data-role="none" id="squareList" readonly cols='25' rows='4'></textarea></p>
-				<div>Line of Fire is: <input data-role="none" style='font-weight:bold' size="20" readonly id='lofResult'></input></div><br>
+				<p>Drawing a line from: <input data-role="none" type="text" readonly id="result" size="40"></p>
+				<p>Line passes through squares: <textarea data-role="none" id="squareList" readonly cols='45' rows='4'></textarea></p>
+				<div>Line of Fire is: <input data-role="none" style='font-weight:bold' size=50 readonly id='lofResult'></input></div><br>
 			</form>
+			
+			<script type="text/javascript"> 
+				resetDropdowns(24,16); 
+			</script>
+		
+			<a href="#mainpage" data-rel="back" data-role="button" data-inline="true">Close</a>
+			
+		</div>
+	
+	<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+	
+		<div data-role="popup" data-overlay-theme="b" id="mapInfo">
 	
 			<form>
+				<div>Map Title: <span style='font-weight:bold' id='mapTitle'></span></div>
+				<div>Set: <span style='font-weight:bold' id='mapSet'></span></div>
+				<div>Universe: <span style='font-weight:bold' id='mapUniverse'></span></div>
+				<div><span style='font-weight:bold' id='mapInOut'></span></div>
+				<div id='mapSpecial' style='visibility:hidden'><u>Special Rules:<br></u>
+				<textarea data-role="none" readonly rows="5" cols="50" id='mapSpecialRules'></textarea></div>
 				<div>
 					<table id="mainStatsBox" class="breakdown">
 						<tr>
@@ -79,64 +137,15 @@
 						</tr>
 					</table>				
 				</div>
-				<div>Map Title: <span style='font-weight:bold' id='mapTitle'></span></div>
-				<div>Set: <span style='font-weight:bold' id='mapSet'></span></div>
-				<div>Universe: <span style='font-weight:bold' id='mapUniverse'></span></div>
-				<div><span style='font-weight:bold' id='mapInOut'></span></div>
-				<div id='mapSpecial' style='visibility:hidden'><u>Special Rules:<br></u>
-				<textarea data-role="none" readonly rows="5" cols="50" id='mapSpecialRules'></textarea></div>
-				
 			</form>
 		
-			<a href="#mainpage" data-rel="close" data-role="button" data-icon="delete" data-inline="true">Hide</a>
+		<a href="#mainpage" data-rel="back" data-role="button" data-inline="true">Close</a>
 		
-		</div>  <!-- mapInfo panel -->
-		
-		<div data-role="header">
-			<h1>Heroclix&trade; Line of Fire Tool</h1>
-			<a href="#mapInfo" data-position-to="window" data-icon="info" class="ui-btn-left">Line / Info</a>
-			<a href="#help" data-position-to="window" data-rel="popup" data-transition="slidedown" data-icon="star" class="ui-btn-right">Help</a>
 		</div>
-
-		<div data-role="content">
-			<div id='mapdiv' style="position: relative;">
-				<div id='griddiv' style="position: relative;"></div>
-			</div>
-		
-			<!--
-			<div id='griddiv' style="position: relative;">
-				<div id="mapElementsDiv" style="position: absolute;">
-					<canvas id="mapElements" style="position: absolute;"></canvas>
-				</div>
-			</div>
-			-->
-		
-			<script type="text/javascript"> 		
-				/*createOverlay();*/
-				// Line/Info panel defaults to open
-				$(document).on('pagebeforeshow', '#mainpage', function(){
-					$( "#mapInfo" ).panel("open");
-				});
-				
-				createGrid(24,16); 
-				resetDropdowns(24,16);
-			</script>
-
-		</div>
-		
-		<div data-role="footer" class="footer">
-			<p>This tool is intended for use as a reference only.  Please refer to the Rulebook for proper rulings, or ask your judge.<br>
-			Line of Fire rules used are defined in the 2014 Rulebook.  Modern Age maps are current as of 2014.<br>
-			
-			<p>Do you want to help this project be the best it can be?  Volunteer and <a href="mailto:timothyvolpe@hotmail.com?subject=HCLoF Help">contact me here!</a>
-			
-			<p>This tool is &copy;2014-5 <a href="http://www.lzorro.com">Tim Volpe</a>.  All Rights Reserved.  <a href="devblog.html">Dev Blog</a><br>
-			<a href="http://www.heroclix.com" rel="_blank">Heroclix</a> is &copy; and &trade; WizKids/NECA.	
-		</div>	
 	
 	<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 	 
-		<div data-role="popup" data-overlay-theme="b" data-dismissible="false" id="mapdialog">
+		<div data-role="popup" data-overlay-theme="b" id="mapdialog">
 
 			<!--
 				//  Ideally we would like to have a filterable widget applied to a non-native select of a size greater than 1
@@ -206,7 +215,7 @@
 			</div>
 	
 			<a href="#mainpage" data-rel="back" data-role="button" data-inline="true" onclick="loadMapDetails()">Load</a>
-			<a href="#mainpage" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<a href="#mainpage" data-rel="back" data-role="button" data-inline="true">Close</a>
 	
 			<script type="text/javascript"> loadLibrary(); </script>
 	

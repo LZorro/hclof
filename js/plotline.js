@@ -134,8 +134,8 @@ function plotLine (y1, x1, y2, x2)
 		} 
 	} 
   
-	var passThroughList = document.getElementsByTagName('textarea');
-	passThroughList[0].value = passThrough;
+	var passThroughList = document.getElementById('squareList');
+	passThroughList.value = passThrough;
 }
 
 function createSquare(row, col) 

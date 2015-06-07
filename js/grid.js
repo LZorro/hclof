@@ -6,7 +6,8 @@ function createGrid(row, col)
 	//var oldgrid = document.getElementsByClassName('griddiv');
 	var oldgrid = document.getElementsByClassName('grid');
 	var newgrid = clickableGrid(row, col, selectSquare);	
-	var attach = document.getElementById('mainpage');
+	//var attach = document.getElementById('mainpage');
+	var attach = document.getElementById('griddiv');
 	
 	//var griddiv = document.createElement('div');
 	//griddiv.id = 'griddiv';
