@@ -53,7 +53,7 @@
 	
 				<p>Drawing a line from: <textarea data-role="none" type="text" readonly id="result" cols="25" rows="2"></textarea></p>
 				<p>Line passes through squares: <textarea data-role="none" id="squareList" readonly cols='25' rows='4'></textarea></p>
-				<div>Line of Fire is: <input data-role="none" style='font-weight:bold' size="20" readonly id='lofResult'></input></div><br>
+				<div>Line of Fire is: <input data-role="none" style='font-weight:bold' size="22" readonly id='lofResult'></input></div><br>
 			</form>
 	
 			<form>
@@ -84,7 +84,7 @@
 				<div>Universe: <span style='font-weight:bold' id='mapUniverse'></span></div>
 				<div><span style='font-weight:bold' id='mapInOut'></span></div>
 				<div id='mapSpecial' style='visibility:hidden'><u>Special Rules:<br></u>
-				<textarea data-role="none" readonly rows="5" cols="50" id='mapSpecialRules'></textarea></div>
+				<textarea data-role="none" readonly rows="5" cols="25" id='mapSpecialRules'></textarea></div>
 				
 			</form>
 		
@@ -137,75 +137,86 @@
 	<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
 	 
 		<div data-role="popup" data-overlay-theme="b" data-dismissible="false" id="mapdialog">
-
-			<!--
-				//  Ideally we would like to have a filterable widget applied to a non-native select of a size greater than 1
-				<form>
-					<input data-type="search" id="searchForSelect">
-				</form>
-			-->
-			<select data-input="#searchForSelect" data-role="none" data-filter="true" id="library" onchange="loadStats()" style="width:300px" size=10>	
-			</select>
-
+		
 			<div>
-				Set:  <span style='font-weight:bold' id='loadmapSet'></span>
-			</div>
+				<div id="mapSelect">
+
+					<!--
+						//  Ideally we would like to have a filterable widget applied to a non-native select of a size greater than 1
+						<form>
+							<input data-type="search" id="searchForSelect">
+						</form>
+					-->
+					<select data-input="#searchForSelect" data-role="none" data-filter="true" id="library" onchange="loadStats()" style="width:350px" size=10>	
+					</select>
+
+					<div>
+						Set:  <span style='font-weight:bold' id='loadmapSet'></span>
+					</div>
 	
-			<div>
-				<form>
-					<input data-role="none" name="sort" type="radio" onchange="loadLibrary()" id="filterDefault" checked="true" value="default">Default</input>
-					<input data-role="none" name="sort" type="radio" onchange="loadLibrary()" id="filterAlpha" value="alpha">A-Z</input>
-				</form>
+					<div>
+						<form>
+							<input data-role="none" name="sort" type="radio" onchange="loadLibrary()" id="filterDefault" checked="true" value="default">Default</input>
+							<input data-role="none" name="sort" type="radio" onchange="loadLibrary()" id="filterAlpha" value="alpha">A-Z</input>
+						</form>
 	
-				<form>
-					<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" checked="true" id="filterMarvel">Marvel</input>
-					<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" checked="true" id="filterDC">DC</input>
-					<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" checked="true" id='filterOther'>Other</input>
-					<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" id="filterLotR">Lord of the Rings</input>
-					<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" id="filterStarTrek">Star Trek</input>
-				</form>
+						<form>
+							<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" checked="true" id="filterMarvel">Marvel</input>
+							<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" checked="true" id="filterDC">DC</input>
+							<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" checked="true" id='filterOther'>Other</input>
+							<br>
+							<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" id="filterLotR">Lord of the Rings</input>
+							<input data-role="none" name="filter" type="checkbox" onclick="loadLibrary()" id="filterStarTrek">Star Trek</input>
+						</form>
 	
-				<form>
-					<input data-role="none" name="age" type="radio" onchange="loadLibrary()" id="filterModern">Modern Age</input>
-					<input data-role="none" name="age" type="radio" onchange="loadLibrary()" id="filterGolden" checked="true" >Golden Age</input>
-				</form>
+						<form>
+							<input data-role="none" name="age" type="radio" onchange="loadLibrary()" id="filterModern">Modern Age</input>
+							<input data-role="none" name="age" type="radio" onchange="loadLibrary()" id="filterGolden" checked="true" >Golden Age</input>
+						</form>
 	
-				<form>
-					<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filterIndoor">Indoor</input>
-					<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filterOutdoor">Outdoor</input>
-				</form>
+						<form>
+							<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filterIndoor">Indoor</input>
+							<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filterOutdoor">Outdoor</input>
+						</form>
 				
-				<form>
-					<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filter1624">16x24</input>
-					<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filter2424">24x24</input>
-					<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filter916">9x16</input>
-				</form>
-			</div>
+						<form>
+							<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filter1624">16x24</input>
+							<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filter2424">24x24</input>
+							<input data-role="none" type="checkbox" onclick="loadLibrary()" checked="true" id="filter916">9x16</input>
+						</form>
+					</div>
 	
-			<div>
-				<table id="loadStatsBox" class="breakdown">
-					<tr>
-						<th><button data-role="none" onclick="sortLibrary('H')">H</button></th>
-						<th><button data-role="none" onclick="sortLibrary('B')">B</button></th>
-						<th><button data-role="none" onclick="sortLibrary('L')">Wall</button></th>
-						<th><button data-role="none" onclick="sortLibrary('E')">E</button></th>
-						<th><button data-role="none" onclick="sortLibrary('W')">W</button></th>
-						<th><button data-role="none" onclick="sortLibrary('S')">S</button></th>
-						<th><button data-role="none" onclick="sortLibrary('I')">I</button></th>
-					</tr>
-					<tr>
-						<td id="breakdown" class="H"></td>
-						<td id="breakdown" class="B"></td>
-						<td id="breakdown" class="Wall"></td>
-						<td id="breakdown" class="E"></td>
-						<td id="breakdown" class="W"></td>
-						<td id="breakdown" class="S"></td>
-						<td id="breakdown" class="I"></td>
-					</tr>
-				</table>
-			</div>
+					<div>
+						<table id="loadStatsBox" class="breakdown">
+							<tr>
+								<th><button data-role="none" onclick="sortLibrary('H')">H</button></th>
+								<th><button data-role="none" onclick="sortLibrary('B')">B</button></th>
+								<th><button data-role="none" onclick="sortLibrary('L')">Wall</button></th>
+								<th><button data-role="none" onclick="sortLibrary('E')">E</button></th>
+								<th><button data-role="none" onclick="sortLibrary('W')">W</button></th>
+								<th><button data-role="none" onclick="sortLibrary('S')">S</button></th>
+								<th><button data-role="none" onclick="sortLibrary('I')">I</button></th>
+							</tr>
+							<tr>
+								<td id="breakdown" class="H"></td>
+								<td id="breakdown" class="B"></td>
+								<td id="breakdown" class="Wall"></td>
+								<td id="breakdown" class="E"></td>
+								<td id="breakdown" class="W"></td>
+								<td id="breakdown" class="S"></td>
+								<td id="breakdown" class="I"></td>
+							</tr>
+						</table>
+					</div>
+				</div> <!-- mapSelect -->
+				
+				<div id="mapImage">
+					<img id="previewImage" src="maps/nopreview.png" onError="this.onError=null;this.src='maps/nopreview.png';">
+				</div>
+			
+			</div> <!-- mapContainer -->
 	
-			<a href="#mainpage" data-rel="back" data-role="button" data-inline="true" onclick="loadMapDetails()">Load</a>
+			<a href="#mainpage" data-rel="back" data-theme="b" data-role="button" data-inline="true" onclick="loadMapDetails()">Load</a>
 			<a href="#mainpage" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-b ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
 	
 			<script type="text/javascript"> loadLibrary(); </script>

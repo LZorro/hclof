@@ -293,7 +293,7 @@ function loadMapDetails()
 	{
 		var mapFilename = library.options[library.selectedIndex].value;
 		
-		loadMap(mapFilename.substr(0, mapFilename.indexOf(' ')));
+		loadMap(mapFilename.substr(0, mapFilename.indexOf(' ')) + ".xml");
 	}
 }  // loadMapDetails()
 	
@@ -344,10 +344,12 @@ function loadStats()
 	var library  = document.getElementById("library")
 	var statsBox = document.getElementById("loadStatsBox");
 	var title 	 = document.getElementById("loadmapSet");
+	var prevImage = document.getElementById("previewImage");
 		
 	var statsArray = new Array(7);
 	var mapStats = library.options[library.selectedIndex].value;
-	var lastIndex = mapStats.indexOf(".xml") + 5;
+	var lastIndex = mapStats.indexOf(" ") + 1;
+	var imageFilename = "maps/" + mapStats.substr(0, lastIndex-1) + ".png";
 	statsArray[0] = parseInt(mapStats.substr(lastIndex, mapStats.indexOf("%H") - lastIndex));
 	lastIndex = mapStats.indexOf("%H")+3;
 	statsArray[1] = parseInt(mapStats.substr(lastIndex, mapStats.indexOf("%B") - lastIndex));
@@ -363,7 +365,8 @@ function loadStats()
 	statsArray[6] = parseInt(mapStats.substr(lastIndex, mapStats.indexOf("%I") - lastIndex));
 	lastIndex = mapStats.indexOf("%I")+3;
 	title.textContent = mapStats.substr(lastIndex);
-		
+	prevImage.src = imageFilename;
+
 	if (library.selectedIndex > -1)
 	{
 		for (var i = 0; i < statsArray.length; i++)

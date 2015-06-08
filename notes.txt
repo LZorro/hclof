@@ -10,6 +10,7 @@ Notes
 
 - Redesign page so all information is showing at once on left (Select Point, Map Info)
 	- Design so it's on a sliding panel, so we can "fullscreen" the map
+	- consider removing LoF "reasons" so they'll fit in the shorter column
 	
 - RESPONSIVE WEB DESIGN for mobile
    

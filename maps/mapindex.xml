@@ -2,7 +2,7 @@
 
 <index>
 	<map>
-		<filename>icon_centennialzoo.xml</filename>
+		<filename>icon_centennialzoo</filename>
 		<title>Centennial Park Zoo</title>
 		<set>Icons</set>
 		<universe>DC</universe>
@@ -14,7 +14,7 @@
 		<w>3%</w>
 	</map>
 	<map>
-		<filename>aw_lab.xml</filename>
+		<filename>aw_lab</filename>
 		<title>The Lab</title>
 		<set>Armor Wars</set>
 		<universe>Marvel</universe>
@@ -28,7 +28,7 @@
 		<i>46%</i>
 	</map>
 	<map>
-		<filename>cd_junkyard.xml</filename>
+		<filename>cd_junkyard</filename>
 		<title>The Junkyard</title>
 		<set>Collateral Damage</set>
 		<universe>DC</universe>
@@ -42,7 +42,7 @@
 		<i>19%</i>
 	</map>
 	<map>
-		<filename>dr_institutegrounds.xml</filename>
+		<filename>dr_institutegrounds</filename>
 		<title>Institute Grounds</title>
 		<set>Danger Room</set>
 		<universe>Marvel</universe>
@@ -55,7 +55,7 @@
 		<w>6%</w>
 	</map>
 	<map>
-		<filename>dr_trainingcomplex.xml</filename>
+		<filename>dr_trainingcomplex</filename>
 		<title>Training Complex</title>
 		<set>Danger Room</set>
 		<universe>Marvel</universe>
@@ -70,7 +70,7 @@
 		<i>66%</i>
 	</map>
 	<map>
-		<filename>sin_prison.xml</filename>
+		<filename>sin_prison</filename>
 		<title>The Prison</title>
 		<set>Sinister</set>
 		<universe>Marvel</universe>
@@ -82,7 +82,7 @@
 		<wall>20%</wall>
 	</map>
 	<map>
-		<filename>dofp_schoolruins.xml</filename>
+		<filename>dofp_schoolruins</filename>
 		<title>School Ruins</title>
 		<set>Days of Future Past</set>
 		<universe>Marvel</universe>
@@ -95,7 +95,7 @@
 		<i>49%</i>
 	</map>
 	<map>
-		<filename>sn_deepspace.xml</filename>
+		<filename>sn_deepspace</filename>
 		<title>Deep Space</title>
 		<set>Supernova</set>
 		<universe>Marvel</universe>
@@ -108,7 +108,7 @@
 		<s>53%</s>
 	</map>
 	<map>
-		<filename>or_jsamuseum.xml</filename>
+		<filename>or_jsamuseum</filename>
 		<title>JSA Museum</title>
 		<set>Origin</set>
 		<universe>DC</universe>
@@ -120,7 +120,7 @@
 		<e>4%</e>
 	</map>
 	<map>
-		<filename>bprd_anuratemple.xml</filename>
+		<filename>bprd_anuratemple</filename>
 		<title>Anura Temple</title>
 		<set>B.P.R.D.</set>
 		<universe>Other</universe>
@@ -132,7 +132,7 @@
 		<w>53%</w>
 	</map>
 	<map>
-		<filename>hrc_castleruins.xml</filename>
+		<filename>hrc_castleruins</filename>
 		<title>Castle Ruins</title>
 		<set>Horrorclix</set>
 		<universe>Other</universe>
@@ -147,7 +147,7 @@
 		<i>5%</i>
 	</map>
 	<map>
-		<filename>hrc_carnival.xml</filename>
+		<filename>hrc_carnival</filename>
 		<title>Steven Bros. Carnival</title>
 		<set>Horrorclix</set>
 		<universe>Other</universe>
@@ -160,7 +160,7 @@
 		<i>26%</i>
 	</map>
 	<map>
-		<filename>av_airbase.xml</filename>
+		<filename>av_airbase</filename>
 		<title>Airbase</title>
 		<set>Avengers</set>
 		<universe>Marvel</universe>
@@ -172,7 +172,7 @@
 		<e>4%</e>
 	</map>
 	<map>
-		<filename>jl_bank.xml</filename>
+		<filename>jl_bank</filename>
 		<title>The Bank</title>
 		<set>Justice League</set>
 		<universe>DC</universe>
@@ -184,7 +184,7 @@
 		<wall>5%</wall>
 	</map>
 	<map>
-		<filename>mumo_arena.xml</filename>
+		<filename>mumo_arena</filename>
 		<title>The Arena</title>
 		<set>Mutations and Monsters</set>
 		<universe>Marvel</universe>
@@ -195,7 +195,7 @@
 		<e>21%</e>
 	</map>
 	<map>
-		<filename>mumo_battlesquare.xml</filename>
+		<filename>mumo_battlesquare</filename>
 		<title>Battle Square</title>
 		<set>Mutations and Monsters</set>
 		<universe>Marvel</universe>
@@ -207,7 +207,7 @@
 		<e>4%</e>
 	</map>
 	<map>
-		<filename>f4_castledoom.xml</filename>
+		<filename>f4_castledoom</filename>
 		<title>Castle Doom Gardens</title>
 		<set>Fantastic Four</set>
 		<universe>Marvel</universe>
@@ -219,7 +219,7 @@
 		<w>10%</w>
 	</map>
 	<map>
-		<filename>f4_baxterbuilding.xml</filename>
+		<filename>f4_baxterbuilding</filename>
 		<title>Baxter Building</title>
 		<set>Fantastic Four</set>
 		<universe>Marvel</universe>
@@ -231,7 +231,7 @@
 		<wall>7%</wall>
 	</map>
 	<map>
-		<filename>si_spaceshipcrashsite.xml</filename>
+		<filename>si_spaceshipcrashsite</filename>
 		<title>Spaceship Crash Site</title>
 		<set>Secret Invasion</set>
 		<universe>Marvel</universe>
@@ -242,7 +242,7 @@
 		<b>10%</b>
 	</map>
 	<map>
-		<filename>aa_asylum.xml</filename>
+		<filename>aa_asylum</filename>
 		<title>The Asylum</title>
 		<set>Arkham Asylum</set>
 		<universe>DC</universe>
@@ -253,7 +253,7 @@
 		<wall>15%</wall>
 	</map>
 	<map>
-		<filename>hot_fountainasgard.xml</filename>
+		<filename>hot_fountainasgard</filename>
 		<title>Fountain of Asgard</title>
 		<set>Hammer of Thor</set>
 		<universe>Marvel</universe>
@@ -266,7 +266,7 @@
 		<s>3%</s>
 	</map>
 	<map>
-		<filename>bb_graveyard.xml</filename>
+		<filename>bb_graveyard</filename>
 		<title>The Graveyard</title>
 		<set>Brave and the Bold</set>
 		<universe>DC</universe>
@@ -280,7 +280,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>bn_oansciencells.xml</filename>
+		<filename>bn_oansciencells</filename>
 		<title>Oan Sciencells</title>
 		<set>Blackest Night</set>
 		<universe>DC</universe>
@@ -292,7 +292,7 @@
 		<s>3%</s>
 	</map>
 	<map>
-		<filename>wos_bridge.xml</filename>
+		<filename>wos_bridge</filename>
 		<title>The Bridge</title>
 		<set>Web of Spider-Man</set>
 		<universe>Marvel</universe>
@@ -304,7 +304,7 @@
 		<w>34%</w>
 	</map>
 	<map>
-		<filename>bd_crater.xml</filename>
+		<filename>bd_crater</filename>
 		<title>The Crater</title>
 		<set>Brightest Day</set>
 		<universe>DC</universe>
@@ -318,7 +318,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>bd_monument.xml</filename>
+		<filename>bd_monument</filename>
 		<title>The Monument</title>
 		<set>Brightest Day</set>
 		<universe>DC</universe>
@@ -332,7 +332,7 @@
 		<w>9%</w>
 	</map>
 	<map>
-		<filename>dc75_airport.xml</filename>
+		<filename>dc75_airport</filename>
 		<title>Airport Terminal</title>
 		<set>DC 75th Anniversary</set>
 		<universe>DC</universe>
@@ -346,7 +346,7 @@
 		<i>75%</i>
 	</map>
 	<map>
-		<filename>dc75_hawkworld.xml</filename>
+		<filename>dc75_hawkworld</filename>
 		<title>Hawkworld</title>
 		<set>DC 75th Anniversary</set>
 		<universe>DC</universe>
@@ -359,7 +359,7 @@
 		<s>48%</s>
 	</map>
 	<map>
-		<filename>gsx_madripoor.xml</filename>
+		<filename>gsx_madripoor</filename>
 		<title>Madripoor Lowtown</title>
 		<set>Giant Size X-Men</set>
 		<universe>Marvel</universe>
@@ -372,7 +372,7 @@
 		<w>10%</w>
 	</map>
 	<map>
-		<filename>gsx_krakoa.xml</filename>
+		<filename>gsx_krakoa</filename>
 		<title>Krakoa</title>
 		<set>Giant Size X-Men</set>
 		<universe>Marvel</universe>
@@ -386,7 +386,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>gl_oa.xml</filename>
+		<filename>gl_oa</filename>
 		<title>Oa</title>
 		<set>Green Lantern</set>
 		<universe>DC</universe>
@@ -398,7 +398,7 @@
 		<e>18%</e>
 	</map>
 	<map>
-		<filename>gl_ferrisaircraft.xml</filename>
+		<filename>gl_ferrisaircraft</filename>
 		<title>Ferris Aircraft</title>
 		<set>Green Lantern</set>
 		<universe>DC</universe>
@@ -412,7 +412,7 @@
 		<i>42%</i>
 	</map>
 	<map>
-		<filename>hot_jotunheim.xml</filename>
+		<filename>hot_jotunheim</filename>
 		<title>Jotunheim</title>
 		<set>Hammer of Thor</set>
 		<universe>Marvel</universe>
@@ -424,7 +424,7 @@
 		<e>66%</e>
 	</map>
 	<map>
-		<filename>hot_muspelheim.xml</filename>
+		<filename>hot_muspelheim</filename>
 		<title>Muspelheim</title>
 		<set>Hammer of Thor</set>
 		<universe>Marvel</universe>
@@ -436,7 +436,7 @@
 		<s>46%</s>
 	</map>
 	<map>
-		<filename>ca_helicarrierbow.xml</filename>
+		<filename>ca_helicarrierbow</filename>
 		<title>S.H.I.E.L.D. Helicarrier Bow S-1</title>
 		<set>Captain America</set>
 		<universe>Marvel</universe>
@@ -449,7 +449,7 @@
 		<s>22%</s>
 	</map>
 	<map>
-		<filename>ca_helicarriermidsection.xml</filename>
+		<filename>ca_helicarriermidsection</filename>
 		<title>S.H.I.E.L.D. Helicarrier Midsection S-2</title>
 		<set>Captain America</set>
 		<universe>Marvel</universe>
@@ -464,7 +464,7 @@
 		<i>20%</i>
 	</map>
 	<map>
-		<filename>ca_helicarrierstern.xml</filename>
+		<filename>ca_helicarrierstern</filename>
 		<title>S.H.I.E.L.D. Helicarrier Stern S-3</title>
 		<set>Captain America</set>
 		<universe>Marvel</universe>
@@ -477,7 +477,7 @@
 		<s>22%</s>
 	</map>
 	<map>
-		<filename>ca_helicarrierbelow.xml</filename>
+		<filename>ca_helicarrierbelow</filename>
 		<title>S.H.I.E.L.D. Helicarrier Below Decks S-4</title>
 		<set>Captain America</set>
 		<universe>Marvel</universe>
@@ -491,7 +491,7 @@
 		<s>17%</s>
 	</map>
 	<map>
-		<filename>sf_templeroof.xml</filename>
+		<filename>sf_templeroof</filename>
 		<title>Temple Roof</title>
 		<set>Street Fighter</set>
 		<universe>Other</universe>
@@ -504,7 +504,7 @@
 		<wall>6%</wall>
 	</map>
 	<map>
-		<filename>sf_jetty.xml</filename>
+		<filename>sf_jetty</filename>
 		<title>Jetty</title>
 		<set>Street Fighter</set>
 		<universe>Other</universe>
@@ -517,7 +517,7 @@
 		<w>30%</w>
 	</map>
 	<map>
-		<filename>sf_street.xml</filename>
+		<filename>sf_street</filename>
 		<title>Street</title>
 		<set>Street Fighter</set>
 		<universe>Other</universe>
@@ -529,7 +529,7 @@
 		<e>4%</e>
 	</map>
 	<map>
-		<filename>sf_airfield.xml</filename>
+		<filename>sf_airfield</filename>
 		<title>Airfield</title>
 		<set>Street Fighter</set>
 		<universe>Other</universe>
@@ -541,7 +541,7 @@
 		<wall>2%</wall>
 	</map>
 	<map>
-		<filename>sm_metropolis.xml</filename>
+		<filename>sm_metropolis</filename>
 		<title>Metropolis City Battleground</title>
 		<set>Superman</set>
 		<universe>DC</universe>
@@ -553,7 +553,7 @@
 		<e>8%</e>
 	</map>
 	<map>
-		<filename>sm_fortresssolitude.xml</filename>
+		<filename>sm_fortresssolitude</filename>
 		<title>Fortress of Solitude</title>
 		<set>Superman</set>
 		<universe>DC</universe>
@@ -566,7 +566,7 @@
 		<w>3%</w>
 	</map>
 	<map>
-		<filename>sm_bizarroworld.xml</filename>
+		<filename>sm_bizarroworld</filename>
 		<title>Bizarro World</title>
 		<set>Superman</set>
 		<universe>DC</universe>
@@ -577,7 +577,7 @@
 		<e>65%</e>
 	</map>
 	<map>
-		<filename>ih_gammarange.xml</filename>
+		<filename>ih_gammarange</filename>
 		<title>Gamma Range</title>
 		<set>Incredible Hulk</set>
 		<universe>Marvel</universe>
@@ -591,7 +591,7 @@
 		<i>2%</i>
 	</map>
 	<map>
-		<filename>ih_shadowland.xml</filename>
+		<filename>ih_shadowland</filename>
 		<title>Shadowland Fortress</title>
 		<set>Incredible Hulk</set>
 		<universe>Marvel</universe>
@@ -604,7 +604,7 @@
 		<w>4%</w>
 	</map>
 	<map>
-		<filename>ih_sakaar.xml</filename>
+		<filename>ih_sakaar</filename>
 		<title>Sakaar</title>
 		<set>Incredible Hulk</set>
 		<universe>Marvel</universe>
@@ -617,7 +617,7 @@
 		<w>3%</w>
 	</map>
 	<map>
-		<filename>lotr_battlefield.xml</filename>
+		<filename>lotr_battlefield</filename>
 		<title>Battlefield</title>
 		<set>Lord of the Rings</set>
 		<universe>LotR</universe>
@@ -629,7 +629,7 @@
 		<e>13%</e>
 	</map>
 	<map>
-		<filename>stt_ds9.xml</filename>
+		<filename>stt_ds9</filename>
 		<title>Deep Space Nine</title>
 		<set>Star Trek Tactics</set>
 		<universe>StarTrek</universe>
@@ -641,7 +641,7 @@
 		<s>2%</s>
 	</map>
 	<map>
-		<filename>stt_kobayashi.xml</filename>
+		<filename>stt_kobayashi</filename>
 		<title>Kobayashi Maru</title>
 		<set>Star Trek Tactics</set>
 		<universe>StarTrek</universe>
@@ -651,7 +651,7 @@
 		<b>7%</b>
 	</map>
 	<map>
-		<filename>stt_mutara.xml</filename>
+		<filename>stt_mutara</filename>
 		<title>The Mutara Nebula</title>
 		<set>Star Trek Tactics</set>
 		<universe>StarTrek</universe>
@@ -662,7 +662,7 @@
 		<b>3%</b>
 	</map>
 	<map>
-		<filename>stt_wolf359.xml</filename>
+		<filename>stt_wolf359</filename>
 		<title>Wolf 359</title>
 		<set>Star Trek Tactics</set>
 		<universe>StarTrek</universe>
@@ -672,7 +672,7 @@
 		<h>18%</h>
 	</map>
 	<map>
-		<filename>gg_blueareamoon.xml</filename>
+		<filename>gg_blueareamoon</filename>
 		<title>Blue Area of the Moon</title>
 		<set>Galactic Guardians</set>
 		<universe>Marvel</universe>
@@ -684,7 +684,7 @@
 		<e>72%</e>
 	</map>
 	<map>
-		<filename>gg_realmdeath.xml</filename>
+		<filename>gg_realmdeath</filename>
 		<title>Realm of Death</title>
 		<set>Galactic Guardians</set>
 		<universe>Marvel</universe>
@@ -696,7 +696,7 @@
 		<wall>14%</wall>
 	</map>
 	<map>
-		<filename>gg_knowhere.xml</filename>
+		<filename>gg_knowhere</filename>
 		<title>Knowhere</title>
 		<set>Galactic Guardians</set>
 		<universe>Marvel</universe>
@@ -708,7 +708,7 @@
 		<wall>13%</wall>
 	</map>
 	<map>
-		<filename>gg_aliencity.xml</filename>
+		<filename>gg_aliencity</filename>
 		<title>Alien City</title>
 		<set>Galactic Guardians</set>
 		<universe>Marvel</universe>
@@ -721,7 +721,7 @@
 		<w>12%</w>
 	</map>
 	<map>
-		<filename>avm_starktower.xml</filename>
+		<filename>avm_starktower</filename>
 		<title>Stark Tower</title>
 		<set>Avengers Movie</set>
 		<universe>Marvel</universe>
@@ -733,7 +733,7 @@
 		<s>22%</s>
 	</map>
 	<map>
-		<filename>avm_helicarrier.xml</filename>
+		<filename>avm_helicarrier</filename>
 		<title>S.H.I.E.L.D. Helicarrier</title>
 		<set>Avengers Movie</set>
 		<universe>Marvel</universe>
@@ -744,7 +744,7 @@
 		<e>78%</e>
 	</map>
 	<map>
-		<filename>ig_soulworld.xml</filename>
+		<filename>ig_soulworld</filename>
 		<title>Soul World</title>
 		<set>Infinity Gauntlet</set>
 		<universe>Marvel</universe>
@@ -757,7 +757,7 @@
 		<w>16%</w>
 	</map>
 	<map>
-		<filename>ig_nexusreality.xml</filename>
+		<filename>ig_nexusreality</filename>
 		<title>Nexus of Reality</title>
 		<set>Infinity Gauntlet</set>
 		<universe>Marvel</universe>
@@ -769,7 +769,7 @@
 		<s>10%</s>
 	</map>
 	<map>
-		<filename>ig_tamarata.xml</filename>
+		<filename>ig_tamarata</filename>
 		<title>Tamarata</title>
 		<set>Infinity Gauntlet</set>
 		<universe>Marvel</universe>
@@ -781,7 +781,7 @@
 		<e>26%</e>
 	</map>
 	<map>
-		<filename>ig_garden.xml</filename>
+		<filename>ig_garden</filename>
 		<title>The Garden</title>
 		<set>Infinity Gauntlet</set>
 		<universe>Marvel</universe>
@@ -792,7 +792,7 @@
 		<b>1%</b>
 	</map>
 	<map>
-		<filename>ig_spaceracetrack.xml</filename>
+		<filename>ig_spaceracetrack</filename>
 		<title>Space Racetrack</title>
 		<set>Infinity Gauntlet</set>
 		<universe>Marvel</universe>
@@ -804,7 +804,7 @@
 		<s>57%</s>
 	</map>
 	<map>
-		<filename>ig_collectorsship.xml</filename>
+		<filename>ig_collectorsship</filename>
 		<title>Collector's Ship</title>
 		<set>Infinity Gauntlet</set>
 		<universe>Marvel</universe>
@@ -816,7 +816,7 @@
 		<e>31%</e>
 	</map>
 	<map>
-		<filename>ig_mentalplane.xml</filename>
+		<filename>ig_mentalplane</filename>
 		<title>Mental Plane</title>
 		<set>Infinity Gauntlet</set>
 		<universe>Marvel</universe>
@@ -827,7 +827,7 @@
 		<b>15%</b>
 	</map>
 	<map>
-		<filename>ig_shrinedeath.xml</filename>
+		<filename>ig_shrinedeath</filename>
 		<title>Shrine to Death</title>
 		<set>Infinity Gauntlet</set>
 		<universe>Marvel</universe>
@@ -839,7 +839,7 @@
 		<e>65%</e>
 	</map>
 	<map>
-		<filename>dc75_okaara.xml</filename>
+		<filename>dc75_okaara</filename>
 		<title>Okaara</title>
 		<set>DC 75th Anniversary</set>
 		<universe>DC</universe>
@@ -853,7 +853,7 @@
 		<i>46%</i>
 	</map>
 	<map>
-		<filename>dc75_qward.xml</filename>
+		<filename>dc75_qward</filename>
 		<title>Qward</title>
 		<set>DC 75th Anniversary</set>
 		<universe>DC</universe>
@@ -865,7 +865,7 @@
 		<e>65%</e>
 	</map>
 	<map>
-		<filename>gsx_weaponxfacility.xml</filename>
+		<filename>gsx_weaponxfacility</filename>
 		<title>Abandoned Weapon X Facility</title>
 		<set>Giant Size X-Men</set>
 		<universe>Marvel</universe>
@@ -878,7 +878,7 @@
 		<e>95%</e>
 	</map>
 	<map>
-		<filename>cw_negativezone.xml</filename>
+		<filename>cw_negativezone</filename>
 		<title>Negative Zone Prison</title>
 		<set>Chaos War</set>
 		<universe>Marvel</universe>
@@ -890,7 +890,7 @@
 		<s>22%</s>
 	</map>
 	<map>
-		<filename>cw_avengersmansion.xml</filename>
+		<filename>cw_avengersmansion</filename>
 		<title>Avengers Mansion Grounds</title>
 		<set>Chaos War</set>
 		<universe>Marvel</universe>
@@ -902,7 +902,7 @@
 		<e>19%</e>
 	</map>
 	<map>
-		<filename>jl52_rooftops.xml</filename>
+		<filename>jl52_rooftops</filename>
 		<title>Rooftops of Gotham City</title>
 		<set>Justice League (New 52)</set>
 		<universe>DC</universe>
@@ -915,7 +915,7 @@
 		<s>17%</s>
 	</map>
 	<map>
-		<filename>jl52_paradiseisland.xml</filename>
+		<filename>jl52_paradiseisland</filename>
 		<title>Paradise Island</title>
 		<set>Justice League (New 52)</set>
 		<universe>DC</universe>
@@ -928,7 +928,7 @@
 		<w>21%</w>
 	</map>
 	<map>
-		<filename>bm_batcave.xml</filename>
+		<filename>bm_batcave</filename>
 		<title>The Batcave</title>
 		<set>Batman</set>
 		<universe>DC</universe>
@@ -942,7 +942,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>bm_lazaruspit.xml</filename>
+		<filename>bm_lazaruspit</filename>
 		<title>Lazarus Pit</title>
 		<set>Batman</set>
 		<universe>DC</universe>
@@ -956,7 +956,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>bm_waynemanor.xml</filename>
+		<filename>bm_waynemanor</filename>
 		<title>Wayne Manor</title>
 		<set>Batman</set>
 		<universe>DC</universe>
@@ -971,7 +971,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>bm_temple.xml</filename>
+		<filename>bm_temple</filename>
 		<title>The Temple</title>
 		<set>Batman</set>
 		<universe>DC</universe>
@@ -986,7 +986,7 @@
 		<i>17%</i>
 	</map>
 	<map>
-		<filename>nml_blackgatepre.xml</filename>
+		<filename>nml_blackgatepre</filename>
 		<title>Blackgate Prison (Pre-cataclysm)</title>
 		<set>No Man's Land</set>
 		<universe>DC</universe>
@@ -1000,7 +1000,7 @@
 		<s>4%</s>
 	</map>
 	<map>
-		<filename>nml_blackgatepost.xml</filename>
+		<filename>nml_blackgatepost</filename>
 		<title>Blackgate Prison (Post-cataclysm)</title>
 		<set>No Man's Land</set>
 		<universe>DC</universe>
@@ -1015,7 +1015,7 @@
 		<s>3%</s>
 	</map>
 	<map>
-		<filename>nml_waynegroundspre.xml</filename>
+		<filename>nml_waynegroundspre</filename>
 		<title>Wayne Manor Grounds (Pre-cataclysm)</title>
 		<set>No Man's Land</set>
 		<universe>DC</universe>
@@ -1029,7 +1029,7 @@
 		<i>18%</i>
 	</map>
 	<map>
-		<filename>nml_waynegroundspost.xml</filename>
+		<filename>nml_waynegroundspost</filename>
 		<title>Wayne Manor Grounds (Post-cataclysm)</title>
 		<set>No Man's Land</set>
 		<universe>DC</universe>
@@ -1042,7 +1042,7 @@
 		<e>78%</e>
 	</map>
 	<map>
-		<filename>nml_powerplantpre.xml</filename>
+		<filename>nml_powerplantpre</filename>
 		<title>Gotham City Power Plant (Pre-cataclysm)</title>
 		<set>No Man's Land</set>
 		<universe>DC</universe>
@@ -1055,7 +1055,7 @@
 		<w>14%</w>
 	</map>
 	<map>
-		<filename>nml_powerplantpost.xml</filename>
+		<filename>nml_powerplantpost</filename>
 		<title>Gotham City Power Plant (Post-cataclysm)</title>
 		<set>No Man's Land</set>
 		<universe>DC</universe>
@@ -1068,7 +1068,7 @@
 		<e>57%</e>
 	</map>
 	<map>
-		<filename>nml_robinsonpre.xml</filename>
+		<filename>nml_robinsonpre</filename>
 		<title>Robinson Park (Pre-cataclysm)</title>
 		<set>No Man's Land</set>
 		<universe>DC</universe>
@@ -1081,7 +1081,7 @@
 		<w>6%</w>
 	</map>
 	<map>
-		<filename>nml_robinsonpost.xml</filename>
+		<filename>nml_robinsonpost</filename>
 		<title>Robinson Park (Post-cataclysm)</title>
 		<set>No Man's Land</set>
 		<universe>DC</universe>
@@ -1094,7 +1094,7 @@
 		<w>3%</w>
 	</map>
 	<map>
-		<filename>nml_waterfrontpre.xml</filename>
+		<filename>nml_waterfrontpre</filename>
 		<title>Gotham Waterfront (Pre-cataclysm)</title>
 		<set>No Man's Land</set>
 		<universe>DC</universe>
@@ -1108,7 +1108,7 @@
 		<i>26%</i>
 	</map>
 	<map>
-		<filename>nml_waterfrontpost.xml</filename>
+		<filename>nml_waterfrontpost</filename>
 		<title>Gotham Waterfront (Post-cataclysm)</title>
 		<set>No Man's Land</set>
 		<universe>DC</universe>
@@ -1123,7 +1123,7 @@
 		<i>26%</i>
 	</map>
 	<map>
-		<filename>nml_docksidepre.xml</filename>
+		<filename>nml_docksidepre</filename>
 		<title>Dockside Amusement Park (Pre-cataclysm)</title>
 		<set>No Man's Land</set>
 		<universe>DC</universe>
@@ -1138,7 +1138,7 @@
 		<i>43%</i>
 	</map>
 	<map>
-		<filename>nml_docksidepost.xml</filename>
+		<filename>nml_docksidepost</filename>
 		<title>Dockside Amusement Park (Post-cataclysm)</title>
 		<set>No Man's Land</set>
 		<universe>DC</universe>
@@ -1153,7 +1153,7 @@
 		<i>43%</i>
 	</map>
 	<map>
-		<filename>sog_streets.xml</filename>
+		<filename>sog_streets</filename>
 		<title>Streets of Gotham City</title>
 		<set>Streets of Gotham</set>
 		<universe>DC</universe>
@@ -1166,7 +1166,7 @@
 		<s>2%</s>
 	</map>
 	<map>
-		<filename>sog_crocsewer.xml</filename>
+		<filename>sog_crocsewer</filename>
 		<title>Killer Croc Sewer Lair</title>
 		<set>Streets of Gotham</set>
 		<universe>DC</universe>
@@ -1179,7 +1179,7 @@
 		<s>2%</s>
 	</map>
 	<map>
-		<filename>stt2_delphiardu.xml</filename>
+		<filename>stt2_delphiardu</filename>
 		<title>Delphi Ardu</title>
 		<set>Star Trek Tactics II</set>
 		<universe>StarTrek</universe>
@@ -1189,7 +1189,7 @@
 		<s>17%</s>
 	</map>
 	<map>
-		<filename>stt2_quadrant.xml</filename>
+		<filename>stt2_quadrant</filename>
 		<title>Q-audrant</title>
 		<set>Star Trek Tactics II</set>
 		<universe>StarTrek</universe>
@@ -1200,7 +1200,7 @@
 		<s>9%</s>
 	</map>
 	<map>
-		<filename>asm_belltower.xml</filename>
+		<filename>asm_belltower</filename>
 		<title>Bell Tower</title>
 		<set>Amazing Spider-Man</set>
 		<universe>Marvel</universe>
@@ -1214,7 +1214,7 @@
 		<i>18%</i>
 	</map>
 	<map>
-		<filename>asm_strangemansion.xml</filename>
+		<filename>asm_strangemansion</filename>
 		<title>Dr. Strange Mansion</title>
 		<set>Amazing Spider-Man</set>
 		<universe>Marvel</universe>
@@ -1227,7 +1227,7 @@
 		<e>53%</e>
 	</map>
 	<map>
-		<filename>im3_mandarinmansion.xml</filename>
+		<filename>im3_mandarinmansion</filename>
 		<title>The Mandarin's Mansion</title>
 		<set>Iron Man 3</set>
 		<universe>Marvel</universe>
@@ -1240,7 +1240,7 @@
 		<w>5%</w>
 	</map>
 	<map>
-		<filename>im3_portmiami.xml</filename>
+		<filename>im3_portmiami</filename>
 		<title>Port of Miami</title>
 		<set>Iron Man 3</set>
 		<universe>Marvel</universe>
@@ -1253,7 +1253,7 @@
 		<w>9%</w>
 	</map>
 	<map>
-		<filename>tt_towergreathall.xml</filename>
+		<filename>tt_towergreathall</filename>
 		<title>Teen Titans Tower: Great Hall</title>
 		<set>Teen Titans</set>
 		<universe>DC</universe>
@@ -1265,7 +1265,7 @@
 		<wall>7%</wall>
 	</map>
 	<map>
-		<filename>tt_nowherecrucible.xml</filename>
+		<filename>tt_nowherecrucible</filename>
 		<title>N.O.W.H.E.R.E.: The Crucible</title>
 		<set>Teen Titans</set>
 		<universe>DC</universe>
@@ -1278,7 +1278,7 @@
 		<s>13%</s>
 	</map>
 	<map>
-		<filename>fi_blitzkriegdc.xml</filename>
+		<filename>fi_blitzkriegdc</filename>
 		<title>Blitzkrieg D.C.</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1291,7 +1291,7 @@
 		<w>3%</w>
 	</map>
 	<map>
-		<filename>fi_blitzkriegmanhattan.xml</filename>
+		<filename>fi_blitzkriegmanhattan</filename>
 		<title>Blitzkrieg Manhattan</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1302,7 +1302,7 @@
 		<b>18%</b>
 	</map>
 	<map>
-		<filename>fi_gargoylefacility.xml</filename>
+		<filename>fi_gargoylefacility</filename>
 		<title>Grey Gargoyle Holding Facility</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1316,7 +1316,7 @@
 		<w>3%</w>
 	</map>
 	<map>
-		<filename>fi_svartalfheim.xml</filename>
+		<filename>fi_svartalfheim</filename>
 		<title>Svartalfheim</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1329,7 +1329,7 @@
 		<s>5%</s>
 	</map>
 	<map>
-		<filename>fi_botsfortress.xml</filename>
+		<filename>fi_botsfortress</filename>
 		<title>Book of the Skull Fortress</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1343,7 +1343,7 @@
 		<s>4%</s>
 	</map>
 	<map>
-		<filename>fi_theraft.xml</filename>
+		<filename>fi_theraft</filename>
 		<title>The Raft</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1356,7 +1356,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>fi_botsantarctica.xml</filename>
+		<filename>fi_botsantarctica</filename>
 		<title>Book of the Skull Fortress (Antarctica)</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1370,7 +1370,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>fi_paris.xml</filename>
+		<filename>fi_paris</filename>
 		<title>Paris</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1384,7 +1384,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>fi_yancystreet.xml</filename>
+		<filename>fi_yancystreet</filename>
 		<title>NYC: Yancy Street</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1396,7 +1396,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>fi_southafrica.xml</filename>
+		<filename>fi_southafrica</filename>
 		<title>South Africa</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1409,7 +1409,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>fi_broxtonok.xml</filename>
+		<filename>fi_broxtonok</filename>
 		<title>Broxton, OK</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1420,7 +1420,7 @@
 		<b>7%</b>
 	</map>
 	<map>
-		<filename>fi_china.xml</filename>
+		<filename>fi_china</filename>
 		<title>China</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1433,7 +1433,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>fi_fallenasgard.xml</filename>
+		<filename>fi_fallenasgard</filename>
 		<title>Fallen Asgard</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1446,7 +1446,7 @@
 		<s>7%</s>
 	</map>
 	<map>
-		<filename>fi_pacificocean.xml</filename>
+		<filename>fi_pacificocean</filename>
 		<title>Pacific Ocean</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1460,7 +1460,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>fi_brazil.xml</filename>
+		<filename>fi_brazil</filename>
 		<title>Brazil</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1474,7 +1474,7 @@
 		<s>2%</s>
 	</map>
 	<map>
-		<filename>fi_darkasgard.xml</filename>
+		<filename>fi_darkasgard</filename>
 		<title>Dark Asgard</title>
 		<set>Fear Itself</set>
 		<universe>Marvel</universe>
@@ -1486,7 +1486,7 @@
 		<wall>7%</wall>
 	</map>
 	<map>
-		<filename>fotr_weathertop.xml</filename>
+		<filename>fotr_weathertop</filename>
 		<title>Weathertop</title>
 		<set>Fellowship of the Ring</set>
 		<universe>LotR</universe>
@@ -1498,7 +1498,7 @@
 		<e>2%</e>
 	</map>
 	<map>
-		<filename>fotr_bagend.xml</filename>
+		<filename>fotr_bagend</filename>
 		<title>Bag End</title>
 		<set>Fellowship of the Ring</set>
 		<universe>LotR</universe>
@@ -1509,7 +1509,7 @@
 		<b>21%</b>
 	</map>
 	<map>
-		<filename>fotr_amonhen.xml</filename>
+		<filename>fotr_amonhen</filename>
 		<title>Amon Hen</title>
 		<set>Fellowship of the Ring</set>
 		<universe>LotR</universe>
@@ -1522,7 +1522,7 @@
 		<w>4%</w>
 	</map>
 	<map>
-		<filename>fotr_lothlorien.xml</filename>
+		<filename>fotr_lothlorien</filename>
 		<title>Lothlorien</title>
 		<set>Fellowship of the Ring</set>
 		<universe>LotR</universe>
@@ -1536,7 +1536,7 @@
 		<s>4%</s>
 	</map>
 	<map>
-		<filename>bsi_columbia.xml</filename>
+		<filename>bsi_columbia</filename>
 		<title>Columbia</title>
 		<set>BioShock: Infinite</set>
 		<universe>Other</universe>
@@ -1549,7 +1549,7 @@
 		<s>17%</s>
 	</map>
 	<map>
-		<filename>bsi_founderspavilion.xml</filename>
+		<filename>bsi_founderspavilion</filename>
 		<title>Founders' Pavilion</title>
 		<set>BioShock: Infinite</set>
 		<universe>Other</universe>
@@ -1561,7 +1561,7 @@
 		<e>19%</e>		
 	</map>
 	<map>
-		<filename>wxm_dangerroom.xml</filename>
+		<filename>wxm_dangerroom</filename>
 		<title>Danger Room</title>
 		<set>Wolverine and the X-Men</set>
 		<universe>Marvel</universe>
@@ -1575,7 +1575,7 @@
 		<w>2%</w>
 	</map>
 	<map>
-		<filename>wxm_canadianwilderness.xml</filename>
+		<filename>wxm_canadianwilderness</filename>
 		<title>Canadian Wilderness</title>
 		<set>Wolverine and the X-Men</set>
 		<universe>Marvel</universe>
@@ -1588,7 +1588,7 @@
 		<w>7%</w>
 	</map>
 	<map>
-		<filename>stt3_battlesector001.xml</filename>
+		<filename>stt3_battlesector001</filename>
 		<title>The Battle of Sector 001</title>
 		<set>Star Trek Tactics III</set>
 		<universe>StarTrek</universe>
@@ -1599,7 +1599,7 @@
 		<b>9%</b>		
 	</map>
 	<map>
-		<filename>stt3_tsiolkovsky.xml</filename>
+		<filename>stt3_tsiolkovsky</filename>
 		<title>Tsiolkovsky's Comet</title>
 		<set>Star Trek Tactics III</set>
 		<universe>StarTrek</universe>
@@ -1610,7 +1610,7 @@
 		<s>31%</s>		
 	</map>
 	<map>
-		<filename>stt3_delphicexpanse.xml</filename>
+		<filename>stt3_delphicexpanse</filename>
 		<title>Delphic Expanse</title>
 		<set>Star Trek Tactics III</set>
 		<universe>StarTrek</universe>
@@ -1620,7 +1620,7 @@
 		<s>31%</s>		
 	</map>
 	<map>
-		<filename>stt3_blackhole.xml</filename>
+		<filename>stt3_blackhole</filename>
 		<title>Black Hole</title>
 		<set>Star Trek Tactics III</set>
 		<universe>StarTrek</universe>
@@ -1631,7 +1631,7 @@
 		<s>21%</s>		
 	</map>
 	<map>
-		<filename>t2t_fangornforest.xml</filename>
+		<filename>t2t_fangornforest</filename>
 		<title>Fangorn Forest</title>
 		<set>The Two Towers</set>
 		<universe>LotR</universe>
@@ -1643,7 +1643,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>t2t_edoras.xml</filename>
+		<filename>t2t_edoras</filename>
 		<title>Edoras</title>
 		<set>The Two Towers</set>
 		<universe>LotR</universe>
@@ -1656,7 +1656,7 @@
 		<i>40%</i>
 	</map>
 	<map>
-		<filename>t2t_isengard.xml</filename>
+		<filename>t2t_isengard</filename>
 		<title>Isengard</title>
 		<set>The Two Towers</set>
 		<universe>LotR</universe>
@@ -1669,7 +1669,7 @@
 		<w>6%</w>
 	</map>
 	<map>
-		<filename>t2t_forbiddenpool.xml</filename>
+		<filename>t2t_forbiddenpool</filename>
 		<title>Forbidden Pool</title>
 		<set>The Two Towers</set>
 		<universe>LotR</universe>
@@ -1683,7 +1683,7 @@
 		<s>24%</s>
 	</map>
 	<map>
-		<filename>iim_avengersisland.xml</filename>
+		<filename>iim_avengersisland</filename>
 		<title>Avengers Island</title>
 		<set>Invincible Iron Man</set>
 		<universe>Marvel</universe>
@@ -1698,7 +1698,7 @@
 		<i>31%</i>
 	</map>
 	<map>
-		<filename>iim_officebuilding.xml</filename>
+		<filename>iim_officebuilding</filename>
 		<title>Office Building</title>
 		<set>Invincible Iron Man</set>
 		<universe>Marvel</universe>
@@ -1711,7 +1711,7 @@
 		<s>2%</s>
 	</map>
 	<map>
-		<filename>avx_avengerstower.xml</filename>
+		<filename>avx_avengerstower</filename>
 		<title>Avengers Tower</title>
 		<set>Avengers vs. X-Men</set>
 		<universe>Marvel</universe>
@@ -1724,7 +1724,7 @@
 		<w>2%</w>
 	</map>
 	<map>
-		<filename>avx_utopiawest.xml</filename>
+		<filename>avx_utopiawest</filename>
 		<title>Utopia: West</title>
 		<set>Avengers vs. X-Men</set>
 		<universe>Marvel</universe>
@@ -1737,7 +1737,7 @@
 		<w>18%</w>
 	</map>
 	<map>
-		<filename>avx_utopia.xml</filename>
+		<filename>avx_utopia</filename>
 		<title>Utopia</title>
 		<set>Avengers vs. X-Men</set>
 		<universe>Marvel</universe>
@@ -1749,7 +1749,7 @@
 		<wall>9%</wall>
 	</map>
 	<map>
-		<filename>avx_utopiaeast.xml</filename>
+		<filename>avx_utopiaeast</filename>
 		<title>Utopia: East</title>
 		<set>Avengers vs. X-Men</set>
 		<universe>Marvel</universe>
@@ -1762,7 +1762,7 @@
 		<w>21%</w>
 	</map>
 	<map>
-		<filename>avx_wundagore.xml</filename>
+		<filename>avx_wundagore</filename>
 		<title>Wundagore Mountain</title>
 		<set>Avengers vs. X-Men</set>
 		<universe>Marvel</universe>
@@ -1774,7 +1774,7 @@
 		<e>54%</e>
 	</map>
 	<map>
-		<filename>avx_savageland.xml</filename>
+		<filename>avx_savageland</filename>
 		<title>Savage Land</title>
 		<set>Avengers vs. X-Men</set>
 		<universe>Marvel</universe>
@@ -1786,7 +1786,7 @@
 		<w>24%</w>
 	</map>
 	<map>
-		<filename>avx_latveria.xml</filename>
+		<filename>avx_latveria</filename>
 		<title>Latveria</title>
 		<set>Avengers vs. X-Men</set>
 		<universe>Marvel</universe>
@@ -1799,7 +1799,7 @@
 		<w>3%</w>
 	</map>
 	<map>
-		<filename>avx_wakanda.xml</filename>
+		<filename>avx_wakanda</filename>
 		<title>Flooded Wakanda</title>
 		<set>Avengers vs. X-Men</set>
 		<universe>Marvel</universe>
@@ -1812,7 +1812,7 @@
 		<w>54%</w>
 	</map>
 	<map>
-		<filename>avx_limbo.xml</filename>
+		<filename>avx_limbo</filename>
 		<title>Limbo</title>
 		<set>Avengers vs. X-Men</set>
 		<universe>Marvel</universe>
@@ -1825,7 +1825,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>avx_verkhoyansk.xml</filename>
+		<filename>avx_verkhoyansk</filename>
 		<title>Verkhoyansk Mountains</title>
 		<set>Avengers vs. X-Men</set>
 		<universe>Marvel</universe>
@@ -1836,7 +1836,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>avx_surfacemoon.xml</filename>
+		<filename>avx_surfacemoon</filename>
 		<title>Surface of the Moon</title>
 		<set>Avengers vs. X-Men</set>
 		<universe>Marvel</universe>
@@ -1848,7 +1848,7 @@
 		<e>80%</e>
 	</map>
 	<map>
-		<filename>avx_kunlun.xml</filename>
+		<filename>avx_kunlun</filename>
 		<title>K'un L'un</title>
 		<set>Avengers vs. X-Men</set>
 		<universe>Marvel</universe>
@@ -1862,7 +1862,7 @@
 		<w>1%</w>
 	</map>
 	<map>
-		<filename>slosh_legionplaza.xml</filename>
+		<filename>slosh_legionplaza</filename>
 		<title>Legion Plaza</title>
 		<set>Superman and the Legion of Super-Heroes</set>
 		<universe>DC</universe>
@@ -1874,7 +1874,7 @@
 		<e>16%</e>
 	</map>
 	<map>
-		<filename>slosh_apokalips.xml</filename>
+		<filename>slosh_apokalips</filename>
 		<title>Apokalips</title>
 		<set>Superman and the Legion of Super-Heroes</set>
 		<universe>DC</universe>
@@ -1887,7 +1887,7 @@
 		<s>13%</s>
 	</map>
 	<map>
-		<filename>dofp_southbronx.xml</filename>
+		<filename>dofp_southbronx</filename>
 		<title>South Bronx Mutant Internment Center</title>
 		<set>Days of Future Past</set>
 		<universe>Marvel</universe>
@@ -1899,7 +1899,7 @@
 		<e>16%</e>
 	</map>
 	<map>
-		<filename>dofp_baxterbuilding.xml</filename>
+		<filename>dofp_baxterbuilding</filename>
 		<title>Baxter Building / Sentinel HQ</title>
 		<set>Days of Future Past</set>
 		<universe>Marvel</universe>
@@ -1911,7 +1911,7 @@
 		<wall>10%</wall>
 	</map>
 	<map>
-		<filename>ao_streetbattle.xml</filename>
+		<filename>ao_streetbattle</filename>
 		<title>Street Battle</title>
 		<set>Arkham Origins Quick-Start</set>
 		<universe>DC</universe>
@@ -1921,7 +1921,7 @@
 		<h>9%</h>
 	</map>
 	<map>
-		<filename>dp_hellhouse.xml</filename>
+		<filename>dp_hellhouse</filename>
 		<title>Hellhouse</title>
 		<set>Deadpool</set>
 		<universe>Marvel</universe>
@@ -1934,7 +1934,7 @@
 		<i>67%</i>
 	</map>
 	<map>
-		<filename>dp_deadpoolshouse.xml</filename>
+		<filename>dp_deadpoolshouse</filename>
 		<title>Deadpool's House</title>
 		<set>Deadpool</set>
 		<universe>Marvel</universe>
@@ -1946,7 +1946,7 @@
 		<wall>10%</wall>
 	</map>
 	<map>
-		<filename>dp_mall.xml</filename>
+		<filename>dp_mall</filename>
 		<title>The Mall</title>
 		<set>Deadpool</set>
 		<universe>Marvel</universe>
@@ -1959,7 +1959,7 @@
 		<i>78%</i>
 	</map>
 	<map>
-		<filename>dp_thunderboltssub.xml</filename>
+		<filename>dp_thunderboltssub</filename>
 		<title>Thunderbolts' Submarine</title>
 		<set>Deadpool</set>
 		<universe>Marvel</universe>
@@ -1972,7 +1972,7 @@
 		<s>38%</s>
 	</map>
 	<map>
-		<filename>wol_oabatteryplaza.xml</filename>
+		<filename>wol_oabatteryplaza</filename>
 		<title>Oa Central Battery Plaza</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -1985,7 +1985,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>wol_ranx.xml</filename>
+		<filename>wol_ranx</filename>
 		<title>Ranx</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -1997,7 +1997,7 @@
 		<s>4%</s>
 	</map>
 	<map>
-		<filename>wol_okaaratemple.xml</filename>
+		<filename>wol_okaaratemple</filename>
 		<title>Okaara Temple</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -2010,7 +2010,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>wol_coastcity.xml</filename>
+		<filename>wol_coastcity</filename>
 		<title>Coast City</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -2023,7 +2023,7 @@
 		<w>2%</w>
 	</map>
 	<map>
-		<filename>wol_oabigw.xml</filename>
+		<filename>wol_oabigw</filename>
 		<title>Oa: The Big W</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -2035,7 +2035,7 @@
 		<i>63%</i>
 	</map>
 	<map>
-		<filename>wol_qwardarmory.xml</filename>
+		<filename>wol_qwardarmory</filename>
 		<title>Qward Armory and Forge</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -2047,7 +2047,7 @@
 		<e>57%</e>
 	</map>
 	<map>
-		<filename>wol_odym.xml</filename>
+		<filename>wol_odym</filename>
 		<title>Odym</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -2060,7 +2060,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>wol_space.xml</filename>
+		<filename>wol_space</filename>
 		<title>Space</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -2070,7 +2070,7 @@
 		<e>42%</e>
 	</map>
 	<map>
-		<filename>wol_blackmercy.xml</filename>
+		<filename>wol_blackmercy</filename>
 		<title>Black Mercy Garden</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -2081,7 +2081,7 @@
 		<s>45%</s>
 	</map>
 	<map>
-		<filename>wol_ysmault.xml</filename>
+		<filename>wol_ysmault</filename>
 		<title>Ysmault</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -2095,7 +2095,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>wol_nok.xml</filename>
+		<filename>wol_nok</filename>
 		<title>Nok</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -2108,7 +2108,7 @@
 		<s>32%</s>
 	</map>
 	<map>
-		<filename>wol_korugar.xml</filename>
+		<filename>wol_korugar</filename>
 		<title>Korugar</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -2120,7 +2120,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>wol_zamaron.xml</filename>
+		<filename>wol_zamaron</filename>
 		<title>Zamaron</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -2133,7 +2133,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>wol_ryut.xml</filename>
+		<filename>wol_ryut</filename>
 		<title>Ryut</title>
 		<set>War of Light</set>
 		<universe>DC</universe>
@@ -2145,7 +2145,7 @@
 		<s>1%</s>
 	</map>
 	<map>
-		<filename>gotg_titan.xml</filename>
+		<filename>gotg_titan</filename>
 		<title>Titan</title>
 		<set>Guardians of the Galaxy</set>
 		<universe>Marvel</universe>
@@ -2159,7 +2159,7 @@
 		<i>34%</i>
 	</map>
 	<map>
-		<filename>gotg_starlordsship.xml</filename>
+		<filename>gotg_starlordsship</filename>
 		<title>Star-Lord's Ship</title>
 		<set>Guardians of the Galaxy</set>
 		<universe>Marvel</universe>
@@ -2173,7 +2173,7 @@
 		<s>13%</s>
 	</map>
 	<map>
-		<filename>gotg_attilanocean.xml</filename>
+		<filename>gotg_attilanocean</filename>
 		<title>Attilan: North Atlantic Ocean</title>
 		<set>Guardians of the Galaxy</set>
 		<universe>Marvel</universe>
@@ -2184,7 +2184,7 @@
 		<w>34%</w>
 	</map>
 	<map>
-		<filename>gotg_attilanbluemoon.xml</filename>
+		<filename>gotg_attilanbluemoon</filename>
 		<title>Attilan: Blue Area of the Moon</title>
 		<set>Guardians of the Galaxy</set>
 		<universe>Marvel</universe>
@@ -2195,7 +2195,7 @@
 		<e>22%</e>
 	</map>
 	<map>
-		<filename>fl_centralcity.xml</filename>
+		<filename>fl_centralcity</filename>
 		<title>Central City</title>
 		<set>The Flash</set>
 		<universe>DC</universe>
@@ -2208,7 +2208,7 @@
 		<w>14%</w>
 	</map>
 	<map>
-		<filename>fl_keystonecity.xml</filename>
+		<filename>fl_keystonecity</filename>
 		<title>Keystone City</title>
 		<set>The Flash</set>
 		<universe>DC</universe>
