@@ -133,7 +133,7 @@
 				<column>
 					<cell row='2' col='D'>
 						<terrain>clear</terrain>
-						<elevated>1</elevated>
+						<elevated>2</elevated>
 					</cell>
 				</column>
 				<column>

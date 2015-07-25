@@ -14,6 +14,18 @@
 		<w>3%</w>
 	</map>
 	<map>
+		<filename>icon_axischemicals</filename>
+		<title>Axis Chemicals</title>
+		<set>Icons</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>24x24</size>
+		<age>Golden</age>
+		<h>5%</h>
+		<wall>6%</wall>
+		<w>6%</w>
+	</map>
+	<map>
 		<filename>aw_lab</filename>
 		<title>The Lab</title>
 		<set>Armor Wars</set>
@@ -160,6 +172,32 @@
 		<i>26%</i>
 	</map>
 	<map>
+		<filename>losh_smalltown</filename>
+		<title>Small Town</title>
+		<set>Legion of Super-Heroes</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>24x24</size>
+		<age>Golden</age>
+		<h>6%</h>
+		<b>3%</b>
+		<e>27%</e>
+	</map>
+	<map>
+		<filename>losh_centralport</filename>
+		<title>Central Port</title>
+		<set>Legion of Super-Heroes</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>24x24</size>
+		<age>Golden</age>
+		<h>2%</h>
+		<b>3%</b>
+		<wall>2%</wall>
+		<e>53%</e>
+		<s>1%</s>
+	</map>
+	<map>
 		<filename>av_airbase</filename>
 		<title>Airbase</title>
 		<set>Avengers</set>
@@ -172,6 +210,17 @@
 		<e>4%</e>
 	</map>
 	<map>
+		<filename>av_rooftops</filename>
+		<title>Rooftops</title>
+		<set>Avengers</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>24x24</size>
+		<age>Golden</age>
+		<b>1%</b>
+		<s>51%</s>
+	</map>
+	<map>
 		<filename>jl_bank</filename>
 		<title>The Bank</title>
 		<set>Justice League</set>
@@ -182,6 +231,18 @@
 		<h>12%</h>
 		<b>5%</b>
 		<wall>5%</wall>
+	</map>
+	<map>
+		<filename>jl_docklands</filename>
+		<title>Docklands</title>
+		<set>Justice League</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>24x24</size>
+		<age>Golden</age>
+		<h>6%</h>
+		<e>14%</e>
+		<w>32%</w>
 	</map>
 	<map>
 		<filename>mumo_arena</filename>
@@ -205,6 +266,31 @@
 		<h>17%</h>
 		<b>6%</b>
 		<e>4%</e>
+	</map>
+	<map>
+		<filename>cr_dawnofman</filename>
+		<title>Dawn of Man</title>
+		<set>Crisis</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>24x24</size>
+		<age>Golden</age>
+		<h>16%</h>
+		<b>1%</b>
+		<e>3%</e>
+		<w>10%</w>
+		<s>69%</s>
+	</map>
+	<map>
+		<filename>cr_antimatterfortress</filename>
+		<title>Anti-Matter Fortress</title>
+		<set>Crisis</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>24x24</size>
+		<age>Golden</age>
+		<h>1%</h>
+		<b>24%</b>
 	</map>
 	<map>
 		<filename>f4_castledoom</filename>
@@ -290,6 +376,44 @@
 		<h>9%</h>
 		<wall>20%</wall>
 		<s>3%</s>
+	</map>
+	<map>
+		<filename>wm_mars</filename>
+		<title>Mars</title>
+		<set>Watchmen</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<e>14%</e>
+		<s>14%</s>
+	</map>
+	<map>
+		<filename>wm_karnak</filename>
+		<title>Karnak</title>
+		<set>Watchmen</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>4%</h>
+		<b>14%</b>
+		<wall>3%</wall>
+		<e>32%</e>
+		<w>4%</w>
+		<s>2%</s>
+	</map>
+	<map>
+		<filename>wm_drmanhattanslab</filename>
+		<title>Dr. Manhattan's Lab</title>
+		<set>Watchmen</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>5%</h>
+		<b>12%</b>
+		<e>37%</e>
 	</map>
 	<map>
 		<filename>wos_bridge</filename>
@@ -566,6 +690,18 @@
 		<w>3%</w>
 	</map>
 	<map>
+		<filename>sm_farm</filename>
+		<title>The Farm</title>
+		<set>Superman</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>19%</h>
+		<b>4%</b>
+		<e>16%</e>
+	</map>
+	<map>
 		<filename>sm_bizarroworld</filename>
 		<title>Bizarro World</title>
 		<set>Superman</set>
@@ -604,6 +740,20 @@
 		<w>4%</w>
 	</map>
 	<map>
+		<filename>ih_gammabase</filename>
+		<title>Gamma Base</title>
+		<set>Incredible Hulk</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>10%</h>
+		<b>3%</b>
+		<wall>12%</wall>
+		<e>9%</e>
+		<i>17%</i>
+	</map>
+	<map>
 		<filename>ih_sakaar</filename>
 		<title>Sakaar</title>
 		<set>Incredible Hulk</set>
@@ -627,6 +777,71 @@
 		<h>7%</h>
 		<b>5%</b>
 		<e>13%</e>
+	</map>
+	<map>
+		<filename>lotr_minesmoria</filename>
+		<title>The Mines of Moria</title>
+		<set>Lord of the Rings</set>
+		<universe>LotR</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>5%</h>
+		<b>18%</b>
+		<e>10%</e>
+	</map>
+	<map>
+		<filename>lotr_helmsdeep</filename>
+		<title>Helm's Deep</title>
+		<set>Lord of the Rings</set>
+		<universe>LotR</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>1%</h>
+		<b>9%</b>
+		<e>46%</e>
+		<w>2%</w>
+		<s>2%</s>
+	</map>
+	<map>
+		<filename>lotr_minastirith</filename>
+		<title>Minas Tirith</title>
+		<set>Lord of the Rings</set>
+		<universe>LotR</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>3%</h>
+		<b>8%</b>
+		<e>23%</e>
+		<s>15%</s>
+	</map>
+	<map>
+		<filename>lotr_pelennorfields</filename>
+		<title>Pelennor Fields</title>
+		<set>Lord of the Rings</set>
+		<universe>LotR</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>5%</h>
+		<b>6%</b>
+		<e>4%</e>
+		<w>6%</w>
+		<s>3%</s>
+	</map>
+	<map>
+		<filename>lotr_helmsdike</filename>
+		<title>Helm's Dike</title>
+		<set>Lord of the Rings</set>
+		<universe>LotR</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>7%</h>
+		<b>5%</b>
+		<e>2%</e>
 	</map>
 	<map>
 		<filename>stt_ds9</filename>
@@ -670,6 +885,28 @@
 		<size>16x24</size>
 		<age>Golden</age>
 		<h>18%</h>
+	</map>
+	<map>
+		<filename>stt_borgtranswarp</filename>
+		<title>Borg Transwarp Hub</title>
+		<set>Star Trek Tactics</set>
+		<universe>StarTrek</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<b>21%</b>
+		<s>5%</s>
+	</map>
+	<map>
+		<filename>stt_qonos</filename>
+		<title>Qo'nos</title>
+		<set>Star Trek Tactics</set>
+		<universe>StarTrek</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<b>13%</b>
+		<s>3%</s>
 	</map>
 	<map>
 		<filename>gg_blueareamoon</filename>
@@ -878,6 +1115,45 @@
 		<e>95%</e>
 	</map>
 	<map>
+		<filename>gsx_starcore</filename>
+		<title>Starcore Space Station</title>
+		<set>Giant Size X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>10%</h>
+		<b>9%</b>
+		<wall>14%</wall>
+		<e>85%</e>
+	</map>
+	<map>
+		<filename>dkr_arkham</filename>
+		<title>Arkham Asylum</title>
+		<set>The Dark Knight Rises</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>11%</h>
+		<b>1%</b>
+		<wall>13%</wall>
+		<e>69%</e>
+		<w>2%</w>
+	</map>
+		<map>
+		<filename>dkr_gothambank</filename>
+		<title>Gotham Bank</title>
+		<set>The Dark Knight Rises</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>13%</h>
+		<b>2%</b>
+		<wall>12%</wall>
+	</map>
+	<map>
 		<filename>cw_negativezone</filename>
 		<title>Negative Zone Prison</title>
 		<set>Chaos War</set>
@@ -900,6 +1176,31 @@
 		<h>16%</h>
 		<b>8%</b>
 		<e>19%</e>
+	</map>
+	<map>
+		<filename>cw_europeancastle</filename>
+		<title>European Castle</title>
+		<set>Chaos War</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>2%</h>
+		<b>3%</b>
+		<e>58%</e>
+		<w>1%</w>
+	</map>
+	<map>
+		<filename>cw_quinjethangar</filename>
+		<title>Quinjet Hangar</title>
+		<set>Chaos War</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>6%</h>
+		<b>21%</b>
+		<e>15%</e>
 	</map>
 	<map>
 		<filename>jl52_rooftops</filename>
@@ -984,6 +1285,57 @@
 		<e>69%</e>
 		<w>8%</w>
 		<i>17%</i>
+	</map>
+	<map>
+		<filename>hauj_goblinhalls</filename>
+		<title>Goblin Halls</title>
+		<set>The Hobbit: An Unexpected Journey</set>
+		<universe>LotR</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>2%</h>
+		<b>17%</b>
+		<wall>1%</wall>
+		<w>2%</w>
+	</map>
+	<map>
+		<filename>hauj_gollumscavern</filename>
+		<title>Gollum's Cavern</title>
+		<set>The Hobbit: An Unexpected Journey</set>
+		<universe>LotR</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>3%</h>
+		<b>17%</b>
+		<w>17%</w>
+	</map>
+	<map>
+		<filename>hauj_rivendell</filename>
+		<title>Rivendell</title>
+		<set>The Hobbit: An Unexpected Journey</set>
+		<universe>LotR</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>5%</h>
+		<b>6%</b>
+		<wall>3%</wall>
+		<e>60%</e>
+		<w>7%</w>
+	</map>
+	<map>
+		<filename>hauj_trollcamp</filename>
+		<title>Stone Troll Camp</title>
+		<set>The Hobbit: An Unexpected Journey</set>
+		<universe>LotR</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>13%</h>
+		<b>3%</b>
+		<e>27%</e>
 	</map>
 	<map>
 		<filename>nml_blackgatepre</filename>
@@ -1179,6 +1531,84 @@
 		<s>2%</s>
 	</map>
 	<map>
+		<filename>sog_clocktower</filename>
+		<title>Clock Tower</title>
+		<set>Streets of Gotham</set>
+		<universe>DC</universe>
+		<inout>Indoor/Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>5%</h>
+		<b>4%</b>
+		<wall>5%</wall>
+		<e>22%</e>
+		<s>14%</s>
+		<i>47%</i>
+	</map>
+	<map>
+		<filename>sog_crimealley</filename>
+		<title>Crime Alley</title>
+		<set>Streets of Gotham</set>
+		<universe>DC</universe>
+		<inout>Indoor/Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>14%</h>
+		<b>1%</b>
+		<wall>8%</wall>
+		<e>12%</e>
+		<i>35%</i>
+	</map>
+	<map>
+		<filename>stt2_badlands</filename>
+		<title>Badlands</title>
+		<set>Star Trek Tactics II</set>
+		<universe>StarTrek</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>5%</h>
+		<b>7%</b>
+		<s>2%</s>
+	</map>
+	<map>
+		<filename>stt2_doomsday</filename>
+		<title>Doomsday</title>
+		<set>Star Trek Tactics II</set>
+		<universe>StarTrek</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>4%</h>
+		<b>6%</b>
+		<s>5%</s>
+	</map>
+	<map>
+		<filename>stt2_sectorz6</filename>
+		<title>Sector Z6</title>
+		<set>Star Trek Tactics II</set>
+		<universe>StarTrek</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>1%</h>
+		<b>6%</b>
+		<s>50%</s>
+	</map>
+	<map>
+		<filename>stt2_spacedock</filename>
+		<title>Spacedock</title>
+		<set>Star Trek Tactics II</set>
+		<universe>StarTrek</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>35%</h>
+		<b>1%</b>
+		<e>5%</e>
+		<s>3%</s>
+	</map>
+	<map>
 		<filename>stt2_delphiardu</filename>
 		<title>Delphi Ardu</title>
 		<set>Star Trek Tactics II</set>
@@ -1276,6 +1706,56 @@
 		<b>4%</b>
 		<e>14%</e>
 		<s>13%</s>
+	</map>
+	<map>
+		<filename>tt_towergrounds</filename>
+		<title>Teen Titans Tower Grounds</title>
+		<set>Teen Titans</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>25%</h>
+		<b>7%</b>
+		<e>71%</e>
+	</map>
+	<map>
+		<filename>tt_nowherearcticbase</filename>
+		<title>N.O.W.H.E.R.E. Arctic Base</title>
+		<set>Teen Titans</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>10%</h>
+		<b>1%</b>
+		<wall>13%</wall>
+		<e>3%</e>
+	</map>
+	<map>
+		<filename>mos_metropolis</filename>
+		<title>Metropolis</title>
+		<set>Man of Steel</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>5%</h>
+		<b>3%</b>
+		<e>3%</e>
+		<w>4%</w>
+	</map>
+	<map>
+		<filename>mos_smallville</filename>
+		<title>Smallville</title>
+		<set>Man of Steel</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>10%</h>
+		<b>1%</b>
+		<e>34%</e>
 	</map>
 	<map>
 		<filename>fi_blitzkriegdc</filename>
@@ -1561,6 +2041,33 @@
 		<e>19%</e>		
 	</map>
 	<map>
+		<filename>ka2_justiceforeverhq</filename>
+		<title>Justice Forever Headquarters</title>
+		<set>Kick-Ass 2</set>
+		<universe>Other</universe>
+		<inout>Indoor/Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>12%</h>
+		<b>4%</b>
+		<wall>5%</wall>
+		<e>54%</e>		
+		<i>69%</i>
+	</map>
+	<map>
+		<filename>ka2_evillair</filename>
+		<title>Evil Lair</title>
+		<set>Kick-Ass 2</set>
+		<universe>Other</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>6%</h>
+		<b>4%</b>
+		<e>21%</e>		
+		<w>11%</w>
+	</map>
+	<map>
 		<filename>wxm_dangerroom</filename>
 		<title>Danger Room</title>
 		<set>Wolverine and the X-Men</set>
@@ -1586,6 +2093,31 @@
 		<b>2%</b>
 		<e>45%</e>
 		<w>7%</w>
+	</map>
+		<map>
+		<filename>tdw_svartalfheim</filename>
+		<title>Svartalfheim</title>
+		<set>Thor: The Dark World</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>5%</h>
+		<b>13%</b>
+		<e>26%</e>
+	</map>
+		<map>
+		<filename>tdw_royalacademy</filename>
+		<title>Royal Naval Academy</title>
+		<set>Thor: The Dark World</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>7%</h>
+		<b>6%</b>
+		<e>53%</e>
+		<s>1%</s>
 	</map>
 	<map>
 		<filename>stt3_battlesector001</filename>
@@ -1681,6 +2213,144 @@
 		<e>35%</e>
 		<w>28%</w>
 		<s>24%</s>
+	</map>
+	<map>
+		<filename>mkr_crackstonecamp</filename>
+		<title>Crackstone Camp</title>
+		<set>MageKnight: Resurrection</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<b>21%</b>
+		<w>13%</w>
+		<s>2%</s>
+	</map>	
+	<map>
+		<filename>mkr_delphanadomain</filename>
+		<title>Delphana Domain</title>
+		<set>MageKnight: Resurrection</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>19%</h>
+		<wall>11%</wall>
+	</map>
+	<map>
+		<filename>mkr_wyldenwatch</filename>
+		<title>Wylden Watch</title>
+		<set>MageKnight: Resurrection</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>11%</h>
+		<b>5%</b>
+		<e>8%</e>
+		<w>9%</w>
+		<s>3%</s>
+	</map>
+	<map>
+		<filename>mkr_rokosruins</filename>
+		<title>Rokos Ruins</title>
+		<set>MageKnight: Resurrection</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>15%</h>
+		<b>10%</b>
+		<e>7%</e>
+		<w>14%</w>
+		<s>2%</s>
+	</map>
+	<map>
+		<filename>dota_direstarter</filename>
+		<title>Dire Starter</title>
+		<set>DOTA 2 Dire starter</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>24x24</size>
+		<age>Golden</age>
+		<h>16%</h>
+		<b>8%</b>
+		<e>91%</e>
+		<w>9%</w>
+	</map>	
+	<map>
+		<filename>hdos_forestriver</filename>
+		<title>Forest River</title>
+		<set>The Hobbit: The Desolation of Smaug</set>
+		<universe>LotR</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>12%</h>
+		<b>2%</b>
+		<e>22%</e>
+		<w>17%</w>
+	</map>
+	<map>
+		<filename>hdos_laketown</filename>
+		<title>Lake-town</title>
+		<set>The Hobbit: The Desolation of Smaug</set>
+		<universe>LotR</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>6%</h>
+		<b>2%</b>
+		<e>26%</e>
+		<w>41%</w>
+	</map>
+	<map>
+		<filename>hdos_housebeorn</filename>
+		<title>House of Beorn</title>
+		<set>The Hobbit: The Desolation of Smaug</set>
+		<universe>LotR</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>13%</h>
+		<b>19%</b>
+	</map>
+	<map>
+		<filename>hdos_lairsmaug</filename>
+		<title>Lair of Smaug</title>
+		<set>The Hobbit: The Desolation of Smaug</set>
+		<universe>LotR</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<b>14%</b>
+		<e>50%</e>
+		<s>8%</s>
+	</map>
+	<map>
+		<filename>hdos_spiderrealm</filename>
+		<title>Mirkwood: Spider Realm</title>
+		<set>The Hobbit: The Desolation of Smaug</set>
+		<universe>LotR</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>5%</h>
+		<b>32%</b>
+		<w>1%</w>
+	</map>
+	<map>
+		<filename>hdos_elvenkingdom</filename>
+		<title>Mirkwood Elven Kingdom</title>
+		<set>The Hobbit: The Desolation of Smaug</set>
+		<universe>LotR</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Golden</age>
+		<h>12%</h>
+		<b>5%</b>
+		<wall>2%</wall>
+		<e>29%</e>
 	</map>
 	<map>
 		<filename>iim_avengersisland</filename>
@@ -1862,6 +2532,50 @@
 		<w>1%</w>
 	</map>
 	<map>
+		<filename>ygo_duelistforest</filename>
+		<title>Duelist Kingdom: Forest</title>
+		<set>Yu-Gi-Oh! Series 1</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>23%</h>
+		<b>2%</b>
+	</map>
+	<map>
+		<filename>ygo_pegasuscastle</filename>
+		<title>Pegasus Castle</title>
+		<set>Yu-Gi-Oh! Series 1</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>2%</h>
+		<b>11%</b>
+		<e>83%</e>
+	</map>
+	<map>
+		<filename>ygo_duelistwater</filename>
+		<title>Duelist Kingdom: Water</title>
+		<set>Yu-Gi-Oh! Series 1</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<w>56%</w>
+	</map>
+	<map>
+		<filename>ygo_cavernlostsouls</filename>
+		<title>The Cavern of Lost Souls</title>
+		<set>Yu-Gi-Oh! Series 1</set>
+		<universe>Other</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>3%</h>
+		<b>20%</b>
+	</map>
+	<map>
 		<filename>slosh_legionplaza</filename>
 		<title>Legion Plaza</title>
 		<set>Superman and the Legion of Super-Heroes</set>
@@ -1885,6 +2599,59 @@
 		<b>4%</b>
 		<e>69%</e>
 		<s>13%</s>
+	</map>
+	<map>
+		<filename>slosh_hallofdoom</filename>
+		<title>Hall of Doom</title>
+		<set>Superman and the Legion of Super-Heroes</set>
+		<universe>DC</universe>
+		<inout>Indoor/Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>11%</h>
+		<b>10%</b>
+		<wall>8%</wall>
+		<e>21%</e>
+		<w>5%</w>
+		<i>94%</i>
+	</map>
+	<map>
+		<filename>slosh_slaughterswamp</filename>
+		<title>Slaughter Swamp</title>
+		<set>Superman and the Legion of Super-Heroes</set>
+		<universe>DC</universe>
+		<inout>Indoor/Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>6%</h>
+		<b>4%</b>
+		<wall>1%</wall>
+		<w>29%</w>
+		<i>13%</i>
+	</map>
+	<map>
+		<filename>tws_triskelion</filename>
+		<title>Triskelion Helibay</title>
+		<set>Captain America: The Winter Soldier</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>7%</h>
+		<b>7%</b>
+		<e>16%</e>
+	</map>
+		<map>
+		<filename>tws_helicarrier</filename>
+		<title>S.H.I.E.L.D. Helicarrier</title>
+		<set>Captain America: The Winter Soldier</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>10%</h>
+		<e>14%</e>
+		<s>21%</s>
 	</map>
 	<map>
 		<filename>dofp_southbronx</filename>
@@ -2145,6 +2912,32 @@
 		<s>1%</s>
 	</map>
 	<map>
+		<filename>gotgm_thekyln</filename>
+		<title>The Kyln</title>
+		<set>Guardians of the Galaxy Movie</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>9%</h>
+		<b>2%</b>
+		<wall>10%</wall>
+		<e>79%</e>
+	</map>
+	<map>
+		<filename>gotgm_novacorpshq</filename>
+		<title>Nova Corps Headquarters</title>
+		<set>Guardians of the Galaxy Movie</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>10%</h>
+		<b>4%</b>
+		<wall>3%</wall>
+		<e>39%</e>
+	</map>
+	<map>
 		<filename>gotg_titan</filename>
 		<title>Titan</title>
 		<set>Guardians of the Galaxy</set>
@@ -2219,5 +3012,243 @@
 		<b>2%</b>
 		<e>85%</e>
 		<w>15%</w>
+	</map>
+	<map>
+		<filename>fl_flashmuseum</filename>
+		<title>The Flash Museum</title>
+		<set>The Flash</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>9%</h>
+		<b>3%</b>
+		<wall>9%</wall>
+		<e>8%</e>
+	</map>
+	<map>
+		<filename>fl_centralcitypark</filename>
+		<title>Central City Park</title>
+		<set>The Flash</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>7%</h>
+		<b>6%</b>
+	</map>
+	<map>
+		<filename>smaf_libertyisland</filename>
+		<title>Liberty Island</title>
+		<set>Spider-Man and His Amazing Friends</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>3%</h>
+		<b>4%</b>
+		<e>40%</e>
+		<w>14%</w>
+		<s>3%</s>
+	</map>
+	<map>
+		<filename>smaf_xaviermansion</filename>
+		<title>Xavier Mansion Grounds</title>
+		<set>Spider-Man and His Amazing Friends</set>
+		<universe>Marvel</universe>
+		<inout>Indoor/Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>9%</h>
+		<b>3%</b>
+		<wall>2%</wall>
+		<w>15%</w>
+		<i>8%</i>
+	</map>
+	<map>
+		<filename>ygo_zeppelin</filename>
+		<title>Zeppelin</title>
+		<set>Yu-Gi-Oh! Series 2</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>1%</h>
+		<b>6%</b>
+		<e>17%</e>
+		<s>20%</s>
+	</map>
+	<map>
+		<filename>ygo_battlecity</filename>
+		<title>Battlecity</title>
+		<set>Yu-Gi-Oh! Series 2</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>13%</h>
+		<b>18%</b>
+	</map>
+	<map>
+		<filename>ygo_pharaohthrone</filename>
+		<title>Pharaoh's Throne Room</title>
+		<set>Yu-Gi-Oh! Battle of the Millennuim</set>
+		<universe>Other</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>2%</h>
+		<b>6%</b>
+		<e>48%</e>
+	</map>
+	<map>
+		<filename>ygo_puzzle</filename>
+		<title>Millennium Puzzle</title>
+		<set>Yu-Gi-Oh! Battle of the Millennuim</set>
+		<universe>Other</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>5%</h>
+		<b>2%</b>
+		<e>76%</e>
+	</map>
+	<map>
+		<filename>ygo_kulelna</filename>
+		<title>Kul Elna</title>
+		<set>Yu-Gi-Oh! Battle of the Millennuim</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<b>28%</b>
+		<e>77%</e>
+	</map>
+	<map>
+		<filename>ygo_egyptriver</filename>
+		<title>Egypt River</title>
+		<set>Yu-Gi-Oh! Battle of the Millennuim</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>4%</h>
+		<e>14%</e>
+		<w>31%</w>
+	</map>	
+	<map>
+		<filename>ygo_brokensphinx</filename>
+		<title>Broken Sphinx</title>
+		<set>Yu-Gi-Oh! Battle of the Millennuim</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<b>23%</b>
+	</map>		
+	<map>
+		<filename>jltw_housemystery</filename>
+		<title>House of Mystery</title>
+		<set>Justice League Trinity War</set>
+		<universe>DC</universe>
+		<inout>Indoor/Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>9%</h>
+		<b>2%</b>
+		<wall>9%</wall>
+		<e>46%</e>
+		<i>75%</i>
+	</map>
+	<map>
+		<filename>jltw_atlantis</filename>
+		<title>Atlantis</title>
+		<set>Justice League Trinity War</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>3%</h>
+		<b>11%</b>
+		<e>52%</e>
+		<w>100%</w>
+	</map>
+	<map>
+		<filename>aoum_struckersfortress</filename>
+		<title>Strucker's Fortress</title>
+		<set>Age of Ultron Movie</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>6%</h>
+		<b>9%</b>
+		<e>43%</e>
+	</map>
+	<map>
+		<filename>aoum_avengerstower</filename>
+		<title>Avengers Tower</title>
+		<set>Age of Ultron Movie</set>
+		<universe>Marvel</universe>
+		<inout>Indoor/Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>16%</h>
+		<b>2%</b>
+		<wall>6%</wall>
+		<e>38%</e>
+		<s>7%</s>
+		<i>63%</i>
+	</map>
+	<map>
+		<filename>avas_arcadesarena</filename>
+		<title>Arcade's Arena</title>
+		<set>Avengers Assemble</set>
+		<universe>Marvel</universe>
+		<inout>Indoor/Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>11%</h>
+		<wall>2%</wall>
+		<w>18%</w>
+		<i>9%</i>
+	</map>
+	<map>
+		<filename>avas_avengerscompound</filename>
+		<title>Avengers Compound</title>
+		<set>Avengers Assemble</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>8%</h>
+		<b>1%</b>
+		<wall>2%</wall>
+		<e>27%</e>
+		<w>7%</w>
+	</map>
+	<map>
+		<filename>aou_hankpymslab</filename>
+		<title>Hank Pym's Lab</title>
+		<set>Age of Ultron</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>9%</h>
+		<b>6%</b>
+		<wall>10%</wall>
+	</map>
+	<map>
+		<filename>aou_thebesegypt</filename>
+		<title>Thebes, Egypt</title>
+		<set>Age of Ultron</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>3%</h>
+		<b>12%</b>
+		<e>20%</e>
 	</map>
 </index>

@@ -54,6 +54,7 @@
 					<cell row='1' col='G'>
 						<terrain>start</terrain>
 						<elevated>1</elevated>
+						<east>start</east>
 					</cell>
 				</column>
 				<column>
@@ -74,6 +75,7 @@
 					<cell row='1' col='J'>
 						<terrain>start</terrain>
 						<elevated>1</elevated>
+						<west>start</west>
 					</cell>
 				</column>
 				<column>
@@ -165,6 +167,7 @@
 					<cell row='2' col='G'>
 						<terrain>start</terrain>
 						<elevated>1</elevated>
+						<east>start</east>
 						<south>start</south>
 					</cell>
 				</column>
@@ -173,7 +176,7 @@
 						<terrain>blocking</terrain>
 						<elevated>1</elevated>
 						<west>blocking</west>
-						<south>start</south>
+						<south>blocking</south>
 					</cell>
 				</column>
 				<column>
@@ -181,13 +184,14 @@
 						<terrain>blocking</terrain>
 						<elevated>2</elevated>
 						<east>blocking</east>
-						<south>start</south>
+						<south>blocking</south>
 					</cell>
 				</column>
 				<column>
 					<cell row='2' col='J'>
 						<terrain>start</terrain>
 						<elevated>1</elevated>
+						<west>start</west>
 						<south>start</south>
 					</cell>
 				</column>

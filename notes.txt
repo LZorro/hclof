@@ -7,6 +7,7 @@ Notes
 
 - Load Map has "other" size instead of 6x16, so we can include Team Base and Crisis Time Zone maps
 	- don't forget Quick-Start maps
+	- rename to actual 6x16 (we have 9x16 :P)
 
 - Redesign page so all information is showing at once on left (Select Point, Map Info)
 	- Design so it's on a sliding panel, so we can "fullscreen" the map
@@ -14,73 +15,110 @@ Notes
 	
 - RESPONSIVE WEB DESIGN for mobile
    
+RE/UPLOAD:
+	- ih_sakaar
+	- fi_paris
+	- ig_collectorsship
+	- avm_starktower
+	- aou_hankpymslab
+	- aou_thebesegypt
+	- icon_axischemicals
+	- losh_smalltown
+	- losh_centralport
+	- av_rooftops
+	- jl_docklands
+	- cr_dawnofman
+	- cr_antimatterfortress
+	- dota_direstarter
+	- wm_mars
+	- wm_karnak
+	- wm_drmanhattanslab
+	- sm_farm
+	- ih_gammabase
+	- gsx_starcore
+	- dkr_arkham
+	- dkr_gothambank
+	- cw_europeancastle
+	- cw_quinjethangar
+	- sog_clocktower
+	- sog_crimealley
+	- tt_towergrounds
+	- tt_nowherearcticbase
+	- mos_metropolis
+	- mos_smallville
+	- tdw_svartalfheim
+	- tdw_royalacademy
+	- slosh_hallofdoom
+	- slosh_slaughterswamp
+	- tws_triskelion
+	- tws_helicarrier
+	- gotgm_thekyln
+	- gotgm_novacorpshq
+	- fl_centralcitypark
+	- fl_flashmuseum
+	- smaf_libertyisland
+	- smaf_xaviermansion
+	- jltw_housemystery
+	- jltw_atlantis
+	- aoum_struckersfortress
+	- aoum_avengerstower
+	- avas_arcadesarena
+	- avas_avengerscompound
+	- ygo_duelistforest
+	- ygo_pegasuscastle
+	- ygo_duelistwater
+	- ygo_cavernlostsouls
+	- ygo_zeppelin
+	- ygo_battlecity
+	- ygo_pharaohthrone
+	- ygo_puzzle
+	- ygo_kulelna
+	- ygo_egyptriver
+	- ygo_brokensphinx
+	- ka2_justiceforeverhq
+	- ka2_evillair
+	- mkr_crackstonecamp
+	- mkr_delphanadomain
+	- mkr_wyldenwatch
+	- mkr_rokosruins
+	- lotr_helmsdeep
+	- lotr_helmsdike
+	- lotr_pelennorfields
+	- lotr_minastirith
+	- lotr_minesmoria
+	- hauj_goblinhalls
+	- hauj_gollumscavern
+	- hauj_rivendell
+	- hauj_trollcamp
+	- hdos_forestriver
+	- hdos_laketown
+	- hdos_housebeorn
+	- hdos_lairsmaug
+	- hdos_spiderrealm
+	- hdos_elvenkingdom
+	- stt_borgtranswarp
+	- stt_qonos
+	- stt2_badlands
+	- stt2_doomsday
+	- stt2_sectorz6
+	- stt2_spacedock
+	
    
 (optional)   
 - Rewrite map sorting algorithm so that maps without a type of terrain are filtered out
 	(eg. maps with no elevated terrain don't show up on the list sorted by elevated terrain)
    
 Issues to look into:
- - Fear Itself: Paris - blocking terrain B2 and I23
- - Fear Itself: South Africa - G2, G23
- - WXM: Candian Wilderness - check water G2-H2
  - ASM: Bell Tower - check elevated/special terrain division, figure out how to get elevated/indoor displaying properly
- - NML: Dockside (pre) - ticket booth elevated, is it starting or separate?
- -  same for Dockside Post
- - NML: Robinson (post) - check southern start area (esp. right)
- - NML: Power Plant (post) - D3 elevated
- - NML: Blackgate Prison (pre) - Outdoor? Really?  - also, check mess that is post
- - BMFF: Wayne Manor - 17 NOP, no doorway?
- - CW: Negative Zone Prison - E11: pointing wrong way?
- - DC75 WoL FF: Okaara - rows 12, 13, 14 - blocking indoor or outdoor? 1 or 2?
- - IG: Collector's Ship - north start area, blocking included or separate?
- - AVM: Stark Tower - check special terrain, which elevation is it? (esp. north)
- - GSX: Madripoor - blocking in southern start included in start?
- - DC75: Hawkworld - check elevated terrain isn't part of starts
- - DR: Training Complex - T19 indoor/outdoor? that elevated area
- - SoG: Crime Alley - ways to get into theaters?
  
- Importants maps:
- - Justice League Trinity War
- - Age of Ultron Movie
- - Avengers Assemble
+Still to code:
+ - tiny maps 
+	- quick start
+	- Timezone
+	- wxm team bases
+	- teen titans bases
+
  
  
- STILL TO CODE:
- - Axis Chemicals
- - Small Town
- - Central Port
- - Rooftops
- - Docklands
- - Dawn of Man
- - Anti-Matter Fortress
- - Mars
- - Karnak
- - Dr Manhattan's Lab
- - The Farm
- - Sakaar (finish)
- - Gamma Base
- - Starcore Space Station
- - Arhkam Asylum
- - Gotham Bank
- - Quinjet Hangar
- - European Castle
- - Clock Tower
- - Crime Alley
- - Teen Titans Tower Grounds
- - NOWHERE Arctic Base
- - Smallville
- - Metropolis
- - Svartalfheim (TDW)
- - Royal Naval Academy
- - Hall of Doom
- - Slaughter Swamp
- - Triskelion Helibay
- - SHIELD Helicarrier (TWS)
- - The Kyln
- - Nova Corps Headquarters
- - Central City Park
- - The Flash Museum
- - Liberty Island
- - Xavier Mansion Grounds
  
  

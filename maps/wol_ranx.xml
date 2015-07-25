@@ -247,6 +247,7 @@
 						<elevated>1</elevated>
 						<north>hindering</north>
 						<west>hindering</west>
+						<south>hindering</south>
 					</cell>
 				</column>
 				<column>
@@ -254,6 +255,8 @@
 						<terrain>hindering</terrain>
 						<elevated>1</elevated>
 						<north>hindering</north>
+						<east>hindering</east>
+						<south>hindering</south>
 					</cell>
 				</column>
 				<column>
@@ -309,6 +312,8 @@
 						<terrain>hindering</terrain>
 						<elevated>1</elevated>
 						<north>hindering</north>
+						<west>hindering</west>
+						<south>hindering</south>
 					</cell>
 				</column>
 				<column>
@@ -317,6 +322,7 @@
 						<elevated>1</elevated>
 						<north>hindering</north>
 						<east>hindering</east>
+						<south>hindering</south>
 					</cell>
 				</column>
 				<column>
@@ -379,6 +385,8 @@
 					<cell row='4' col='F'>
 						<terrain>hindering</terrain>
 						<elevated>1</elevated>
+						<north>hindering</north>
+						<west>hindering</west>
 						<south>hindering</south>
 					</cell>
 				</column>
@@ -386,6 +394,7 @@
 					<cell row='4' col='G'>
 						<terrain>hindering</terrain>
 						<elevated>1</elevated>
+						<north>hindering</north>
 						<east>hindering</east>
 						<south>hindering</south>
 					</cell>
@@ -412,6 +421,8 @@
 					<cell row='4' col='K'>
 						<terrain>hindering</terrain>
 						<elevated>1</elevated>
+						<north>hindering</north>
+						<east>hindering</east>
 						<west>hindering</west>
 						<south>hindering</south>
 					</cell>
@@ -717,6 +728,7 @@
 						<elevated>1</elevated>
 						<north>hindering</north>
 						<west>hindering</west>
+						<south>hindering</south>
 					</cell>
 				</column>
 				<column>
@@ -725,6 +737,7 @@
 						<elevated>1</elevated>
 						<north>hindering</north>
 						<east>hindering</east>
+						<south>hindering</south>
 					</cell>
 				</column>
 				<column>
@@ -816,6 +829,8 @@
 					<cell row='8' col='F'>
 						<terrain>special</terrain>
 						<elevated>1</elevated>
+						<east>special</east>
+						<south>special</south>
 						<special>C</special>
 					</cell>
 				</column>
@@ -857,6 +872,8 @@
 					<cell row='8' col='K'>
 						<terrain>special</terrain>
 						<elevated>1</elevated>
+						<west>special</west>
+						<south>special</south>
 						<special>C</special>
 					</cell>
 				</column>
@@ -949,6 +966,7 @@
 					<cell row='9' col='H'>
 						<terrain>hindering</terrain>
 						<elevated>1</elevated>
+						<north>hindering</north>
 						<west>hindering</west>
 						<south>hindering</south>
 					</cell>
@@ -957,6 +975,7 @@
 					<cell row='9' col='I'>
 						<terrain>hindering</terrain>
 						<elevated>1</elevated>
+						<north>hindering</north>
 						<east>hindering</east>
 						<south>hindering</south>
 					</cell>
@@ -1501,6 +1520,7 @@
 						<elevated>1</elevated>
 						<north>hindering</north>
 						<west>hindering</west>
+						<south>hindering</south>
 					</cell>
 				</column>
 				<column>
@@ -1509,6 +1529,7 @@
 						<elevated>1</elevated>
 						<north>hindering</north>
 						<east>hindering</east>
+						<south>hindering</south>
 					</cell>
 				</column>
 				<column>
@@ -1734,6 +1755,8 @@
 					<cell row='16' col='H'>
 						<terrain>hindering</terrain>
 						<elevated>1</elevated>
+						<north>hindering</north>
+						<west>hindering</west>
 						<south>hindering</south>
 					</cell>
 				</column>
@@ -1741,6 +1764,8 @@
 					<cell row='16' col='I'>
 						<terrain>hindering</terrain>	
 						<elevated>1</elevated>
+						<north>hindering</north>
+						<east>hindering</east>
 						<south>hindering</south>
 					</cell>
 				</column>
@@ -2151,6 +2176,7 @@
 					<cell row='20' col='D'>
 						<terrain>special</terrain>
 						<elevated>1</elevated>
+						<north>special</north>
 						<west>special</west>
 						<special>C</special>
 					</cell>
@@ -2159,6 +2185,8 @@
 					<cell row='20' col='E'>
 						<terrain>special</terrain>	
 						<elevated>1</elevated>
+						<north>special</north>
+						<east>special</east>
 						<special>C</special>
 					</cell>
 				</column>
@@ -2210,6 +2238,8 @@
 					<cell row='20' col='L'>
 						<terrain>special</terrain>
 						<elevated>1</elevated>
+						<north>special</north>
+						<west>special</west>
 						<special>C</special>
 					</cell>
 				</column>
@@ -2217,6 +2247,7 @@
 					<cell row='20' col='M'>
 						<terrain>special</terrain>	
 						<elevated>1</elevated>
+						<north>special</north>
 						<east>special</east>
 						<special>C</special>
 					</cell>

@@ -22,6 +22,7 @@ Orange squares are IMPACT ZONE squares.  Before the beginning of the game either
 					<cell row='1' col='B'>
 						<terrain>start</terrain>
 						<elevated>2</elevated>
+						<south>start</south>
 					</cell>
 				</column>
 				<column>
@@ -116,6 +117,7 @@ Orange squares are IMPACT ZONE squares.  Before the beginning of the game either
 					<cell row='2' col='A'>
 						<terrain>start</terrain>
 						<elevated>2</elevated>
+						<east>start</east>
 						<south>start</south>
 					</cell>
 				</column>
@@ -126,7 +128,6 @@ Orange squares are IMPACT ZONE squares.  Before the beginning of the game either
 						<north>blocking</north>
 						<east>blocking</east>
 						<west>blocking</west>
-						<south>start</south>
 					</cell>
 				</column>
 				<column>
@@ -134,6 +135,7 @@ Orange squares are IMPACT ZONE squares.  Before the beginning of the game either
 						<terrain>start</terrain>
 						<elevated>2</elevated>
 						<east>elevated</east>
+						<west>start</west>
 						<south>start</south>
 					</cell>
 				</column>
@@ -2444,13 +2446,13 @@ Orange squares are IMPACT ZONE squares.  Before the beginning of the game either
 						<terrain>start</terrain>
 						<elevated>1</elevated>
 						<north>start</north>
+						<east>start</east>
 					</cell>
 				</column>
 				<column>
 					<cell row='23' col='I'>
 						<terrain>blocking</terrain>
 						<elevated>1</elevated>
-						<north>start</north>
 						<east>blocking</east>
 						<west>blocking</west>
 						<south>blocking</south>
@@ -2461,6 +2463,7 @@ Orange squares are IMPACT ZONE squares.  Before the beginning of the game either
 						<terrain>start</terrain>
 						<elevated>1</elevated>
 						<north>start</north>
+						<west>start</west>
 					</cell>
 				</column>
 				<column>
@@ -2559,6 +2562,7 @@ Orange squares are IMPACT ZONE squares.  Before the beginning of the game either
 					<cell row='24' col='I'>
 						<terrain>start</terrain>
 						<elevated>1</elevated>
+						<north>start</north>
 					</cell>
 				</column>
 				<column>

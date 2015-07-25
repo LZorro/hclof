@@ -608,6 +608,7 @@
 					<cell row='6' col='I'>
 						<terrain>hindering</terrain>
 						<elevated>1</elevated>
+						<north>hindering</north>
 						<east>hindering</east>
 						<west>hindering</west>
 						<south>hindering</south>
@@ -694,6 +695,7 @@
 						<elevated>1</elevated>
 						<north>blocking</north>
 						<east>blocking</east>
+						<west>blocking</west>
 					</cell>
 				</column>
 				<column>
@@ -794,6 +796,7 @@
 						<terrain>blocking</terrain>
 						<elevated>1</elevated>
 						<east>blocking</east>
+						<west>blocking</west>
 						<south>blocking</south>
 					</cell>
 				</column>
@@ -1207,6 +1210,7 @@
 						<elevated>1</elevated>
 						<north>blocking</north>
 						<east>blocking</east>
+						<west>blocking</west>
 					</cell>
 				</column>
 				<column>
@@ -1314,6 +1318,7 @@
 						<terrain>blocking</terrain>
 						<elevated>1</elevated>
 						<east>blocking</east>
+						<west>blocking</west>
 						<south>blocking</south>
 					</cell>
 				</column>
@@ -1728,6 +1733,7 @@
 						<elevated>1</elevated>
 						<north>blocking</north>
 						<east>blocking</east>
+						<west>blocking</west>
 					</cell>
 				</column>
 				<column>
@@ -1833,6 +1839,7 @@
 						<terrain>blocking</terrain>
 						<elevated>1</elevated>
 						<east>blocking</east>
+						<west>blocking</west>
 						<south>blocking</south>
 					</cell>
 				</column>

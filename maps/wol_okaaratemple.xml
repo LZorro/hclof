@@ -1846,6 +1846,7 @@
 						<terrain>blocking</terrain>
 						<elevated>2</elevated>
 						<north>blocking</north>
+						<east>blocking</east>
 						<west>blocking</west>
 						<south>blocking</south>
 					</cell>
@@ -1906,6 +1907,7 @@
 						<elevated>2</elevated>
 						<north>blocking</north>
 						<east>blocking</east>
+						<west>blocking</west>
 						<south>blocking</south>
 					</cell>
 				</column>
@@ -2158,6 +2160,7 @@
 						<terrain>blocking</terrain>
 						<elevated>2</elevated>
 						<north>blocking</north>
+						<east>blocking</east>
 						<west>blocking</west>
 						<south>blocking</south>
 					</cell>
@@ -2226,6 +2229,7 @@
 						<elevated>2</elevated>
 						<north>blocking</north>
 						<east>blocking</east>
+						<west>blocking</west>
 						<south>blocking</south>
 					</cell>
 				</column>
@@ -2501,6 +2505,7 @@
 						<terrain>blocking</terrain>
 						<elevated>2</elevated>
 						<north>blocking</north>
+						<east>blocking</east>
 						<west>blocking</west>
 					</cell>
 				</column>
@@ -2560,6 +2565,7 @@
 						<elevated>2</elevated>
 						<north>blocking</north>
 						<east>blocking</east>
+						<west>blocking</west>
 					</cell>
 				</column>
 				<column>
