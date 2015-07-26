@@ -282,6 +282,93 @@
 		<s>69%</s>
 	</map>
 	<map>
+		<filename>cr_tzmetropolis</filename>
+		<title>TIME ZONE: The Battle of Metropolis, 2006</title>
+		<set>Crisis</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>21%</h>
+		<b>5%</b>
+	</map>
+	<map>
+		<filename>cr_tzcamelot</filename>
+		<title>TIME ZONE: Camelot, Time of Myth</title>
+		<set>Crisis</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<e>34%</e>
+		<w>9%</w>
+	</map>
+	<map>
+		<filename>cr_tzkooey</filename>
+		<title>TIME ZONE: Kooey Kooey Kooey, 1989</title>
+		<set>Crisis</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>6%</h>
+		<w>53%</w>
+	</map>
+	<map>
+		<filename>cr_tzchicago</filename>
+		<title>TIME ZONE: Chicago, Earth A.D.</title>
+		<set>Crisis</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>28%</h>
+		<b>7%</b>
+	</map>
+	<map>
+		<filename>cr_tzcoyote</filename>
+		<title>TIME ZONE: Coyote, Texas, 1879</title>
+		<set>Crisis</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<b>38%</b>
+	</map>
+	<map>
+		<filename>cr_tzplazasquare</filename>
+		<title>TIME ZONE: Plaza Square, 2985</title>
+		<set>Crisis</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>16%</h>
+		<b>3%</b>
+	</map>
+	<map>
+		<filename>cr_tzatlantis</filename>
+		<title>TIME ZONE: Atlantis, 45,000 B.C.</title>
+		<set>Crisis</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>10%</h>
+		<b>31%</b>
+	</map>
+	<map>
+		<filename>cr_tzmarkovia</filename>
+		<title>TIME ZONE: Markovia, 1945</title>
+		<set>Crisis</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>12%</h>
+		<b>14%</b>
+	</map>
+	<map>
 		<filename>cr_antimatterfortress</filename>
 		<title>Anti-Matter Fortress</title>
 		<set>Crisis</set>
@@ -981,6 +1068,17 @@
 		<e>78%</e>
 	</map>
 	<map>
+		<filename>avm_helicarriermini</filename>
+		<title>S.H.I.E.L.D. Helicarrier (Mini)</title>
+		<set>Avengers Movie Mini-Game</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>17%</h>
+		<e>50%</e>
+	</map>
+	<map>
 		<filename>ig_soulworld</filename>
 		<title>Soul World</title>
 		<set>Infinity Gauntlet</set>
@@ -1141,7 +1239,7 @@
 		<e>69%</e>
 		<w>2%</w>
 	</map>
-		<map>
+	<map>
 		<filename>dkr_gothambank</filename>
 		<title>Gotham Bank</title>
 		<set>The Dark Knight Rises</set>
@@ -1154,13 +1252,26 @@
 		<wall>12%</wall>
 	</map>
 	<map>
+		<filename>dkr_arkhammini</filename>
+		<title>Arkham Asylum (Mini)</title>
+		<set>The Dark Knight Rises Mini-Game</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>8%</h>
+		<b>2%</b>
+		<wall>9%</wall>
+		<e>63%</e>
+	</map>
+	<map>
 		<filename>cw_negativezone</filename>
 		<title>Negative Zone Prison</title>
 		<set>Chaos War</set>
 		<universe>Marvel</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>9%</h>
 		<wall>26%</wall>
 		<s>22%</s>
@@ -1172,7 +1283,7 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>16%</h>
 		<b>8%</b>
 		<e>19%</e>
@@ -1184,7 +1295,7 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>2%</h>
 		<b>3%</b>
 		<e>58%</e>
@@ -1197,7 +1308,7 @@
 		<universe>Marvel</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>6%</h>
 		<b>21%</b>
 		<e>15%</e>
@@ -1209,7 +1320,7 @@
 		<universe>DC</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>7%</h>
 		<b>5%</b>
 		<e>32%</e>
@@ -1222,7 +1333,7 @@
 		<universe>DC</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>3%</h>
 		<b>8%</b>
 		<e>46%</e>
@@ -1235,7 +1346,7 @@
 		<universe>DC</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>14%</h>
 		<wall>1%</wall>
 		<e>74%</e>
@@ -1249,7 +1360,7 @@
 		<universe>DC</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>5%</h>
 		<b>3%</b>
 		<wall>7%</wall>
@@ -1263,7 +1374,7 @@
 		<universe>DC</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>13%</h>
 		<b>1%</b>
 		<wall>9%</wall>
@@ -1278,7 +1389,7 @@
 		<universe>DC</universe>
 		<inout>Indoor/Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>3%</h>
 		<b>9%</b>
 		<wall>2%</wall>
@@ -1338,13 +1449,24 @@
 		<e>27%</e>
 	</map>
 	<map>
+		<filename>hauj_trollcampmini</filename>
+		<title>Stone Troll Camp (Mini)</title>
+		<set>The Hobbit: An Unexpected Journey Mini-Game</set>
+		<universe>LotR</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>9%</h>
+		<b>5%</b>
+	</map>
+	<map>
 		<filename>nml_blackgatepre</filename>
 		<title>Blackgate Prison (Pre-cataclysm)</title>
 		<set>No Man's Land</set>
 		<universe>DC</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>13%</h>
 		<b>4%</b>
 		<wall>14%</wall>
@@ -1358,7 +1480,7 @@
 		<universe>DC</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>8%</h>
 		<b>3%</b>
 		<wall>11%</wall>
@@ -1373,7 +1495,7 @@
 		<universe>DC</universe>
 		<inout>Indoor/Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>12%</h>
 		<b>1%</b>
 		<wall>3%</wall>
@@ -1387,7 +1509,7 @@
 		<universe>DC</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>11%</h>
 		<b>1%</b>
 		<wall>2%</wall>
@@ -1400,7 +1522,7 @@
 		<universe>DC</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>7%</h>
 		<b>5%</b>
 		<e>39%</e>
@@ -1413,7 +1535,7 @@
 		<universe>DC</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>3%</h>
 		<b>6%</b>
 		<wall>1%</wall>
@@ -1426,7 +1548,7 @@
 		<universe>DC</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>11%</h>
 		<b>1%</b>
 		<e>4%</e>
@@ -1439,7 +1561,7 @@
 		<universe>DC</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>14%</h>
 		<b>4%</b>
 		<e>84%</e>
@@ -1452,7 +1574,7 @@
 		<universe>DC</universe>
 		<inout>Indoor/Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>4%</h>
 		<wall>5%</wall>
 		<e>13%</e>
@@ -1466,7 +1588,7 @@
 		<universe>DC</universe>
 		<inout>Indoor/Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>3%</h>
 		<wall>5%</wall>
 		<e>2%</e>
@@ -1481,7 +1603,7 @@
 		<universe>DC</universe>
 		<inout>Indoor/Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>5%</h>
 		<b>4%</b>
 		<wall>10%</wall>
@@ -1496,7 +1618,7 @@
 		<universe>DC</universe>
 		<inout>Indoor/Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>7%</h>
 		<b>5%</b>
 		<wall>6%</wall>
@@ -1511,7 +1633,7 @@
 		<universe>DC</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>7%</h>
 		<b>2%</b>
 		<e>32%</e>
@@ -1524,7 +1646,7 @@
 		<universe>DC</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>6%</h>
 		<wall>13%</wall>
 		<w>22%</w>
@@ -1537,7 +1659,7 @@
 		<universe>DC</universe>
 		<inout>Indoor/Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>5%</h>
 		<b>4%</b>
 		<wall>5%</wall>
@@ -1552,7 +1674,7 @@
 		<universe>DC</universe>
 		<inout>Indoor/Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>14%</h>
 		<b>1%</b>
 		<wall>8%</wall>
@@ -1636,7 +1758,7 @@
 		<universe>Marvel</universe>
 		<inout>Indoor/Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<b>5%</b>
 		<wall>4%</wall>
 		<e>64%</e>
@@ -1650,7 +1772,7 @@
 		<universe>Marvel</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>8%</h>
 		<b>5%</b>
 		<wall>4%</wall>
@@ -1663,7 +1785,7 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>10%</h>
 		<b>6%</b>
 		<e>16%</e>
@@ -1676,11 +1798,22 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>6%</h>
 		<b>7%</b>
 		<e>19%</e>
 		<w>9%</w>
+	</map>
+	<map>
+		<filename>im3_mansionmini</filename>
+		<title>Mansion Gates (Mini)</title>
+		<set>Iron Man 3 Mini-Game</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>7%</h>
+		<b>5%</b>
 	</map>
 	<map>
 		<filename>tt_towergreathall</filename>
@@ -1689,7 +1822,7 @@
 		<universe>DC</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>12%</h>
 		<b>3%</b>
 		<wall>7%</wall>
@@ -1701,7 +1834,7 @@
 		<universe>DC</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>1%</h>
 		<b>4%</b>
 		<e>14%</e>
@@ -1714,7 +1847,7 @@
 		<universe>DC</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>25%</h>
 		<b>7%</b>
 		<e>71%</e>
@@ -1726,11 +1859,120 @@
 		<universe>DC</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>10%</h>
 		<b>1%</b>
 		<wall>13%</wall>
 		<e>3%</e>
+	</map>
+	<map>
+		<filename>tt_nowhereomensdomain</filename>
+		<title>N.O.W.H.E.R.E.: Omen's Domain</title>
+		<set>Teen Titans</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>6%</h>
+		<wall>14%</wall>
+	</map>
+	<map>
+		<filename>tt_towerlablevel</filename>
+		<title>Teen Titans Tower: Laboratory Level</title>
+		<set>Teen Titans</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>9%</h>
+		<b>9%</b>
+	</map>
+	<map>
+		<filename>tt_nowheresuperboylab</filename>
+		<title>N.O.W.H.E.R.E.: Project Superboy Laboratory</title>
+		<set>Teen Titans</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>8%</h>
+		<b>8%</b>
+	</map>
+	<map>
+		<filename>tt_towermemorial</filename>
+		<title>Teen Titans Tower: Memorial Hall</title>
+		<set>Teen Titans</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<b>16%</b>
+	</map>
+	<map>
+		<filename>tt_nowhereharvestsdomain</filename>
+		<title>N.O.W.H.E.R.E.: Harvest's Domain</title>
+		<set>Teen Titans</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>14%</h>
+	</map>
+	<map>
+		<filename>tt_towersubbasement</filename>
+		<title>Teen Titans Tower: Sub-Basement Level</title>
+		<set>Teen Titans</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<b>6%</b>
+		<w>19%</w>
+	</map>
+	<map>
+		<filename>tt_nowhereholdingcells</filename>
+		<title>N.O.W.H.E.R.E.: Holding Cells</title>
+		<set>Teen Titans</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>9%</h>
+		<wall>29%</wall>
+	</map>
+	<map>
+		<filename>tt_towerresidential</filename>
+		<title>Teen Titans Tower: Residential Level</title>
+		<set>Teen Titans</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>16%</h>
+		<wall>25%</wall>
+	</map>
+	<map>
+		<filename>tt_nowherecontrolroom</filename>
+		<title>N.O.W.H.E.R.E.: Control Room</title>
+		<set>Teen Titans</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>6%</h>
+		<wall>11%</wall>
+		<e>6%</e>
+	</map>
+	<map>
+		<filename>tt_towerrecreation</filename>
+		<title>Teen Titans Tower: Recreation Level</title>
+		<set>Teen Titans</set>
+		<universe>DC</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>6%</h>
+		<w>38%</w>
 	</map>
 	<map>
 		<filename>mos_metropolis</filename>
@@ -1739,7 +1981,7 @@
 		<universe>DC</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>5%</h>
 		<b>3%</b>
 		<e>3%</e>
@@ -1752,10 +1994,21 @@
 		<universe>DC</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>10%</h>
 		<b>1%</b>
 		<e>34%</e>
+	</map>
+	<map>
+		<filename>mos_mainstreetmini</filename>
+		<title>Main Street (Mini)</title>
+		<set>Man of Steel Mini-Game</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>13%</h>
+		<b>2%</b>
 	</map>
 	<map>
 		<filename>fi_blitzkriegdc</filename>
@@ -1764,7 +2017,7 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>9%</h>
 		<b>12%</b>
 		<e>20%</e>
@@ -1777,7 +2030,7 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>8%</h>
 		<b>18%</b>
 	</map>
@@ -1788,7 +2041,7 @@
 		<universe>Marvel</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>7%</h>
 		<b>11%</b>
 		<wall>1%</wall>
@@ -1802,7 +2055,7 @@
 		<universe>Marvel</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>4%</h>
 		<b>5%</b>
 		<e>11%</e>
@@ -1815,7 +2068,7 @@
 		<universe>Marvel</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>1%</h>
 		<b>4%</b>
 		<wall>2%</wall>
@@ -1829,7 +2082,7 @@
 		<universe>Marvel</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>5%</h>
 		<b>12%</b>
 		<w>11%</w>
@@ -1842,7 +2095,7 @@
 		<universe>Marvel</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>4%</h>
 		<b>5%</b>
 		<wall>8%</wall>
@@ -1856,7 +2109,7 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>3%</h>
 		<b>10%</b>
 		<e>27%</e>
@@ -1870,7 +2123,7 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>8%</h>
 		<e>21%</e>
 		<s>1%</s>
@@ -1882,7 +2135,7 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>3%</h>
 		<b>10%</b>
 		<e>92%</e>
@@ -1895,7 +2148,7 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>4%</h>
 		<b>7%</b>
 	</map>
@@ -1906,7 +2159,7 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>4%</h>
 		<b>2%</b>
 		<e>23%</e>
@@ -1919,7 +2172,7 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>7%</h>
 		<b>8%</b>
 		<e>5%</e>
@@ -1932,7 +2185,7 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>6%</h>
 		<b>1%</b>
 		<e>47%</e>
@@ -1946,7 +2199,7 @@
 		<universe>Marvel</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>11%</h>
 		<b>4%</b>
 		<e>98%</e>
@@ -1960,7 +2213,7 @@
 		<universe>Marvel</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>14%</h>
 		<b>2%</b>
 		<wall>7%</wall>
@@ -2022,7 +2275,7 @@
 		<universe>Other</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>4%</h>
 		<b>4%</b>
 		<e>13%</e>
@@ -2035,10 +2288,22 @@
 		<universe>Other</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>16%</h>
 		<b>5%</b>
 		<e>19%</e>		
+	</map>
+	<map>
+		<filename>pr_minigame</filename>
+		<title>Pacific Rim</title>
+		<set>Pacific Rim Mini-Game</set>
+		<universe>Other</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>8%</h>
+		<b>8%</b>
+		<w>38%</w>		
 	</map>
 	<map>
 		<filename>ka2_justiceforeverhq</filename>
@@ -2047,7 +2312,7 @@
 		<universe>Other</universe>
 		<inout>Indoor/Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>12%</h>
 		<b>4%</b>
 		<wall>5%</wall>
@@ -2061,7 +2326,7 @@
 		<universe>Other</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>6%</h>
 		<b>4%</b>
 		<e>21%</e>		
@@ -2094,7 +2359,141 @@
 		<e>45%</e>
 		<w>7%</w>
 	</map>
-		<map>
+	<map>
+		<filename>wxm_halfcourt</filename>
+		<title>Half Court</title>
+		<set>Wolverine and the X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<h>9%</h>
+		<b>9%</b>
+	</map>
+	<map>
+		<filename>wxm_princessbar</filename>
+		<title>Princess Bar</title>
+		<set>Wolverine and the X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<h>16%</h>
+		<b>3%</b>
+	</map>
+	<map>
+		<filename>wxm_astralplane</filename>
+		<title>Astral Plane</title>
+		<set>Wolverine and the X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<h>6%</h>
+		<b>19%</b>
+	</map>
+	<map>
+		<filename>wxm_headmaster</filename>
+		<title>Xavier Institute Headmaster's Office</title>
+		<set>Wolverine and the X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<h>13%</h>
+	</map>
+	<map>
+		<filename>wxm_coastline</filename>
+		<title>Lighthouse Coastline</title>
+		<set>Wolverine and the X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<h>3%</h>
+		<b>13%</b>
+		<w>28%</w>
+	</map>
+	<map>
+		<filename>wxm_lighthouse</filename>
+		<title>Lighthouse</title>
+		<set>Wolverine and the X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<h>6%</h>
+		<b>25%</b>
+	</map>
+	<map>
+		<filename>wxm_novaroma</filename>
+		<title>Nova Roma Building</title>
+		<set>Wolverine and the X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<h>6%</h>
+		<b>6%</b>
+		<w>13%</w>
+	</map>
+	<map>
+		<filename>wxm_classroom</filename>
+		<title>Xavier Institute Classroom</title>
+		<set>Wolverine and the X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<h>14%</h>
+	</map>
+	<map>
+		<filename>wxm_asteroid</filename>
+		<title>Asteroid</title>
+		<set>Wolverine and the X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<h>16%</h>
+	</map>
+	<map>
+		<filename>wxm_shiarthrone</filename>
+		<title>Shi'ar Throne Room</title>
+		<set>Wolverine and the X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<h>6%</h>
+		<b>16%</b>
+		<e>13%</e>
+	</map>
+	<map>
+		<filename>wxm_innercircle</filename>
+		<title>Inner Circle</title>
+		<set>Wolverine and the X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Indoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<h>13%</h>
+		<b>3%</b>
+		<e>13%</e>
+	</map>
+	<map>
+		<filename>wxm_rocketlaunch</filename>
+		<title>Rocket Launch Base</title>
+		<set>Wolverine and the X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<h>6%</h>
+		<b>6%</b>
+		<e>25%</e>
+	</map>
+	<map>
 		<filename>tdw_svartalfheim</filename>
 		<title>Svartalfheim</title>
 		<set>Thor: The Dark World</set>
@@ -2106,7 +2505,7 @@
 		<b>13%</b>
 		<e>26%</e>
 	</map>
-		<map>
+	<map>
 		<filename>tdw_royalacademy</filename>
 		<title>Royal Naval Academy</title>
 		<set>Thor: The Dark World</set>
@@ -2118,6 +2517,17 @@
 		<b>6%</b>
 		<e>53%</e>
 		<s>1%</s>
+	</map>
+	<map>
+		<filename>tdw_svartalfheimmini</filename>
+		<title>Svartalfheim (Mini)</title>
+		<set>Thor: The Dark World Mini-Game</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<h>2%</h>
+		<b>12%</b>
 	</map>
 	<map>
 		<filename>stt3_battlesector001</filename>
@@ -2169,7 +2579,7 @@
 		<universe>LotR</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>31%</h>
 		<b>24%</b>
 		<s>1%</s>
@@ -2181,7 +2591,7 @@
 		<universe>LotR</universe>
 		<inout>Indoor/Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>8%</h>
 		<b>2%</b>
 		<wall>7%</wall>
@@ -2194,7 +2604,7 @@
 		<universe>LotR</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>8%</h>
 		<b>1%</b>
 		<e>72%</e>
@@ -2207,7 +2617,7 @@
 		<universe>LotR</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>7%</h>
 		<b>10%</b>
 		<e>35%</e>
@@ -2351,6 +2761,18 @@
 		<b>5%</b>
 		<wall>2%</wall>
 		<e>29%</e>
+	</map>
+	<map>
+		<filename>hdos_forestrivermini</filename>
+		<title>Forest River (Mini)</title>
+		<set>The Hobbit: The Desolation of Smaug Mini-Game</set>
+		<universe>LotR</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>10%</h>
+		<b>3%</b>
+		<w>6%</w>
 	</map>
 	<map>
 		<filename>iim_avengersisland</filename>
@@ -2538,7 +2960,7 @@
 		<universe>Other</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>23%</h>
 		<b>2%</b>
 	</map>
@@ -2549,7 +2971,7 @@
 		<universe>Other</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>2%</h>
 		<b>11%</b>
 		<e>83%</e>
@@ -2561,7 +2983,7 @@
 		<universe>Other</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<w>56%</w>
 	</map>
 	<map>
@@ -2571,7 +2993,7 @@
 		<universe>Other</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>3%</h>
 		<b>20%</b>
 	</map>
@@ -2641,7 +3063,7 @@
 		<b>7%</b>
 		<e>16%</e>
 	</map>
-		<map>
+	<map>
 		<filename>tws_helicarrier</filename>
 		<title>S.H.I.E.L.D. Helicarrier</title>
 		<set>Captain America: The Winter Soldier</set>
@@ -2652,6 +3074,17 @@
 		<h>10%</h>
 		<e>14%</e>
 		<s>21%</s>
+	</map>
+	<map>
+		<filename>tws_triskelionmini</filename>
+		<title>Triskelion Helibay (Mini)</title>
+		<set>Captain America: The Winter Soldier Mini-Game</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Modern</age>
+		<b>10%</b>
+		<e>36%</e>
 	</map>
 	<map>
 		<filename>dofp_southbronx</filename>
@@ -2686,6 +3119,17 @@
 		<size>9x16</size>
 		<age>Golden</age>
 		<h>9%</h>
+	</map>
+	<map>
+		<filename>sm_streetbattle</filename>
+		<title>Street Battle</title>
+		<set>Superman Quick-Start</set>
+		<universe>DC</universe>
+		<inout>Outdoor</inout>
+		<size>9x16</size>
+		<age>Golden</age>
+		<h>13%</h>
+		<b>2%</b>
 	</map>
 	<map>
 		<filename>dp_hellhouse</filename>
@@ -3072,7 +3516,7 @@
 		<universe>Other</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>1%</h>
 		<b>6%</b>
 		<e>17%</e>
@@ -3085,7 +3529,7 @@
 		<universe>Other</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>13%</h>
 		<b>18%</b>
 	</map>
@@ -3096,7 +3540,7 @@
 		<universe>Other</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>2%</h>
 		<b>6%</b>
 		<e>48%</e>
@@ -3108,7 +3552,7 @@
 		<universe>Other</universe>
 		<inout>Indoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>5%</h>
 		<b>2%</b>
 		<e>76%</e>
@@ -3120,7 +3564,7 @@
 		<universe>Other</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<b>28%</b>
 		<e>77%</e>
 	</map>
@@ -3131,7 +3575,7 @@
 		<universe>Other</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<h>4%</h>
 		<e>14%</e>
 		<w>31%</w>
@@ -3143,7 +3587,7 @@
 		<universe>Other</universe>
 		<inout>Outdoor</inout>
 		<size>16x24</size>
-		<age>Modern</age>
+		<age>Golden</age>
 		<b>23%</b>
 	</map>		
 	<map>

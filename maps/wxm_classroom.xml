@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='us-ascii'?>
+
+<library>
+	<map>
+		<universe>Marvel</universe>
+		<title>Xavier Institute Classroom</title>
+		<set>Wolverine and the X-Men (Super Booster)</set>
+		<inout>Indoor</inout>
+		<totalRows>8</totalRows>
+		<totalCols>8</totalCols>
+		<tile>
+			<row>
+				<column>
+					<cell row='1' col='A'>
+						<terrain>hindering</terrain>
+						<elevated>1</elevated>
+						<east>start</east>
+						<south>hindering</south>
+					</cell>
+				</column>
+				<column>
+					<cell row='1' col='B'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='1' col='C'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='1' col='D'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='1' col='E'>
+						<terrain>hindering</terrain>
+						<elevated>1</elevated>
+						<east>hindering</east>
+						<west>hindering</west>
+						<south>hindering</south>
+					</cell>
+				</column>
+				<column>
+					<cell row='1' col='F'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='1' col='G'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='1' col='H'>
+						<terrain>start</terrain>
+						<elevated>1</elevated>
+						<west>start</west>
+					</cell>
+				</column>
+			</row>
+			<row>
+				<column>
+					<cell row='2' col='A'>
+						<terrain>start</terrain>
+						<elevated>1</elevated>
+						<east>start</east>
+					</cell>
+				</column>
+				<column>
+					<cell row='2' col='B'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='2' col='C'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='2' col='D'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='2' col='E'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='2' col='F'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='2' col='G'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='2' col='H'>
+						<terrain>start</terrain>
+						<elevated>1</elevated>
+						<west>start</west>
+					</cell>
+				</column>
+			</row>
+			<row>
+				<column>
+					<cell row='3' col='A'>
+						<terrain>start</terrain>
+						<elevated>1</elevated>
+						<east>start</east>
+					</cell>
+				</column>
+				<column>
+					<cell row='3' col='B'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='3' col='C'>
+						<terrain>hindering</terrain>
+						<elevated>1</elevated>
+						<north>hindering</north>
+						<east>hindering</east>
+						<west>hindering</west>
+						<south>hindering</south>
+					</cell>
+				</column>
+				<column>
+					<cell row='3' col='D'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='3' col='E'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='3' col='F'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='3' col='G'>
+						<terrain>hindering</terrain>
+						<elevated>1</elevated>
+						<north>hindering</north>
+						<east>hindering</east>
+						<west>hindering</west>
+						<south>hindering</south>
+					</cell>
+				</column>
+				<column>
+					<cell row='3' col='H'>
+						<terrain>start</terrain>
+						<elevated>1</elevated>
+						<west>start</west>
+					</cell>
+				</column>
+			</row>
+			<row>
+				<column>
+					<cell row='4' col='A'>
+						<terrain>start</terrain>
+						<elevated>1</elevated>
+						<east>start</east>
+					</cell>
+				</column>
+				<column>
+					<cell row='4' col='B'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='4' col='C'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='4' col='D'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='4' col='E'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='4' col='F'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='4' col='G'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='4' col='H'>
+						<terrain>start</terrain>
+						<elevated>1</elevated>
+						<west>start</west>
+					</cell>
+				</column>
+			</row>
+			<row>
+				<column>
+					<cell row='5' col='A'>
+						<terrain>hindering</terrain>
+						<elevated>1</elevated>
+						<north>hindering</north>
+						<east>start</east>
+						<south>hindering</south>
+					</cell>
+				</column>
+				<column>
+					<cell row='5' col='B'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='5' col='C'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='5' col='D'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='5' col='E'>
+						<terrain>hindering</terrain>
+						<elevated>1</elevated>
+						<north>hindering</north>
+						<east>hindering</east>
+						<west>hindering</west>
+						<south>hindering</south>
+					</cell>
+				</column>
+				<column>
+					<cell row='5' col='F'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='5' col='G'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='5' col='H'>
+						<terrain>start</terrain>
+						<elevated>1</elevated>
+						<west>start</west>
+					</cell>
+				</column>
+			</row>
+			<row>
+				<column>
+					<cell row='6' col='A'>
+						<terrain>start</terrain>
+						<elevated>1</elevated>
+						<east>start</east>
+					</cell>
+				</column>
+				<column>
+					<cell row='6' col='B'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='6' col='C'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='6' col='D'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='6' col='E'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='6' col='F'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='6' col='G'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='6' col='H'>
+						<terrain>hindering</terrain>
+						<elevated>1</elevated>
+						<north>hindering</north>
+						<west>start</west>
+						<south>hindering</south>
+					</cell>
+				</column>
+			</row>
+			<row>
+				<column>
+					<cell row='7' col='A'>
+						<terrain>start</terrain>
+						<elevated>1</elevated>
+						<east>start</east>
+					</cell>
+				</column>
+				<column>
+					<cell row='7' col='B'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='7' col='C'>
+						<terrain>hindering</terrain>
+						<elevated>1</elevated>
+						<north>hindering</north>
+						<east>hindering</east>
+						<west>hindering</west>
+						<south>hindering</south>
+					</cell>
+				</column>
+				<column>
+					<cell row='7' col='D'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='7' col='E'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='7' col='F'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='7' col='G'>
+						<terrain>hindering</terrain>
+						<elevated>1</elevated>
+						<north>hindering</north>
+						<east>hindering</east>
+						<west>hindering</west>
+						<south>hindering</south>
+					</cell>
+				</column>
+				<column>
+					<cell row='7' col='H'>
+						<terrain>start</terrain>
+						<elevated>1</elevated>
+						<west>start</west>
+					</cell>
+				</column>
+			</row>
+			<row>
+				<column>
+					<cell row='8' col='A'>
+						<terrain>start</terrain>
+						<elevated>1</elevated>
+						<east>start</east>
+					</cell>
+				</column>
+				<column>
+					<cell row='8' col='B'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='8' col='C'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='8' col='D'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='8' col='E'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='8' col='F'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='8' col='G'>
+						<terrain>clear</terrain>
+						<elevated>1</elevated>
+					</cell>
+				</column>
+				<column>
+					<cell row='8' col='H'>
+						<terrain>start</terrain>
+						<elevated>1</elevated>
+						<west>start</west>
+					</cell>
+				</column>
+			</row>
+		</tile>
+	</map>
+</library>
