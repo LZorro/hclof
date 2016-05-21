@@ -3884,4 +3884,30 @@
 		<wall>5%</wall>
 		<w>6%</w>
 	</map>
+	<map>
+		<filename>uxm_jeangreyschool</filename>
+		<title>Jean Grey School for Higher Learning</title>
+		<set>Uncanny X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Indoor/Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>11%</h>
+		<b>4%</b>
+		<wall>9%</wall>
+		<i>91%</i>
+	</map>
+	<map>
+		<filename>uxm_manhattanbridge</filename>
+		<title>Manhattan Bridge</title>
+		<set>Uncanny X-Men</set>
+		<universe>Marvel</universe>
+		<inout>Outdoor</inout>
+		<size>16x24</size>
+		<age>Modern</age>
+		<h>4%</h>
+		<b>1%</b>
+		<e>50%</e>
+		<w>40%</w>
+	</map>
 </index>
